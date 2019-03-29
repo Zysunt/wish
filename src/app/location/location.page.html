@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="headlocation" (click)="goRoot()">
+            <div class="back">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>选择城市</span>
+
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="nowBox">
+        <p class="biaoti">当前定位</p>
+        <p>
+            <img src="assets/icon/home/yelocate.png" alt="">
+            <span class="nowcity">{{now}}</span>
+        </p>
+    </div>
+    <div>
+        <div class="city">
+            <p class="biaoti">热门城市<span>#</span></p>
+            <p>
+                <span>北京</span>
+            </p>
+        </div>
+        <div class="city">
+            <p class="biaoti">A</p>
+            <p>
+                <span>澳门</span>
+            </p>
+        </div>
+        <div class="city">
+            <p class="biaoti">S</p>
+            <p>
+                <span>苏州</span>
+            </p>
+        </div>
+
+    </div>
+    <div class="Letter">
+        <p>#</p>
+        <p>热</p>
+        <p>A</p>
+        <p>B</p>
+        <p>C</p>
+        <p>D</p>
+    </div>
+
+</ion-content>

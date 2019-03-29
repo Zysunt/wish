@@ -1,0 +1,165 @@
+.shanchu {
+    height: 6.1vw;
+    width: 6.1vw;
+}
+
+.head {
+    text-align: center;
+    overflow: hidden;
+    width: 98%;
+    line-height: 1vw;
+}
+
+.cent {
+    margin: 3vw 5%;
+}
+
+.head span {
+    font-size: 4.3vw;
+    color: #333333;
+    position: relative;
+    left: 3vw;
+}
+
+.head img {
+    float: right;
+}
+
+.itemBox {
+    margin: 0vw 5% 11vw;
+    width: 90%;
+}
+
+.onebox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.clear div:first-child {
+    width: 70% !important;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.time {
+    color: #999999;
+    font-size: 3.2vw;
+}
+
+.oa {
+    width: 20%;
+    position: relative;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    width: 80%;
+    text-align: left;
+}
+
+.a {
+    position: relative;
+    left: -12vw;
+}
+
+.miaosu {
+    color: #999999;
+    font-size: 3.2vw;
+    margin: 0;
+}
+
+.name {
+    color: #333;
+    font-size: 4.7vw;
+    margin: 0;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.huiyuanbox {
+    display: flex
+}
+
+.at {
+    color: #4579b2;
+    font-size: 3.5vw;
+    margin-right: 1vw;
+}
+
+.towbox {
+    display: flex;
+    width: 100%;
+    background: #f7f7f7;
+}
+
+.txiang {
+    width: 23.7vw;
+    height: 23.3vw;
+}
+
+.over {
+    width: 70%;
+    margin: 3.5vw 0 0 4vw;
+}
+
+.over div {
+    margin: 2vw 0px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.over div p {
+    position: relative;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.over div p::after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 40px;
+    background: -webkit-linear-gradient(left, transparent, #fff 55%);
+    background: -o-linear-gradient(rightright, transparent, #fff 55%);
+    background: -moz-linear-gradient(rightright, transparent, #fff 55%);
+    background: linear-gradient(to rightright, transparent, #fff 55%);
+}

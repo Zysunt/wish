@@ -1,0 +1,154 @@
+<ion-content>
+    <div class="body">
+
+        <div class="header">
+            <div class="tu">
+                <p><img *ngIf="login==true" src="assets/icon/mine/jiahaoyou.png" alt=""></p>
+                <p>
+                    <img *ngIf="login==true" src="assets/icon/mine/qiandao.png" style="margin-right: 4vw;" alt="">
+                    <img src="assets/icon/mine/shezhi.png" (click)="set()" alt="">
+                </p>
+            </div>
+            <!-- 未登录 -->
+            <div *ngIf="login==false">
+                <div class="touxboxwei">
+
+                    <div class="a">
+                        <img (click)="denglu()" src="assets/icon/mine/txmeidl.png" class="toux" alt="">
+                    </div>
+                    <div class="weib">
+                        <img (click)="denglu()" src="assets/icon/mine/login.png" style="margin-right:3vw" alt="">
+                        <img (click)="zhuce()" src="assets/icon/mine/zhuce.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- 已登陆 -->
+            <div *ngIf="login==true">
+
+                <div class="touxbox">
+                    <div class="abox">
+                        <div>
+                            <div class="a">
+                                <img src="assets/icon/mine/viptx3.png" class="toux" alt="">
+                                <img src="assets/icon/mine/viptx2.png" *ngIf="isVip==true" class="isvip" alt="">
+
+                            </div>
+                            <div class="b ">
+                                <div class="huiyuanbox">
+                                    <h4>{{myname}}</h4>
+                                    <div *ngIf="isVip==true">
+                                        <p class="huip">
+                                            <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                            <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <p>{{miaosu}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bbox">
+                        <div class="jinbox">
+                            <div>
+                                <img class="jinbi" src="assets/icon/mine/jinbi1.png" alt="">
+                                <span>9877</span>
+                            </div>
+                            <div>
+                                <img class="jinbi" src="assets/icon/mine/jinbi.png" alt="">
+                                <span>9877</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="mybox">
+
+                <div>
+                    <h4>890</h4>
+                    <span>关注</span>
+                </div>
+                <div>
+                    <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
+                </div>
+                <div>
+                    <h4>890</h4>
+                    <span>粉丝</span>
+                </div>
+                <div>
+                    <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
+                </div>
+                <div>
+                    <h4>8920</h4>
+                    <span>收藏</span>
+                </div>
+                <div>
+                    <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
+                </div>
+                <div>
+                    <h4>22890</h4>
+                    <span>点赞</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="neibox">
+            <div class="changyong">
+                <h4>常用工具</h4>
+            </div>
+            <div class="daojubox">
+                <ul>
+                    <li>
+                        <img style="margin-right: 4vw;" src="assets/icon/mine/daoju.png" alt="">
+                        <p class="left"><span> 我的道具</span></p>
+                    </li>
+                    <li>
+                        <img src="assets/icon/mine/houdong.png" alt="">
+                        <p>我的活动</p>
+                    </li>
+                    <li>
+                        <img src="assets/icon/mine/cs.png" alt="">
+                        <p>道具商城</p>
+                    </li>
+                    <li>
+                        <img style="margin-left: 4vw;" src="assets/icon/mine/kefu.png" alt="">
+                        <p class="right"><span> 服务中心</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img style="margin-right: 4vw;" src="assets/icon/mine/vip.png" alt="">
+                        <p class="left"><span> 会员等级</span></p>
+                    </li>
+                    <li>
+                        <img src="assets/icon/mine/chongzhi.png" alt="">
+                        <p>充值中心</p>
+                    </li>
+                    <li>
+                        <img src="assets/icon/mine/xc.png" alt="">
+                        <p>活动相册</p>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+</ion-content>

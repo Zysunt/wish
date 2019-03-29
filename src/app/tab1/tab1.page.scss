@@ -1,4 +1,416 @@
 .welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+    max-height: 35vh;
+    overflow: hidden;
+}
+
+.headtab1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg {
+    // background-color: #B267FD;
+    background-image: url('/assets/icon/home/h1.png');
+    background-size: 100%;
+    height: 56vw;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.ion-color-warning {
+    margin: 0 5% 3vw !important;
+    width: 90%;
+}
+
+.scan {
+    height: 5vw;
+}
+
+.toolbar-container {
+    background: #000;
+}
+
+.locate {
+    width: 15%;
+    // height: 30vw;
+    line-height: 15vw;
+    padding-left: 3vw;
+}
+
+.locate img {
+    width: 5vw;
+    height: 6vw;
+}
+
+.locate span {
+    font-size: 0.35vw;
+    color: #ffffff;
+    position: relative;
+    top: -11%;
+}
+
+.select {
+    width: 78%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.select img {
+    width: 0.35vw;
+    height: 0.35vw;
+}
+
+.select input {
+    height: 10vw;
+    border-radius: 16vw;
+    border: none;
+    width: 90%;
+    padding-left: 6vw;
+    padding-left: 4vw;
+    background: #00000030;
+    outline: none;
+    color: #fff;
+}
+
+.scanbox {
+    width: 7%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.tuijian {
+    height: 34vw;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 3vw;
+    box-shadow: 1px 4px 10px 1px #888888;
+    // box-shadow: 0 0 0 0 #f4f4f4, /*上边阴影*/
+    // -0.5vw 0 0.5vw 0 #f4f4f4, /*左边阴影*/
+    // 0.5vw 0 0.5vw 0 #f4f4f4, /*右边阴影*/
+    // 0 0.5vw 0.5vw 0 #f4f4f4;
+    position: relative;
+    top: -7vw;
+    background: #fff;
+    padding: 2vw 4vw;
+}
+
+.tuijian h1 {
+    font-size: 5vw;
+    color: #ff9101;
+    margin-top: 0;
+}
+
+.tui1 {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+}
+
+.tui1 img {
+    max-width: 80%;
+}
+
+.tui2 {
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.tui2 p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 4vw;
+}
+
+.tui2 span {
+    color: #989897;
+}
+
+.tui2 button {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+}
+
+@media screen and (max-width: 320px) {
+    .locate img {
+        width: 4vw;
+        height: 5vw;
+    }
+    .select input {
+        font-size: 4vw;
+    }
+}
+
+.wishwall {
+    border-radius: 2vw;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.ion-color-warning {
+    margin: 0 0 3vw 0;
+}
+
+.wishitem {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    height: 58vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.le {
+    margin-left: 3%;
+}
+
+.wishwall p {
+    position: absolute;
+    bottom: 11vw;
+    margin: 0;
+    color: #fff;
+}
+
+.wishwall img {
+    height: 50vw;
+    width: 100%;
+    height: 88%;
+}
+
+.caozuo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caozuo span {
+    position: relative;
+    top: -1.5vw;
+}
+
+.caozuo img {
+    height: 6vw;
+    width: 6vw;
+}
+
+.onebox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5%;
+    padding: 3vw;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 7px 1px #ccc8c8;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.clear div:first-child {
+    width: 70% !important;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    margin: 0;
+    color: #999;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 100% !important;
+    display: inline-block;
+    line-height: 9vw;
+    position: relative;
+    left: 9vw;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 2vw;
+    border-radius: 2vw;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.as {
+    display: flex;
+    justify-content: space-between
+}
+
+.as div {
+    width: 30%;
+}
+
+.as div img {
+    width: 100%;
+}
+
+.fabuneir p {
+    margin: 0;
+    font-size: 3.5vw
+}
+
+.huodongimg {
+    height: 16.2vw;
+    width: 19.5vw;
+}
+
+.huodongnr {
+    width: 70%;
+}
+
+.huodongnr label {
+    font-size: 3.7vw;
+    font-weight: 500;
+}
+
+.huodongnr p {
+    font-size: 3.2vw;
+    color: #333;
+}
+
+.onebox .huodongnr div span {
+    color: #999;
+    font-size: 3vw;
+}
+
+.wz {
+    height: 3.2vw;
+    width: 2.4vw
+}
+
+.jiezhibox {
+    display: flex;
+    justify-content: space-between
+}
+
+.jiezhibox div {
+    width: 50%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
 }

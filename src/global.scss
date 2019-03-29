@@ -9,3 +9,84 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+.ion-color-primary {
+    --ion-color-base: #f57c12 !important;
+    --ion-color-base-rgb: var(--ion-color-warning-rgb, 255, 206, 0) !important;
+    --ion-color-contrast: var(--ion-color-warning-contrast, #fff) !important;
+    --ion-color-contrast-rgb: var(--ion-color-warning-contrast-rgb, 255, 255, 255) !important;
+    --ion-color-shade: #f7844d !important;
+    --ion-color-tint: #e68837 !important;
+}
+
+.ion-color-warning {
+    --ion-color-base: #f57c12 !important;
+    --ion-color-base-rgb: var(--ion-color-warning-rgb, 255, 206, 0) !important;
+    --ion-color-contrast: var(--ion-color-warning-contrast, #fff) !important;
+    --ion-color-contrast-rgb: var(--ion-color-warning-contrast-rgb, 255, 255, 255) !important;
+    --ion-color-shade: #f7844d !important;
+    --ion-color-tint: #e68837 !important;
+}
+
+:root {
+    /** primary **/
+    --ion-color-primary: #ff9100;
+    --ion-color-primary-rgb: 56, 128, 255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #be6d01;
+    --ion-color-primary-tint: #f4af53;
+    /** warning **/
+    --ion-color-primary: #ff9100;
+    --ion-color-primary-rgb: 56, 128, 255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #be6d01;
+    --ion-color-primary-tint: #f4af53;
+}
+
+:host(.segment-button-checked) .segment-button-indicator {
+    background: linear-gradient(to bottom right, #fccf41, #f75f16) !important;
+}
+
+button,
+input {
+    outline: none;
+}
+
+.cent {
+    margin: 0 5%;
+    width: 90%
+}
+
+.touxia {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.back {
+    display: inline;
+    width: 12vw;
+    height: 11vw;
+    float: left;
+    padding: 4.5vw 2vw;
+}
+
+.back img {
+    height: 5.1vw;
+    width: 2.7vw;
+    position: relative;
+    left: -3vw;
+}
+
+.head {
+    text-align: center;
+}
+
+.head span {
+    font-size: 5.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+    left: -4vw;
+}

@@ -1,0 +1,203 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>活动详情</span>
+            <p class="fx" (click)="fx()"><img src="assets/icon/hand/fx.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="bod">
+        <div>
+            <div class="imgbox">
+                <img src="assets/icon/hand/q4.png" alt="" />
+                <div>
+                    <p style="display:inline" (click)="details()">
+                        活动详情
+                        <img class="hd" *ngIf="zhankai==1" src="assets/icon/hand/xia.png" alt="" />
+                        <img class="youhd" *ngIf="zhankai!=1" src="assets/icon/hand/you.png" alt="" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- 活动详情 -->
+        <div *ngIf="zhankai == 1">
+            <div class="itembox">
+                <div style="height:3vw"></div>
+                <div>
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>活动详情</span>
+                    </p>
+                    <p class="jieshao">
+                        {{jieshao}}
+                    </p>
+                </div>
+            </div>
+            <div class="itembox">
+                <!-- <div> -->
+                <div>
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>活动时间</span>
+                    </p>
+                    <p class="jieshao">
+                        {{time}}
+                    </p>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="itembox">
+                <div>
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>任务开始时间</span>
+                    </p>
+                    <label for="">{{time}}</label>
+                    <p class="jieshao">
+                        {{timemiaosu}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="itembox">
+            <div>
+                <div style="height:3vw"></div>
+                <p class="biaoti">
+                    <img src="assets/icon/hand/hd.png" alt="">
+                    <span>活动奖励</span>
+                </p>
+                <p class="jieshao">
+                    {{reward}}
+                </p>
+            </div>
+        </div>
+
+        <div class="itembox">
+            <div (click)="huan()">
+                <p class="biaoti">
+                    <img src="assets/icon/hand/hd.png" alt="">
+                    <span>预约人数</span>
+                    <span class="canyu">{{canyu}}人已参与</span>
+                </p>
+                <div class="txbox">
+                    <p *ngFor="let i of imgs">
+                        <img src={{i}} alt="">
+                    </p>
+                </div>
+                <div class="youbox">
+                    <img src="assets/icon/hand/you.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="a">
+            <p>评论{{pinlun}}</p>
+
+        </div>
+        <div class="onebox">
+            <div class="oa">
+                <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+            </div>
+            <div class="ob">
+                <div class="clear">
+                    <div class="huiyuanbox">
+                        <label class="name">{{namepeople}}</label>
+                        <div *ngIf="IsVip==true">
+                            <p class="huip">
+                                <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lastbox">
+                        <img class="aixin" src="assets/icon/hand/aix.png" alt="">
+                        <span class="dianzan">{{dianzan}}</span>
+                    </div>
+
+                </div>
+                <div class="sl">
+                    <p class="miaosu">{{pinl}}</p>
+                </div>
+                <div class="huifubox">
+                    <p>
+                        <span>{{hour}}</span>
+                        <span>回复</span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="onebox">
+            <div class="oa">
+                <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+            </div>
+            <div class="ob">
+                <div class="clear">
+                    <div class="huiyuanbox">
+                        <label class="name">{{namepeople}}</label>
+                        <div *ngIf="IsVip==true">
+                            <p class="huip">
+                                <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lastbox">
+                        <img class="aixin" src="assets/icon/hand/aix.png" alt="">
+                        <span class="dianzan">{{dianzan}}</span>
+                    </div>
+
+                </div>
+                <div class="sl">
+                    <p class="miaosu">{{pinl}}</p>
+                </div>
+                <div class="huifubox">
+                    <p>
+                        <span>{{hour}}</span>
+                        <span>回复</span>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="fucbox">
+        <div>
+            <p>
+                <img src="assets/icon/hand/shouc.png" alt="">
+                <span class="pinls">收藏</span>
+            </p>
+            <p>
+                <img src="assets/icon/hand/pl.png" alt="">
+                <span class="pinls">评论</span>
+            </p>
+        </div>
+
+        <div>
+            <button (click)="yuyuehans()">
+              <span *ngIf="yuyue==true">预约</span>
+              <span *ngIf="yuyue!=true">已预约</span>
+            </button>
+        </div>
+
+    </div>
+</ion-content>

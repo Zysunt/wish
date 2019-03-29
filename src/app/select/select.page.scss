@@ -1,0 +1,99 @@
+.head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.suosou {
+    width: 10%;
+    line-height: 15vw;
+}
+
+.suosou span {
+    color: #ff9100;
+    font-size: 4vw;
+}
+
+.locate {
+    width: 10%;
+    line-height: 7vw;
+    padding-left: 3vw;
+}
+
+.locate img {
+    width: 5vw;
+    height: 6vw;
+}
+
+.select {
+    width: 78%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.select img {
+    width: 0.35vw;
+    height: 0.35vw;
+}
+
+.select input {
+    height: 10vw;
+    border-radius: 16vw;
+    border: none;
+    width: 95%;
+    padding-left: 6vw;
+    padding-left: 4vw;
+    background: #f6f7f8;
+    outline: none;
+    color: #b8b8b9;
+}
+
+.back {
+    display: inline;
+    width: 13vw;
+    height: 12vw;
+    float: left;
+    padding: 5vw;
+}
+
+.back img {
+    height: 3.8vw;
+    width: 2vw;
+}
+
+.bodybox {
+    width: 90%;
+    margin: 0 5% 0;
+}
+
+.bodybox div {
+    margin-top: 8vw;
+}
+
+.bodybox div p {
+    color: #333;
+    font-size: 3.47vw;
+}
+
+.a {
+    display: inline-block !important;
+    margin: 3vw 4vw 3vw !important;
+}
+
+.bodybox div label {
+    color: #ff9100;
+    font-size: 3.5vw;
+    background-color: #fff6eb;
+    border-radius: 5vw;
+    border-radius: 5vw;
+    padding: 2vw 9vw;
+}
+
+@media screen and (max-width: 320px) {
+    .locate img {
+        width: 4vw;
+        height: 5vw;
+    }
+    .select input {
+        font-size: 4vw;
+    }
+}

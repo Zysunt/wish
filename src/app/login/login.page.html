@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title center>登录</ion-title>
+        <p class="zhuce" (click)="zhuce()">注册</p>
+        <div style="both:clear"></div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="bodybox">
+        <ion-segment [(ngModel)]="mimalog" color="warning">
+            <ion-segment-button value="mi" (ionSelect)="mimalogin()">
+                <ion-label>账号密码登录</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="mian" (ionSelect)="mianmi()">
+                <ion-label>快捷免密登录</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+        <div class="itembox">
+            <img src="assets/icon/login/shouji.png" class="tel" alt="">
+            <input type="number" placeholder="请输入手机号" pattern="[0-9]*">
+        </div>
+        <div class="itembox" *ngIf="mima==true">
+            <img src="assets/icon/login/mima.png" class="mima" alt="">
+            <input type="number" placeholder="请输入密码" pattern="[0-9]*">
+        </div>
+        <div class="itembox">
+            <img src="assets/icon/login/code.png" class="code" alt="">
+            <input type="number" placeholder="请输入验证码" pattern="[0-9]*">
+            <p class="getcode">
+                <button (click)="settime()" [disabled]="!verifyCode.disable" value="获取验证码">{{verifyCode.verifyCodeTips}}</button>
+            </p>
+        </div>
+
+        <div class="towbox">
+            <button (click)="tomine()" class="loginbtn">登录</button>
+            <p>忘记密码&nbsp;&nbsp;？</p>
+        </div>
+        <div class="threebox">
+            <p>----第三方账号登录----</p>
+            <div>
+                <img src="assets/icon/login/weixin.png" alt="">
+                <img src="assets/icon/login/weixin.png" alt="">
+                <img src="assets/icon/login/weibo.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+</ion-content>

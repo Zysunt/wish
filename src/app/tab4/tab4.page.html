@@ -1,0 +1,125 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <span>消息中心</span>
+            <img src="assets/icon/msg/sc.png" class="shanchu" alt="">
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cent">
+        <ion-segment [(ngModel)]="xiaoxi" color="warning">
+            <ion-segment-button value="sixin" (ionSelect)="segmentButtonClicked($event)">
+                <ion-label>私信</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="pinlun" (ionSelect)="segmentButtonClicked($event)">
+                <ion-label>评论</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="aite" (ionSelect)="segmentButtonClicked($event)">
+                <ion-label>@我</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tongzhi" (ionSelect)="segmentButtonClicked($event)">
+                <ion-label>通知</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+
+
+    <div>
+
+
+        <div class="itemBox">
+            <div class="onebox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i1.png" alt="">
+                    <!-- <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt=""> -->
+
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox">
+                            <h4 class="name">辅导费</h4>
+                            <div>
+                                <p class="huip">
+                                    <!-- <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt=""> -->
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lastbox">
+                            <span class="time">12分钟前</span>
+                        </div>
+
+                    </div>
+                    <p class="miaosu">{{miaosu}}</p>
+                </div>
+            </div>
+            <p style="font-size:3.5vw;margin: 1vw 0;">
+                <span class="at">@{{friendname}}</span>那份达到防晒的尴尬尴尬尴尬
+            </p>
+
+            <div class="towbox">
+                <div>
+                    <img class="txiang" src="assets/icon/msg/t1.png" alt="">
+                </div>
+                <div class="over">
+                    <h4 class="name">@那大沙发上发呆</h4>
+                    <div>
+                        <p class="miaosu">{{neirong}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="itemBox">
+            <div class="onebox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox">
+                            <h4 class="name">辅导费</h4>
+                            <div *ngIf="IsVip==true">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lastbox">
+                            <span class="time">12分钟前</span>
+                        </div>
+
+                    </div>
+                    <p class="miaosu">{{miaosu}}</p>
+                </div>
+            </div>
+            <p style="font-size:3.5vw;margin: 1vw 0;">
+                <span class="at">@{{friendname}}</span>那份达到防晒的尴尬尴尬尴尬
+            </p>
+
+            <div class="towbox">
+                <div>
+                    <img class="txiang" src="assets/icon/msg/t1.png" alt="">
+                </div>
+                <div class="over">
+                    <h4 class="name">@那大沙发上发呆</h4>
+                    <div>
+                        <p class="miaosu">{{neirong}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</ion-content>

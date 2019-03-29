@@ -1,0 +1,128 @@
+.back {
+    display: inline;
+    width: 12vw;
+    height: 11vw;
+    float: left;
+    padding: 4.5vw 3vw;
+}
+
+.back img {
+    height: 5.1vw;
+    width: 2.7vw;
+}
+
+.head {
+    text-align: center;
+}
+
+.head span {
+    font-size: 5.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+}
+
+.login {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+}
+
+.itembox {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 3vw 2vw;
+    margin-top: 8vw;
+    position: relative;
+}
+
+.itembox input {
+    font-size: 3.9vw;
+    line-height: 5vw;
+    margin-left: 4vw;
+    width: 88%;
+    border: none;
+}
+
+.mima {
+    height: 4vw;
+    width: 3.4vw;
+    position: relative;
+    top: 0.5vw;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.code {
+    height: 4.7vw;
+    width: 4.2vw;
+    position: relative;
+    top: 0.5vw;
+}
+
+.getcode {
+    color: #ffae44;
+    font-size: 3.9vw;
+    position: absolute;
+    right: 2vw;
+    top: 0
+}
+
+.getcode button {
+    background: transparent;
+    color: #ffae44;
+    font-size: 4vw;
+}
+
+.itembox h4 {
+    color: #999;
+    font-size: 6vw;
+    margin: 0;
+    display: inline-block;
+}
+
+.loginbtn {
+    border: none;
+    border-radius: 6vw;
+    background: linear-gradient(to bottom right, #fccf41, #FF9100);
+    color: #fff;
+    font-size: 5.3vw;
+    width: 100%;
+    line-height: 13vw;
+}
+
+.eit {
+    position: absolute;
+    top: 2vw;
+    width: 15vw;
+}
+
+.eit img {
+    height: 1.5vw;
+    width: 3vw;
+    position: relative;
+    top: -2vw;
+    right: 0;
+}
+
+.bodybox {
+    width: 80%;
+    margin: 12vw 10% 0;
+}
+
+.towbox {
+    margin-top: 4vw
+}
+
+.towbox p {
+    font-size: 4vw;
+    color: #999;
+}
+
+.towbox p span {
+    color: #fa8394;
+}

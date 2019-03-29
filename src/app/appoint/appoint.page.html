@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>预约人数</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="cent">
+
+        <div class="itembox" *ngFor="let item of name">
+            <div>
+                <img class="touxia" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+
+            </div>
+            <p>{{item}}</p>
+        </div>
+
+
+    </div>
+
+
+</ion-content>
