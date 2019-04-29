@@ -1,0 +1,80 @@
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    line-height: 13vw;
+    border-bottom: 1px solid #e0dddd75;
+}
+
+.head span {
+    left: -5vw;
+}
+
+.towbox img {
+    height: 4vw;
+    position: relative;
+    top: 5vw;
+}
+
+.body {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.ax {
+    font-size: 3vw;
+    color: #999;
+}
+
+.bton {
+    position: absolute;
+    bottom: 10vw;
+    text-align: center;
+    width: 80%;
+}
+
+.body p {
+    margin: 0
+}
+
+.onebox {
+    margin-top: 30%;
+    text-align: center;
+    position: relative;
+}
+
+.onebox img {
+    width: 15vw;
+    height: 26.5vw;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding: 8vw 0 4vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 45%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 20;
+}

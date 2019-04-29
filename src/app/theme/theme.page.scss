@@ -1,0 +1,43 @@
+.head span {
+    left: -5vw;
+}
+
+.bg {
+    background: #fff;
+    width: 90%;
+    margin: 5%;
+    padding: 2vw;
+    margin-top: 0;
+    border-radius: 2vw;
+}
+
+.body {
+    background: #f7f7f7;
+    width: 100%;
+    min-height: 100%;
+}
+
+.bg img {
+    height: 75vw;
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.bg p span {
+    margin: 0vw 4vw;
+    color: #333;
+}
+
+.bg p {
+    font-size: 3.5vw;
+    border-bottom: 1px solid #dcdcdc63;
+    line-height: 10vw;
+}
+
+.btn {
+    outline: none;
+    width: 70%;
+    padding: 5vw;
+    margin: 20% 15% 0;
+    font-size: 4vw;
+}

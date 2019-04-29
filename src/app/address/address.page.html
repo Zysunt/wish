@@ -1,0 +1,105 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>常用地址</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="cent">
+        <div class="itembox">
+            <div class="one">
+                <h5>{{names}}</h5>
+                <p>{{tels}}</p>
+            </div>
+            <div class="two">
+                <div>
+                    <button>默认</button>
+                    <label for="">{{sheng}}</label>
+                    <label for="">{{shi}}</label>
+                    <label for="">{{qu}}</label>
+                    <label for="">{{jiedao}}</label>
+                    <label for="">{{dizhi}}</label>
+                </div>
+                <div>
+                    <img (click)="toeditadress()" src="assets/icon/set/edit.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="itembox">
+            <div class="one">
+                <h5>{{names}}</h5>
+                <p>{{tels}}</p>
+            </div>
+            <div class="two">
+                <div>
+                    <button>默认</button>
+                    <label for="">{{sheng}}</label>
+                    <label for="">{{shi}}</label>
+                    <label for="">{{qu}}</label>
+                    <label for="">{{jiedao}}</label>
+                    <label for="">{{dizhi}}</label>
+                </div>
+                <div>
+                    <img (click)="toeditadress()" src="assets/icon/set/edit.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="itembox">
+            <div class="one">
+                <h5>{{names}}</h5>
+                <p>{{tels}}</p>
+            </div>
+            <div class="two">
+                <div>
+                    <button *ngIf="moren1==true">默认</button>
+                    <label for="">{{sheng}}</label>
+                    <label for="">{{shi}}</label>
+                    <label for="">{{qu}}</label>
+                    <label for="">{{jiedao}}</label>
+                    <label for="">{{dizhi}}</label>
+                </div>
+                <div>
+                    <img (click)="toeditadress()" src="assets/icon/set/edit.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="itembox">
+            <div class="one">
+                <h5>{{names}}</h5>
+                <p>{{tels}}</p>
+            </div>
+            <div class="two">
+                <div>
+                    <button>默认</button>
+                    <label for="">{{sheng}}</label>
+                    <label for="">{{shi}}</label>
+                    <label for="">{{qu}}</label>
+                    <label for="">{{jiedao}}</label>
+                    <label for="">{{dizhi}}</label>
+                </div>
+                <div>
+                    <img (click)="toeditadress()" src="assets/icon/set/edit.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="shouhuo">
+            <button (click)="toadd()" class="btn">新增收获地址</button>
+        </div>
+
+    </div>
+
+</ion-content>

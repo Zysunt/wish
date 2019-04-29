@@ -1,0 +1,62 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>消费记录</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="body">
+        <div>
+            <ion-segment [(ngModel)]="mimalog" color="warning">
+                <ion-segment-button value="mi" (ionSelect)="dingshenfun()">
+                    <ion-label>丁神币记录</ion-label>
+                    <img *ngIf="dinshen==true" class="record" src="assets/icon/msg/XXX.png" alt="">
+
+                </ion-segment-button>
+                <ion-segment-button value="mian" (ionSelect)="jifenfun()">
+                    <ion-label>积分记录</ion-label>
+                    <img *ngIf="jifen==true" class="record" src="assets/icon/msg/XXX.png" alt="">
+
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+
+        <div *ngIf="jifen==true">
+            <div class="msgbox">
+                <div *ngFor="let item of mons">
+                    <div class="msgitem">
+                        <div class="one">
+                            <p>{{item.date}}</p>
+                            <p>系统奖励</p>
+                        </div>
+                        <div class="two">
+                            <h3>{{item.xitmsg}}</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div *ngIf="dinshen==true">
+            <div class="msgbox">
+                <div class="msgitem">
+                    <div class="one">
+                        <p>{{date1}}</p>
+                        <p>充值成功</p>
+                    </div>
+                    <div class="two">
+                        <h3>{{xitmsg}}</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</ion-content>

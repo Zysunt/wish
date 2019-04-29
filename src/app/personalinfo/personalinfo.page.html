@@ -1,0 +1,110 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>个人信息</span>
+        </div>
+        <div (click)="guanbi()">
+            <div style="background: #00000012;" *ngIf="show==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbi()">
+        <div *ngIf="show==true" class="yinyin"></div>
+    </div>
+    <div (click)="guanbi()">
+        <div class="cache" *ngIf="show==true">
+            <h5>信息保存成功</h5>
+        </div>
+    </div>
+
+    <div>
+        <div class="touxbox">
+            <img class="bj" src="assets/icon/set/bianji.png" alt="">
+            <img class="tx" src="{{imgu}}" alt="">
+        </div>
+        <div class="cent">
+            <div class="items">
+                <div>
+                    <label for="">昵称</label>
+                </div>
+                <div>
+                    <input type="text" value="{{myname}}">
+                </div>
+            </div>
+            <div class="items">
+                <div>
+                    <label for="">个性签名</label>
+                </div>
+                <div>
+                    <input type="text" value="{{info}}">
+                </div>
+            </div>
+            <div class="items">
+                <div>
+                    <label for="">手机</label>
+                </div>
+                <div>
+                    <input type="text" value="{{tel}}">
+                </div>
+            </div>
+            <div class="items">
+                <div>
+                    <label>城市</label>
+                </div>
+                <div>
+                    <p>苏州</p>
+                    <img src="assets/icon/set/you.png" alt="">
+                </div>
+            </div>
+            <!-- <ion-list>
+                <ion-item>
+
+                    <ion-label>居住地</ion-label>
+                    <ion-multi-picker [multiPickerColumns]="cityColumns" [cancelText]="'取消'" [doneText]="'完成'"></ion-multi-picker>
+                </ion-item>
+            </ion-list> -->
+            <div class="items">
+                <div>
+                    <label for="">性别</label>
+                </div>
+                <div>
+                    <input type="text" value="{{sex}}">
+                </div>
+            </div>
+            <!-- <div class="items">
+                <div>
+                    <label for="">生日</label>
+                </div>
+                <div>
+                    <p>2010-11-9</p>
+                    <img src="assets/icon/set/you.png" alt="">
+                </div>
+            </div> -->
+            <ion-item>
+                <ion-label>生日</ion-label>
+                <ion-datetime mode="ios" [(ngModel)]="monthValues" [(ngModel)]="yearValues" [(ngModel)]="dayValues" placeholder="{{startdate}}" [pickerOptions]="customPickerOptions" displayFormat="YYYY-MM-DD" min="2019" max="2050"></ion-datetime>
+            </ion-item>
+            <div class="items">
+                <div>
+                    <label for="">兴趣爱好</label>
+                </div>
+                <div>
+                    <input type="text" value="{{aihao}}">
+                </div>
+            </div>
+            <div class="btnbox">
+                <button (click)="saveinfo()">保存</button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</ion-content>

@@ -1,0 +1,39 @@
+.head span {
+    left: -5vw;
+}
+
+.bg {
+    background: url('../../assets/icon/fuli/dengjibg.png') no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.tablebox {
+    padding-top: 70%
+}
+
+.tablebox table {
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+}
+
+.tablebox table th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #dad6d6b5;
+}
+
+.tablebox table td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #dad6d6b5;
+}
+
+.fw {
+    font-weight: 600;
+}

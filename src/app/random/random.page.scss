@@ -1,0 +1,215 @@
+.head span {
+    left: -5vw
+}
+
+.haoyout {
+    border-bottom: 1px solid #dcdcdc8f;
+    line-height: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.haoyout h4 {
+    font-size: 4.5vw;
+    margin: 0;
+    line-height: 20vw;
+    margin-left: 3vw
+}
+
+.haoyout label {
+    border: 1px solid #afaaaa;
+    color: #797878;
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    padding: 1.3vw 7vw;
+}
+
+.count input[type=checkbox] {
+    opacity: 0 !important;
+    -webkit-appearance: none;
+    height: 5.6vw;
+    width: 5.6vw;
+    position: absolute;
+    left: 2vw;
+    z-index: 100;
+}
+
+.count input[type=checkbox]+label {
+    display: block;
+    width: 5.6vw;
+    height: 5.6vw;
+    overflow: hidden;
+    background: url("../../assets/icon/tab3/hui.png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+    float: left;
+}
+
+.count input[type=checkbox]:checked+label {
+    background: url("../../assets/icon/mine/1(1).png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+}
+
+.count {
+    height: 6vw;
+    width: 7vw;
+    text-align: right;
+    position: relative;
+    right: -8vw;
+}
+
+.haoyout img {
+    height: 5.3vw;
+    width: 4.8vw;
+    position: relative;
+    top: 7vw;
+}
+
+.haoyout div:first-child {
+    display: flex
+}
+
+.imszx {
+    display: flex
+}
+
+.imszx img {
+    height: 3.2vw
+}
+
+.btnbs {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 10vw;
+    padding: 4vw;
+    outline: none;
+    width: 80%;
+    margin: 50% 10% 5vw 10%;
+}
+
+.guanbox img {
+    height: 3.2vw;
+    position: relative;
+    top: 2vw;
+}
+
+.guanbox {
+    display: flex
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.huiyuanbox {
+    display: flex;
+}
+
+.lastbox {
+    width: 20% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -1vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    margin: 0;
+    color: #999;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huip {
+    margin: 0;
+}
+
+.head span {
+    left: -5vw;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+}
+
+.clear .lastbox .guanbox div {
+    width: 86% !important;
+    display: inline-block;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 0 2vw;
+    border-radius: 0;
+    border-bottom: 1px solid #dcdcdc7a;
+}
+
+.imszx div {
+    margin: 0vw 3vw 2vw 0;
+}
+
+.guanbox span,
+.imszx div span {
+    font-size: 3.2vw;
+    color: #999;
+    display: inline-block;
+    margin: 0vw 2vw;
+}
+
+.asz {
+    margin-top: 1.5vw !important;
+}

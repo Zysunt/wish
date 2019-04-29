@@ -1,0 +1,216 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <div class="search">
+                <div>
+                    <ion-searchbar mode="md" type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated placeholder="请输入您想了解的道具名称"></ion-searchbar>
+
+                </div>
+            </div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="showcz==true" class="yinyin">
+        <div class="zhifuc">
+            <div class="cent">
+                <p class="biaotizhifu">
+                    <label for="">请确认支付</label>
+                    <img src="assets/icon/mine/close.png" alt="">
+                </p>
+                <div class="zhifubox">
+                    <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                    <label for="">需支付丁神币{{money}}</label>
+                </div>
+                <div class="queren">
+                    <p>请在{{daojishi}}内完成支付</p>
+                    <button class="btnm" (click)="tosuccess()">确认支付</button>
+                </div>
+            </div>
+        </div>
+        <div class="cache" *ngIf="showcz==true">
+            <h5>丁神币不足，无法支付</h5>
+            <div class="caozuobtn">
+                <div>
+                    <label (click)="guanbicz()" for="">确定</label>
+                </div>
+                <div>
+                    <label (click)="gorecharge()" for="">去充值</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div (click)="guanbipayment()">
+        <div *ngIf="payment==true" class="yinyin">
+            <div class="zhifuc">
+                <div class="cent">
+                    <p class="biaotizhifu">
+                        <label for="">请确认支付</label>
+                        <img src="assets/icon/mine/close.png" alt="">
+                    </p>
+                    <div class="zhifubox">
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <label for="">需支付丁神币{{money}}</label>
+                    </div>
+                    <div class="queren">
+                        <p>请在{{daojishi}}内完成支付</p>
+                        <button class="btnm" (click)="tosuccess()">确认支付</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="header" (click)="toposter()">
+            <ion-slides [options]="slideOpts">
+
+                <ion-slide>
+                    <img class="imglunbo" src="assets/icon/mine/daojubg.png" alt="">
+                </ion-slide>
+
+                <ion-slide>
+                    <img class="imglunbo" src="assets/icon/mine/daojubg.png" alt="">
+                </ion-slide>
+
+                <ion-slide>
+                    <img class="imglunbo" src="assets/icon/mine/daojubg.png" alt="">
+                </ion-slide>
+            </ion-slides>
+
+        </div>
+
+        <div class="">
+            <div class="mokuai">
+                <div class="daojubox">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>全部道具</span>
+                    </p>
+                    <p class="jieshao" (click)="toallprops()">
+                        更多
+                        <img src="assets/icon/hand/you.png" alt="">
+                    </p>
+                </div>
+                <div class="items">
+                    <div class="kaitem">
+                        <p class="kap">通过卡</p>
+                        <img class="ka" src="assets/icon/mine/0.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                    <div class="kaitem">
+                        <p class="kap">替换卡</p>
+                        <img class="ka" src="assets/icon/mine/5.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                    <div class="kaitem">
+                        <p class="kap"> 解答卡</p>
+                        <img class="ka" src="assets/icon/mine/3.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mokuai">
+                <div class="daojubox">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>积分兑换</span>
+                    </p>
+                    <p class="jieshao" (click)="toexchange()">
+                        更多
+                        <img src="assets/icon/hand/you.png" alt="">
+                    </p>
+                </div>
+                <div class="items">
+                    <div class="kaitem">
+                        <p class="kap">提示卡</p>
+                        <img class="ka" src="assets/icon/mine/4.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                    <div class="kaitem">
+                        <p class="kap">替换卡</p>
+                        <img class="ka" src="assets/icon/mine/5.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                    <div class="kaitem">
+                        <p class="kap"> 解答卡</p>
+                        <img class="ka" src="assets/icon/mine/3.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button (click)="openpay()" class="btn">购买</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mokuai">
+                <div class="youhui">
+                    <p>
+                        <i>''</i>今日优惠<i>''</i>
+                    </p>
+                </div>
+                <div class="daojubox">
+
+                    <div class="items">
+                        <div class="kaitem">
+                            <p class="kap">通过卡</p>
+                            <img class="ka" src="assets/icon/mine/0.png" alt="">
+                            <div>
+                                <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                                <p class="shanchuxian">{{jinbi}}</p>
+                                <p class="nowsjinbi">{{nowsjinbi}}</p>
+                            </div>
+                            <button (click)="openpay()" class="btn">购买</button>
+                        </div>
+                        <div class="kaitem">
+                            <p class="kap">替换卡</p>
+                            <img class="ka" src="assets/icon/mine/5.png" alt="">
+                            <div>
+                                <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                                <p class="shanchuxian">{{jinbi}}</p>
+                                <p class="nowsjinbi">{{nowsjinbi}}</p>
+                            </div>
+                            <button (click)="openpay()" class="btn">购买</button>
+                        </div>
+                        <div class="kaitem">
+                            <p class="kap"> 解答卡</p>
+                            <img class="ka" src="assets/icon/mine/3.png" alt="">
+                            <div>
+                                <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                                <p class="shanchuxian">{{jinbi}}</p>
+                                <p class="nowsjinbi">{{nowsjinbi}}</p>
+                            </div>
+                            <button (click)="openpay()" class="btn">购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

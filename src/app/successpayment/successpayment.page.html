@@ -1,0 +1,31 @@
+<ion-header *ngIf="state!='viplevel' && state!='recharge'">
+    <ion-toolbar center>
+        <ion-title style="text-align: center;font-size: 5vw;">
+            <span *ngIf="state=='zhifu'">支付成功</span>
+            <span *ngIf="state=='duihuan'">兑换成功</span>
+
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="state=='viplevel' || state=='recharge'">
+        <div class="back" (click)="back()">
+            <img src="assets/icon/home/back.png" alt="">
+        </div>
+    </div>
+    <div class="cent">
+        <div class="cgbox">
+            <div *ngIf="state=='viplevel' || state=='recharge'" class="as"></div>
+            <img class="cgimg" src="assets/icon/tab3/yifabu.png" alt="">
+            <h4>
+                <span *ngIf="state=='zhifu'">支付成功！</span>
+                <span *ngIf="state=='duihuan'">兑换成功！</span>
+                <span *ngIf="state=='viplevel' || state=='recharge'">恭喜您，充值成功啦！</span>
+            </h4>
+        </div>
+        <button *ngIf="state!='viplevel' && state!='recharge'" class="btnb" (click)="back()">
+    查看我的道具
+  </button>
+    </div>
+</ion-content>

@@ -26,20 +26,20 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'sendwish',
+        path: 'tab3',
         children: [
           {
             path: '',
-            loadChildren: '../sendwish/sendwish.module#SendwishPageModule'
+            loadChildren: '../tab3/tab3.module#Tab3PageModule'
           }
         ]
       },
       {
-        path: 'invitation',
+        path: 'mine',
         children: [
           {
             path: '',
-            loadChildren: '../invitation/invitation.module#InvitationPageModule'
+            loadChildren: '../mine/mine.module#MinePageModule'
           }
         ]
       },

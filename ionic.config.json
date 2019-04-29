@@ -1,6 +1,12 @@
 {
-  "name": "wish",
-  "integrations": {},
-  "type": "angular",
-  "id": "843834e4"
+    "name": "wish",
+    "integrations": {
+        "cordova": {}
+    },
+    "proxies": [{
+        "path": "/api",
+        "proxyUrl": "http://xiny.wh66.cn/api"
+    }],
+    "type": "angular",
+    "id": "843834e4"
 }

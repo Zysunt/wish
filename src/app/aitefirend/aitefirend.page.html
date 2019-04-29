@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>好友</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="cent">
+        <ion-searchbar mode="ios" type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated placeholder="搜索内容，用户"></ion-searchbar>
+
+        <div class="itembox" *ngFor="let item of name">
+            <div>
+                <img class="touxia" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/home/hg.png" alt="">
+
+            </div>
+            <p>{{item}}
+                <img class="hui" src="assets/icon/msg/huiyuan.png" alt="">
+                <img class="hui1" src="assets/icon/msg/huiyuan0.png" alt="">
+
+            </p>
+        </div>
+
+
+    </div>
+
+
+</ion-content>

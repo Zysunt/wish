@@ -1,0 +1,210 @@
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.clear div:first-child {
+    width: 60% !important;
+}
+
+.lastbox {
+    width: 40% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    margin: 0;
+    color: #999;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.head span {
+    left: -5vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+}
+
+.body {
+    width: 100%;
+    min-height: 100%;
+    background: #f7f7f7;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+    margin-top: 1vw;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 86% !important;
+    display: inline-block;
+    text-align: center
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 90%;
+    border: 1px solid #ff9100;
+    padding: 1.8vw 0;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 2vw;
+    border-radius: 2vw;
+}
+
+.darenxiuitem {
+    background: #fff;
+}
+
+.darenxiubox {
+    border-bottom: 1px solid #f3efef;
+    // 
+}
+
+.shunxu {
+    margin: 0;
+    padding: 0;
+    margin-top: 3vw;
+    background: #fff;
+    padding-top: 2vw;
+}
+
+.cent {
+    display: flex
+}
+
+.shunxu img {
+    height: 7vw;
+}
+
+.shunxu h4 span {
+    font-size: 2vw;
+    color: #999;
+    font-weight: 500;
+}
+
+.shunxu h4 {
+    margin: 0;
+    font-size: 4vw;
+    line-height: 8vw;
+    margin-left: 3vw;
+}
+
+.a {
+    color: #999;
+    font-size: 3.5vw;
+    margin: 0;
+    margin-bottom: 2vw;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.one div img {
+    height: 5vw;
+}
+
+.one {
+    background: #fff;
+}
+
+.one div p {
+    margin: 0;
+    font-size: 3.5vw;
+    margin-left: 3vw;
+}
+
+.one div {
+    display: flex;
+    padding: 4vw 5%;
+    width: 100%;
+    border-bottom: 1px solid #f1f0f0;
+}

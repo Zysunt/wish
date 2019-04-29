@@ -1,0 +1,37 @@
+.head span {
+    left: -5vw;
+}
+
+.cent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemsbox {
+    padding-top: 3vw;
+    position: relative;
+    width: 47%;
+}
+
+.itemsbox img {
+    height: 42vw;
+    width: 99%;
+    border-radius: 2vw;
+}
+
+.itemsbox div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 5vw
+}
+
+.itemsbox div h4 {
+    font-size: 3.7vw;
+    margin: 0;
+}
+
+.itemsbox div p {
+    font-size: 3.2vw;
+    color: #999;
+    margin: 0
+}

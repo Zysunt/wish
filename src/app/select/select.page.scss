@@ -1,4 +1,4 @@
-.head {
+.headss {
     display: flex;
     justify-content: space-around;
 }
@@ -20,19 +20,23 @@
 }
 
 .locate img {
-    width: 5vw;
-    height: 6vw;
+    width: 4vw;
+    height: 5vw;
 }
 
 .select {
     width: 78%;
-    // height: 30vw;
-    line-height: 15vw;
+    line-height: 14vw;
+    position: relative;
+    top: 2vw;
+    left: -3vw;
 }
 
 .select img {
-    width: 0.35vw;
-    height: 0.35vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    position: relative;
+    left: -9vw;
 }
 
 .select input {
@@ -86,6 +90,28 @@
     border-radius: 5vw;
     border-radius: 5vw;
     padding: 2vw 9vw;
+}
+
+.delete {
+    height: 2.8vw;
+    width: 2.8vw;
+    float: right;
+}
+
+.searchbar-input.sc-ion-searchbar-md {
+    padding-inline-end: 9px;
+}
+
+.searchbar-input.sc-ion-searchbar-md {
+    padding-left: unset;
+    padding-right: unset;
+    -webkit-padding-start: 55px;
+    padding-inline-start: 55px;
+    -webkit-padding-end: 55px;
+    padding-inline-end: 14px;
+    border-radius: 10vw;
+    border: none;
+    border-radius: 10vw
 }
 
 @media screen and (max-width: 320px) {

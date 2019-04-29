@@ -1,19 +1,24 @@
 <ion-tabs>
 
     <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1" (ionSelect)="changeTab1()">
+        <ion-tab-button tab="tab1" (click)="changeTab1()">
             <img class="tabimg" *ngIf="a1==true" src="assets/icon/tabs/home.png" alt="">
             <img class="tabimg" *ngIf="a1==false" src="assets/icon/tabs/home0.png" alt="">
             <ion-label>首页</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab2" (ionSelect)="changeTab2()">
+        <ion-tab-button tab="tab2" (click)="changeTab2()">
             <img class="tabimg" *ngIf="a2==true" src="assets/icon/tabs/active.png" alt="">
-            <img class="tabimg" *ngIf="a2!=true" src="assets/icon/tabs/active0.png" alt="">
+            <img class="tabimg" *ngIf="a2==false" src="assets/icon/tabs/active0.png" alt="">
             <ion-label>活动</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="sendwish" (ionSelect)="sendwish()">
+        <ion-tab-button tab="tab3">
+            <!-- <ion-fab vertical="center" horizontal="start" slot="fixed">
+                <ion-fab-button>
+                    <ion-icon name="share"></ion-icon>
+                </ion-fab-button>
+            </ion-fab> -->
             <img class="wishimg" src="assets/icon/tabs/wish.png" alt="">
             <!-- <ion-label>发心愿</ion-label> -->
 
@@ -28,17 +33,18 @@
             </div> -->
         </ion-tab-button>
 
-        <ion-tab-button tab="tab4" (ionSelect)="changeTab3()">
+        <ion-tab-button tab="tab4" (click)="changeTab3()">
             <img class="tabimg" *ngIf="a3==true" src="assets/icon/tabs/msg.png" alt="">
             <img class="tabimg" *ngIf="a3!=true" src="assets/icon/tabs/msg0.png" alt="">
             <ion-label>消息</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab5" (ionSelect)="changeTab4()">
+        <ion-tab-button tab="tab5" (click)="changeTab4()">
             <img class="tabimg" *ngIf="a4==true" src="assets/icon/tabs/mine.png" alt="">
             <img class="tabimg" *ngIf="a4!=true" src="assets/icon/tabs/mine0.png" alt="">
             <ion-label>我的</ion-label>
         </ion-tab-button>
+
     </ion-tab-bar>
 
 </ion-tabs>

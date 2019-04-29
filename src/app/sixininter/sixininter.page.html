@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>丁神客服</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="croll-y">
+        <div class="ad">
+
+            <div>
+                <div class="databox">
+                    <span>{{datetz}}</span>
+                </div>
+                <div class="tzitembox">
+                    <img (click)="toelsehomepage()" class="tzhead" src="assets/icon/msg/head.png" alt="">
+                    <div>
+                        <p><span style="margin: 5%;">丁神客服</span></p>
+                        <div class="tznr">
+                            <p>
+                                {{tongzhicont}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="databox">
+                    <span>{{datetz}}</span>
+                </div>
+                <div class="tzitembox">
+                    <div style="    margin-left: 10%;">
+                        <div class="tznr zj">
+                            <p>
+                                {{zi}}
+                            </p>
+                        </div>
+                    </div>
+                    <img (click)="tomyhome()" class="tzhead" src="assets/icon/msg/head.png" alt="">
+
+                </div>
+            </div>
+            <div>
+                <div class="databox">
+                    <span>{{datetz}}</span>
+                </div>
+                <div class="tzitembox">
+                    <img (click)="toelsehomepage()" class="tzhead" src="assets/icon/msg/head.png" alt="">
+                    <div class="tznr" (click)="toxittz()">
+                        <h4 style="margin: 0;">系统通知</h4>
+                        <p class="imgp">
+                            {{tongzhicont}}
+                        </p>
+                        <img src="assets/icon/msg/x1.png" alt="">
+                        <p class="imgp"> {{tongzhicont}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="fucbox">
+                <div class="shurubox">
+                    <input class="shuru" type="text" name="" placeholder="说点儿什么吧！" id="">
+                </div>
+                <div class="faso">
+                    <button class="btn fabtn">发送</button>
+                    <img src="assets/icon/home/more.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

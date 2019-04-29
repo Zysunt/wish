@@ -1,0 +1,52 @@
+.head span {
+    left: -5vw;
+}
+
+.heads {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heads div {
+    width: 49%;
+    height: 26vw;
+    text-align: center;
+    padding: 2vw 5vw;
+    margin: 5vw 0;
+}
+
+.uploadImg {
+    width: 19vw;
+    height: 19vw;
+    position: absolute;
+    opacity: 0;
+}
+
+.heads div:last-child {
+    border-left: 1px solid #e8e6e6c2
+}
+
+.heads div img {
+    height: 20vw;
+}
+
+.tuijian {
+    border-top: 4vw solid #f7f7f7;
+    padding: 5%;
+}
+
+.itembox p {
+    color: #333;
+    font-size: 4.5vw;
+    margin-top: 0;
+}
+
+.itembox div {
+    display: flex;
+    // justify-content: space-between
+}
+
+.itembox img {
+    height: 28vw;
+    margin-right: 2vw;
+}

@@ -1,0 +1,265 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span *ngIf="state !='winprize'">精彩人员回放</span>
+            <span *ngIf="state=='winprize'">得奖人员页面</span>
+            <p class="fx" (click)="fx()"><img src="assets/icon/hand/fx.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+        <div style="background: #dcdcdc69;" (click)="guanbifenx()">
+            <div *ngIf="fxx==true" class="yinyin"></div>
+        </div>
+        <div (click)="guanbihui()">
+            <div style="background: #dcdcdc69;" *ngIf="huifu==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbihui()">
+        <div *ngIf="huifu==true" class="yinyin"></div>
+    </div>
+    <div (click)="guanbifenx()">
+        <div *ngIf="fxx==true" class="yinyin"></div>
+    </div>
+    <div class="fenxiangbox" *ngIf="fxx==true">
+        <div class="cent">
+            <div class="asd">
+                <img (click)="guanbifenx()" class="guanbi" src="assets/icon/hand/gb.png" alt="">
+            </div>
+            <div class="fxnrbox">
+                <div>
+                    <img src="assets/icon/hand/share_wechat.png" alt="">
+                    <p>微信</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_wxcircle.png" alt="">
+                    <p>朋友圈</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_sina.png" alt="">
+                    <p>微博</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="borderbox">
+        <div class="towbox">
+            <div class="oa">
+                <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+            </div>
+            <div class="ob">
+                <div class="clear">
+                    <div class="huiyuanbox">
+                        <label class="name">{{name}}</label>
+                        <div *ngIf="IsVip==true" style="display: inline-block;">
+                            <p class="huip">
+                                <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                            </p>
+
+                        </div>
+                        <p class="fabutime">{{miaos}}</p>
+
+                    </div>
+
+                    <div class="lastbox">
+                        <p class="a">{{hour}}分钟前</p>
+                        <div class="guanbox">
+                            <div (click)="Isguanzhu()">
+                                <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                        <span>关注</span>
+                                    </button>
+                                <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                       已关注
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cent">
+            <p class="miaosuwein">{{windes}}</p>
+            <img class="miaosimg" src="assets/icon/home/o7.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="borderbox" style="    padding-bottom: 18vw;">
+        <div class="cent">
+            <div class="caozuoBox">
+                <div class="a">
+                    <p>评论{{pinlun}}</p>
+                </div>
+                <div class="b">
+                    <div>
+                        <img src="assets/icon/msg/bf.png" alt="">
+                        <span>89897</span>
+                    </div>
+
+                    <div (click)="dianzanfun()">
+                        <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                        <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                        <span>89897</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="punlinitem">
+            <div class="pinlunbox">
+                <div class="oapl">
+                    <img class="touxpl" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vippl" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="obpl">
+                    <div class="clearpl">
+                        <div class="huiyuanboxpl">
+                            <label class="namepl">{{namepeople}}</label>
+                            <div *ngIf="IsVip==true">
+                                <p class="huippl">
+                                    <img class="hui1pl" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2pl" src="assets/icon/hand/dr.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastboxpl">
+                            <img class="aixinpl" src="assets/icon/hand/aix.png" alt="">
+                            <span class="dianzanpl">{{dianzan}}</span>
+                        </div>
+                    </div>
+                    <div class="slpl">
+                        <p class="miaosupl">{{pinl}}</p>
+                    </div>
+                    <div class="huifuboxpl">
+                        <p>
+                            <span>{{hourt}}分钟前</span>
+                            <span (click)="showfaso()">回复</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="fucbox">
+                <div class="shurubox">
+                    <input class="shuru" type="text" name="" placeholder="说点儿什么吧！" id="">
+                </div>
+                <div class="faso">
+                    <button class="btn fabtn">发送</button>
+                    <img src="assets/icon/home/more.png" alt="">
+                </div>
+            </div> -->
+
+        </div>
+        <div class="punlinitem">
+            <div class="pinlunbox">
+                <div class="oapl">
+                    <img class="touxpl" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vippl" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="obpl">
+                    <div class="clearpl">
+                        <div class="huiyuanboxpl">
+                            <label class="namepl">{{namepeople}}</label>
+                            <div *ngIf="IsVip==true">
+                                <p class="huippl">
+                                    <img class="hui1pl" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2pl" src="assets/icon/hand/dr.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastboxpl">
+                            <img class="aixinpl" src="assets/icon/hand/aix.png" alt="">
+                            <span class="dianzanpl">{{dianzan}}</span>
+                        </div>
+                    </div>
+                    <div class="slpl">
+                        <p class="miaosupl">{{pinl}}</p>
+                    </div>
+                    <div class="huifuboxpl">
+                        <p>
+                            <span>{{hourt}}分钟前</span>
+                            <span (click)="showfaso()">回复</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="fucbox" *ngIf="faso==true">
+                <div class="shurubox">
+                    <input class="shuru" type="text" name="" placeholder="说点儿什么吧！" id="">
+                </div>
+                <div class="faso">
+                    <button class="btn fabtn">发送</button>
+                    <img src="assets/icon/home/more.png" alt="">
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="punlinitem">
+            <div class="pinlunbox">
+                <div class="oapl">
+                    <img class="touxpl" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vippl" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="obpl">
+                    <div class="clearpl">
+                        <div class="huiyuanboxpl">
+                            <label class="namepl">{{namepeople}}</label>
+                            <div *ngIf="IsVip==true">
+                                <p class="huippl">
+                                    <img class="hui1pl" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2pl" src="assets/icon/hand/dr.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastboxpl">
+                            <img class="aixinpl" src="assets/icon/hand/aix.png" alt="">
+                            <span class="dianzanpl">{{dianzan}}</span>
+                        </div>
+                    </div>
+                    <div class="slpl">
+                        <p class="miaosupl">{{pinl}}</p>
+                    </div>
+                    <div class="huifuboxpl">
+                        <p>
+                            <span>{{hourt}}分钟前</span>
+                            <span (click)="showfaso()">回复</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="fucbox" style="z-index: 20 !important; " *ngIf="faso==true">
+                <div *ngIf="huifu==false" class="fucbox">
+                    <div class="shurubox">
+                        <input (click)="showhuifu()" class="shuru" type="text" name="" placeholder="说点儿什么吧！" id="">
+                    </div>
+                    <div class="faso">
+                        <button class="btn fabtn">发送</button>
+                        <img src="assets/icon/home/more.png" alt="">
+                    </div>
+                </div>
+                <div *ngIf="huifu==true" style="padding-left: 5%;padding-bottom: 11vw; width: 100%;">
+                    <textarea class="text" name="" id="" rows="4" cols="30" placeholder="回复&nbsp;&nbsp;{{someone}}："></textarea>
+                    <div class="biaoq1">
+                        <div style="line-height: 8vw;">
+                            <img src="assets/icon/tab3/img.png" alt="">
+                            <img (click)="toaitefirend()" src="assets/icon/tab3/@.png" alt="">
+                            <img src="assets/icon/tab3/bq.png" alt="">
+                        </div>
+
+
+                        <button (click)="guanbihui()" style="left: 32vw;top: -1vw;" class="btn fabtn">发送</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</ion-content>

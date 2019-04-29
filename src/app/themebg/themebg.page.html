@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>主题背景</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <div class="heads">
+            <div>
+                <input type="file" [(ngModel)]="imgsrc" input-on-change="uploadDown" class="uploadImg" capture="camera" accept="image/*">
+
+                <img src="assets/icon/zhuti/pzsc.png" alt="">
+            </div>
+            <div>
+                <input type="file" [(ngModel)]="imgsrc" input-on-change="uploadDown" class="uploadImg" accept="image/*">
+
+                <img src="assets/icon/zhuti/sc.png" alt="">
+            </div>
+        </div>
+
+        <div class="tuijian">
+            <div class="itembox">
+                <p>推荐</p>
+                <div>
+                    <img (click)="totheme()" src="assets/icon/zhuti/1.png" alt="">
+                    <img (click)="totheme()" src="assets/icon/zhuti/2.png" alt="">
+                    <img (click)="totheme()" src="assets/icon/zhuti/3.png" alt="">
+
+                </div>
+
+            </div>
+            <div class="itembox">
+                <p>热门</p>
+                <div>
+                    <img (click)="totheme()" src="assets/icon/zhuti/5.png" alt="">
+                    <img (click)="totheme()" src="assets/icon/zhuti/4.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

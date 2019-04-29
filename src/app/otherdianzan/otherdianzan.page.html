@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar>
+
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>他的点赞</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <div>
+            <div class="wishwall">
+
+                <div class="wishitem" (click)="toimgwish()">
+                    <img src="assets/icon/home/n.png" alt="">
+                    <p>{{wishmiaosu}}</p>
+                    <div class="peopleboxitem">
+                        <div class="apeol">
+                            <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt="">
+                            <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                            <img src="assets/icon/home/tx.png" alt="">
+                        </div>
+                        <div>
+                            <label for="">{{manname}}</label>
+                            <span>{{mancount}}人关注</span>
+                        </div>
+                    </div>
+                    <div class="caozuo">
+                        <div>
+                            <img src="assets/icon/home/pinglun.png" alt="">
+                            <span>{{pinglun}}</span>
+                        </div>
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>{{aixin}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishitem le">
+                    <img (click)="toimgwish()" src="assets/icon/home/o7.png" alt="">
+                    <p>asndshfbdhfba都是减肥的办法就完事bdhsdbhsdb</p>
+                    <div class="peopleboxitem">
+                        <div class="apeol">
+                            <!-- <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt=""> -->
+                            <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                            <img src="assets/icon/home/tx.png" alt="">
+                        </div>
+                        <div>
+                            <label for="">{{manname}}</label>
+                            <span>{{mancount}}人关注</span>
+                        </div>
+                    </div>
+                    <div class="caozuo">
+                        <div>
+                            <img src="assets/icon/home/pinglun.png" alt="">
+                            <span>889</span>
+                        </div>
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>{{aixin}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

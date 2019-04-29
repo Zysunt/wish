@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 
 import { InvitationPage } from './invitation.page';
 
+import { FileUploadModule } from 'ng2-file-upload';
+
 const routes: Routes = [
   {
     path: '',
@@ -19,6 +21,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    CommonModule,
+ FileUploadModule,
     RouterModule.forChild(routes)
   ],
   declarations: [InvitationPage]

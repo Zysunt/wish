@@ -1,0 +1,117 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>公告详情</span>
+            <p class="fx" (click)="fx()"><img src="assets/icon/hand/fx.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+        <div (click)="guanbifenx()">
+            <div style="background: #d0cfcf99;" *ngIf="fxx==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <div class="cent">
+            <div class="towbox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/head.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div>
+                            <label class="name">丁神官方人员</label>
+
+                            <p class="fabutime">{{hour}}分钟前</p>
+
+                        </div>
+
+                        <div class="lastbox">
+
+                            <div class="guanbox">
+                                <div (click)="Isguanzhu()">
+                                    <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                            <span>关注</span>
+                                        </button>
+                                    <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                           已关注
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img class="tzimg" src="assets/icon/activity/i5.png" alt="">
+                <p class="hp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{huodong}}</p>
+            </div>
+
+        </div>
+        <div class="mokuai">
+            <div class="daojubox">
+                <p class="biaoti">
+                    <img src="assets/icon/hand/hd.png" alt="">
+                    <span>猜你喜欢</span>
+                </p>
+
+            </div>
+            <div class="items">
+                <div class="kaitem" (click)="topropmall()">
+                    <p class="kap">提示卡</p>
+                    <img class="ka" src="assets/icon/mine/4.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p>{{jinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+                <div class="kaitem" (click)="topropmall()">
+                    <p class="kap">替换卡</p>
+                    <img class="ka" src="assets/icon/mine/5.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p>{{jinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+                <div class="kaitem" (click)="topropmall()">
+                    <p class="kap"> 解答卡</p>
+                    <img class="ka" src="assets/icon/mine/3.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p>{{jinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="fenxiangbox" *ngIf="fxx==true">
+        <div class="cent">
+            <div class="asd">
+                <img (click)="guanbifenx()" class="guanbi" src="assets/icon/hand/gb.png" alt="">
+            </div>
+            <div class="fxnrbox">
+                <div>
+                    <img src="assets/icon/hand/share_wechat.png" alt="">
+                    <p>微信</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_wxcircle.png" alt="">
+                    <p>朋友圈</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_sina.png" alt="">
+                    <p>微博</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

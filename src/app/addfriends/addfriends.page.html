@@ -1,0 +1,117 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>添加好友</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="body">
+        <div style="background:#fff;margin-bottom: 3vw;">
+
+            <ion-segment mode="md" [(ngModel)]="haou" color="warning">
+                <ion-segment-button value="tongxunlu" (ionSelect)="txlfun()">
+                    <ion-label>通讯录</ion-label>
+                    <img class="hx" style="width: 16vw;" src="assets/icon/msg/XXX.png" *ngIf="tongxunlu==true" alt="">
+                </ion-segment-button>
+                <ion-segment-button value="weibo" (ionSelect)="weibofun()">
+                    <ion-label>微博</ion-label>
+                    <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="weibo==true" alt="">
+                </ion-segment-button>
+                <ion-segment-button value="weixin" (ionSelect)="weixinfun()">
+                    <ion-label>微信</ion-label>
+                    <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="weixin==true" alt="">
+                </ion-segment-button>
+
+            </ion-segment>
+
+        </div>
+        <div class="items">
+            <div class="cent">
+                <div class="onebox">
+                    <div class="oa">
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                    </div>
+                    <div class="ob">
+                        <div class="clear">
+                            <div class="huiyuanbox">
+                                <label class="name">{{namepeople}}</label>
+                                <div *ngIf="IsVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sl">
+                            <p class="miaosu">
+                                {{qianming}}
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="oc">
+                        <img (click)="tochat()" src="assets/icon/mine/lt.png" alt="">
+                        <div (click)="isguanzhu()" style="display:inline-block">
+                            <button class="weiguanzhu btn" *ngIf="guanzhu==true">
+                          <span >+关注</span>
+                        </button>
+                            <button class="btn" *ngIf="guanzhu==false">
+                        <span >相互关注</span>
+                      </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="cent">
+                <div class="onebox">
+                    <div class="oa">
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                    </div>
+                    <div class="ob">
+                        <div class="clear">
+                            <div class="huiyuanbox">
+                                <label class="name">{{namepeople}}</label>
+                                <div *ngIf="IsVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sl">
+                            <p class="miaosu">
+                                {{qianming}}
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="oc">
+                        <img (click)="tochat()" src="assets/icon/mine/lt.png" alt="">
+                        <div (click)="isguanzhu()" style="display:inline-block">
+                            <button class="weiguanzhu btn" *ngIf="guanzhu==true">
+                        <span >+关注</span>
+                      </button>
+                            <button class="btn" *ngIf="guanzhu==false">
+                      <span >相互关注</span>
+                    </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

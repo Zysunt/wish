@@ -1,0 +1,116 @@
+.head span {
+    left: -5vw
+}
+
+.touxbox {
+    position: relative;
+    padding: 4vw;
+    text-align: center;
+    height: 24vw;
+    width: 24vw;
+    margin: 4vw auto
+}
+
+ion-label {
+    font-size: 4vw !important;
+    font-weight: 400;
+}
+
+.tx {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.bj {
+    height: 5vw;
+    width: 4.9vw;
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+}
+
+.items {
+    display: flex;
+    line-height: 11vw;
+    border-bottom: 1px solid #e4e4e473;
+}
+
+.items div:first-child {
+    width: 30%;
+}
+
+.items div:last-child {
+    width: 70%;
+    display: flex;
+    justify-content: space-between
+}
+
+.items div:last-child img {
+    height: 4.5vw;
+    width: 2.5vw;
+    position: relative;
+    top: 2.5vw;
+}
+
+.items label {
+    font-size: 3.8vw;
+}
+
+.items p {
+    margin: 0;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.items input {
+    border: none;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding: 8vw 0 4vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 45%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 20;
+}
+
+.btnbox {
+    margin-top: 4vw;
+}
+
+.btnbox button {
+    border: none;
+    border-radius: 6vw;
+    background: linear-gradient(to bottom right, #fccf41, #FF9100);
+    color: #fff;
+    font-size: 5.3vw;
+    width: 100%;
+    line-height: 11vw;
+}

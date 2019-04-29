@@ -1,0 +1,229 @@
+.fx {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+}
+
+.fx img {
+    height: 5.1vw;
+    width: 5.1vw;
+}
+
+.back {
+    display: inline;
+    width: 12vw;
+    height: 11vw;
+    float: left;
+    padding: 4.5vw 3vw;
+}
+
+.back img {
+    height: 5.1vw;
+    width: 2.7vw;
+}
+
+.head {
+    text-align: center;
+}
+
+.head span {
+    font-size: 5.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+}
+
+.headbg {
+    height: 65vw;
+    width: 100%;
+    background: url('../../assets/icon/mine/haibao.jpg') no-repeat;
+    background-size: 100% 100%;
+    padding-top: 7vw;
+    text-align: center;
+}
+
+.headbg h2 {
+    font-size: 9.5vw;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.body {
+    background: #ffeacf;
+    min-height: 100%;
+    width: 100%;
+}
+
+.titlebox {
+    text-align: center
+}
+
+.daojukaimg {
+    height: 7vw
+}
+
+.daojukabox {
+    background: #fff;
+    border-radius: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    padding: 4vw;
+    min-height: 30%
+}
+
+.riqilobal {
+    font-size: 2.4vw;
+    color: #fff;
+    background: #fcc83a;
+    padding: 1.3vw 9vw;
+    border-radius: 10vw;
+}
+
+.appmiaos {
+    background: #ff9101;
+    border-radius: 2vw;
+    width: 78%;
+    margin-left: 11%;
+    padding: 1vw 4vw;
+    height: 20vw;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.appmiaos p {
+    font-size: 2.4vw;
+    color: #fff;
+    margin: 1vw 0;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+.kaitem {
+    width: 30%;
+    padding: 1vw 2vw;
+    text-align: center
+}
+
+.kaitem div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.youhuiimg {
+    position: relative;
+    top: 2.5vw;
+}
+
+.kaitem div img {
+    height: 3.2vw;
+    width: 4.3vw;
+}
+
+.ka {
+    height: 25vw;
+    width: 20vw
+}
+
+.kaitem p {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #333
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mokuai {
+    border-top: 3vw solid #f7f7f7
+}
+
+.btn {
+    color: #FF9302 !important;
+    background: #fff !important;
+    border: 1px solid #FF9302 !important;
+}
+
+.biaotis {
+    height: 28vw;
+    padding-top: 3vw;
+}
+
+.h1 {
+    margin-left: -19% !important;
+}
+
+.h2 {
+    margin-left: 11% !important;
+}
+
+.fxnrbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.fxnrbox img {
+    height: 7.5vw
+}
+
+.shanchuxian {
+    text-decoration: line-through;
+}
+
+.nowsjinbi {
+    color: #FF9302 !important;
+}
+
+.fxnrbox p {
+    font-size: 3.5vw;
+    color: #333;
+    margin: 0;
+}
+
+.guanbi {
+    height: 3.9vw;
+    width: 3.8vw;
+}
+
+.asd {
+    text-align: right;
+    margin: 3vw 0 2vw;
+}
+
+.fenxiangbox {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}

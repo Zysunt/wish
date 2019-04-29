@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>约伴</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cent">
+        <div class="haoyout">
+            <div>
+                <img src="assets/icon/tab3/hyt.png" alt="">
+                <h4>我的好友团</h4>
+            </div>
+            <div>
+                <label for="">全选</label>
+            </div>
+        </div>
+        <div class="txboxs">
+            <div class="txitem" *ngFor="let item of imgsrc">
+                <img class="aim" src="{{item}}" alt="">
+                <h4>{{nameu}}</h4>
+                <div class="count">
+                    <input id="confirm" checked type="checkbox" />
+                    <label for="confirm"></label>
+                </div>
+            </div>
+
+        </div>
+        <div class="btnbox">
+
+            <button (click)="tosendsuccess()" class="btnas">发起邀约</button>
+            <button (click)="torandom()" class="btnbs">增加随机匹配</button>
+        </div>
+
+    </div>
+</ion-content>

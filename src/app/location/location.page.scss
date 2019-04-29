@@ -13,6 +13,13 @@
     width: 98%;
 }
 
+.loca {
+    margin-left: 5%;
+    font-size: 3.5vw;
+    line-height: 10vw;
+    border-bottom: 1px solid #bdbdbd38;
+}
+
 // .headlocation img {
 //     height: 5.1vw;
 //     width: 2.7vw;
@@ -42,6 +49,8 @@
 .nowBox img {
     height: 5.3vw;
     width: 4vw;
+    position: relative;
+    top: 1vw;
 }
 
 .nowcity {
@@ -63,17 +72,37 @@
     font-size: 3.7vw;
 }
 
+a {
+    color: #000;
+    --ion-color-primary: #000;
+    list-style: none;
+    text-decoration: none
+}
+
+.city p {
+    border-bottom: 1px solid #dcdcdc47;
+}
+
 .Letter {
     display: inline-block;
     width: 10%;
     height: 80%;
     padding: 2vw;
-    float: right;
-    margin-top: -39%;
+    position: fixed;
+    top: 20%;
+    right: 0;
 }
 
 .Letter p {
     margin: 0;
     margin: 2vw;
     font-size: 3.7vw;
+}
+
+.Letter i {
+    font-size: 3vw;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin: 1vw 0;
 }

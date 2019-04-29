@@ -1,0 +1,113 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>充值丁神币</span>
+        </div>
+        <div>
+            <div style="background: rgba(31, 30, 30, 0.6);" *ngIf="payment==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div (click)="guanbipayment()">
+        <div *ngIf="payment==true" class="yinyin">
+
+        </div>
+    </div>
+    <div class="zhifuc" *ngIf="zhifu==true">
+        <div class="cent">
+            <p class="biaotizhifu">
+                <label for="">请选择支付方式</label>
+                <img src="assets/icon/mine/close.png" alt="">
+            </p>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/mine/weixin.png" alt="">
+                    <label for="">微信支付</label>
+                </div>
+
+                <div class="count">
+                    <input id="confirm" type="checkbox" />
+                    <label for="confirm"></label>
+                </div>
+            </div>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/mine/zhifubao.png" alt="">
+                    <label for="">支付宝支付</label>
+                </div>
+
+                <div class="count">
+                    <input id="confirm" checked type="checkbox" />
+                    <label for="confirm"></label>
+                </div>
+            </div>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/last/pg.png" alt="">
+                    <label for="">苹果支付</label>
+                </div>
+
+                <div class="count">
+                    <input id="con" type="checkbox" />
+                    <label for="con"></label>
+                </div>
+            </div>
+            <div class="queren">
+                <p>请在{{daojishi}}内完成支付</p>
+                <button *ngIf="xieyi==false" class="btnm huis">确认支付¥{{jine}}</button>
+                <button *ngIf="xieyi==true" class="btnm" (click)="tosuccess()">确认支付¥{{jine}}</button>
+            </div>
+            <div class="xieyibox">
+                <div class="xieyi">
+                    <input (change)="onChecked()" id="c" type="checkbox" />
+                    <label for="c"></label>
+                </div>
+
+                <!-- <ion-checkbox (change)="onChecked()" class="che" mode="ios"></ion-checkbox> -->
+
+                <p (click)="toxieyi()">充值协议条款</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="    margin-bottom: 20vw;">
+        <div style="height: 53vw">
+            <img class="bgimga" src="assets/icon/chongzhi/bg.png" alt="">
+        </div>
+        <div class="itembox">
+            <div class="item1">
+                <p>¥{{money}}</p>
+                <label for="">丁神币{{dsb}}</label>
+            </div>
+            <div class="item2">
+                <p>¥{{money1}}</p>
+                <label for="">丁神币{{dsb1}}</label>
+            </div>
+            <div class="item3">
+                <p>¥{{money2}}</p>
+                <label for="">丁神币{{dsb2}}</label>
+            </div>
+        </div>
+
+        <div class="itembox">
+            <div class="item4" *ngFor="let i of items">
+                <p>¥{{i}}</p>
+                <label for="">丁神币{{i}}</label>
+            </div>
+        </div>
+        <div class="itembox">
+            <div class="item5" *ngFor="let i of items">
+                <p>¥{{i}}</p>
+                <label for="">丁神币{{i}}</label>
+            </div>
+        </div>
+        <button class="btn" (click)="openpay()">立即充值</button>
+    </div>
+</ion-content>

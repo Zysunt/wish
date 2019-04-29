@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>编辑地址</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="body">
+        <div class="wi">
+
+            <div class="cent">
+                <div class="items">
+                    <div>
+                        <label for="">联系人</label>
+                    </div>
+                    <div>
+                        <input type="text" value="{{lianxiren}}">
+                    </div>
+                </div>
+                <div class="items">
+                    <div>
+                        <label for="">手机号码</label>
+                    </div>
+                    <div>
+                        <input type="text" value="{{tel}}" placeholder="请输入手机号码">
+                    </div>
+                </div>
+                <div class="items">
+                    <div>
+                        <label>地址</label>
+                    </div>
+                    <div>
+                        <p>请选择</p>
+                        <img src="assets/icon/set/you.png" alt="">
+                    </div>
+                </div>
+                <div class="items" style="border:none">
+                    <div>
+                        <label for="">门牌号</label>
+                    </div>
+                    <div>
+                        <input type="text" value="{{num}}" placeholder="请输入">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="morendizhi">
+            <div class="xzxbox">
+                <p>设置为默认地址</p>
+                <ion-toggle (ngModelChange)="changemoren()" [(ngModel)]="moren" class="xzzzz" mode="ios"></ion-toggle>
+            </div>
+
+            <!-- <div class="xuanzhebox">
+                <input id="confirm" checked type="checkbox" />
+                <label for="confirm"></label>
+            </div> -->
+        </div>
+        <div class="shanchu" (click)="deletefun()">
+            <p>删除收获地址</p>
+        </div>
+        <div class="btns">
+            <button class="btn" (click)="updatefun()">确定</button>
+        </div>
+    </div>
+</ion-content>

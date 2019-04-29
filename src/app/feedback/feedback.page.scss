@@ -1,0 +1,32 @@
+.head span {
+    left: -5vw;
+}
+
+.wishcont {
+    border-bottom: 1px solid #f5f3f3;
+    width: 100%;
+    position: relative;
+}
+
+.cent {
+    margin: 20vw 10% 0;
+    width: 80%;
+}
+
+.wishcont textarea {
+    width: 90%;
+    resize: none;
+    font-size: 3.5vw;
+    padding: 3vw 0;
+    margin: 0 5%;
+}
+
+.loginbtn {
+    border: none;
+    border-radius: 6vw;
+    background: linear-gradient(to bottom right, #fccf41, #FF9100);
+    color: #fff;
+    font-size: 5.3vw;
+    width: 100%;
+    line-height: 13vw;
+}

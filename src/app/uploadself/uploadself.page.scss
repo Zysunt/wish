@@ -1,0 +1,197 @@
+.headerbox {
+    height: 60vw;
+}
+
+.head span {
+    left: -5vw;
+}
+
+.headerbox img {
+    height: 90vw;
+}
+
+.count {
+    display: flex;
+    text-align: center;
+    margin: 7% 28% 17%;
+}
+
+.count div {
+    position: relative;
+    line-height: 5vw;
+}
+
+.count p {
+    margin: 0;
+    font-size: 3.5vw;
+    margin-left: 2vw;
+    color: #999;
+}
+
+.count span {
+    font-size: 3.8vw
+}
+
+.count input[type=checkbox] {
+    opacity: 0 !important;
+    -webkit-appearance: none;
+    height: 5.6vw;
+    width: 5.6vw;
+    position: absolute;
+    left: 2vw;
+    z-index: 100;
+}
+
+.count input[type=checkbox]+label {
+    display: block;
+    width: 5.6vw;
+    height: 5.6vw;
+    overflow: hidden;
+    background: url("../../assets/icon/tab3/hui.png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+    float: left;
+}
+
+.count input[type=checkbox]:checked+label {
+    background: url("../../assets/icon/mine/1(1).png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+}
+
+.scbtn {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 4.5vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 4vw;
+    outline: none;
+    width: 100%;
+}
+
+.scbox {
+    width: 80%;
+    text-align: center;
+    margin: 40% 10% 0;
+}
+
+.scbox a {
+    text-decoration: underline;
+    color: #000;
+    font-size: 4.4vw;
+}
+
+.guanbi {
+    height: 8.7vw;
+    width: 8.7vw;
+    margin: 10vw auto;
+    display: block;
+}
+
+.itesbox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1vw 5%;
+}
+
+.hx {
+    top: -3vw;
+    height: 1vw;
+    position: relative;
+}
+
+.ites img {
+    height: 12.4vw;
+    width: 10vw
+}
+
+.ites {
+    text-align: center;
+    margin: 4vw 0 0;
+}
+
+.ites p {
+    font-size: 3.5vw;
+    margin: 1vw;
+}
+
+.ites span {
+    font-size: 3.5vw;
+    color: #999
+}
+
+.tancka {
+    background: #fff;
+    border-radius: 4vw;
+    padding: 3vw;
+    width: 90%;
+    margin: 45% 5% 0;
+    padding-bottom: 10vw;
+}
+
+.btnno {
+    background: #fff;
+    font-size: 3.2vw;
+    color: #FF9302;
+    border: 1px solid #FF9302;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+}
+
+.yinyin2 {
+    height: 100%;
+    width: 100%;
+    background: #0a080863;
+    z-index: 79;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding-top: 5vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 80;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.caozuobtn {
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-around
+}
+
+.caozuobtn div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caozuobtn div:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.caozuobtn label {
+    color: #4485ff;
+    font-size: 4vw;
+    padding: 3vw;
+    display: inline-block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}

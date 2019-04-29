@@ -1,9 +1,184 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>invitation</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>发起邀约</span>
+        </div>
+
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <div class="body">
+        <div class="wihte">
+            <div class="cent">
+
+                <div class="items">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>邀约时间</span>
+                    </p>
+                    <div class="datebox">
+                        <input type="number" pattern="[0-9]*">
+                        <p>年</p>
+                        <input class="w" type="number" pattern="[0-9]*">
+                        <p>月</p>
+                        <input class="w" type="number" pattern="[0-9]*">
+                        <p>日</p>
+                        <label for="">至</label>
+                        <input type="number" pattern="[0-9]*">
+                        <p>年</p>
+                        <input class="w" type="number" pattern="[0-9]*">
+                        <p>月</p>
+                        <input class="w" type="number" pattern="[0-9]*">
+                        <p>日</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>邀约人数</span>
+                    </p>
+                    <div class="datebox ">
+                        <div class="count">
+                            <div>
+                                <input id="confirm" checked type="checkbox" />
+                                <label for="confirm"></label>
+                            </div>
+
+                            <div>
+                                <span>1人</span>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <div>
+                                <input id="confirm1" checked type="checkbox" />
+                                <label for="confirm1"></label>
+                            </div>
+
+                            <div>
+                                <span>2-3人</span>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <div>
+                                <input id="confirm2" checked type="checkbox" />
+                                <label for="confirm2"></label>
+                            </div>
+
+                            <div>
+                                <span>4-6人</span>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <div (click)="ischecked()">
+                                <!-- <input id="confirm3" checked type="checkbox" />
+                                <label for="confirm3"></label> -->
+                                <input type="hidden" name="" id="">
+                                <img class="imgas" *ngIf="checked==false" src="assets/icon/tab3/hui.png" alt="">
+                                <img class="imgas" *ngIf="checked==true" src="assets/icon/mine/1(1).png" alt="">
+                            </div>
+
+                            <div>
+                                <span *ngIf="checked==false">其他</span>
+                                <input *ngIf="checked==true" class="qita" type="number" pattern="[0-9]*">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="items" style="border:none">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>性别限制</span>
+                    </p>
+                    <div class="datebox ">
+                        <div class="count">
+                            <div>
+                                <input id="conm" checked type="checkbox" />
+                                <label for="conm"></label>
+                            </div>
+
+                            <div>
+                                <span>不限</span>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <div>
+                                <input id="conm1" checked type="checkbox" />
+                                <label for="conm1"></label>
+                            </div>
+
+                            <div>
+                                <span>男</span>
+                            </div>
+                        </div>
+                        <div class="count">
+                            <div>
+                                <input id="conm2" checked type="checkbox" />
+                                <label for="conm2"></label>
+                            </div>
+
+                            <div>
+                                <span>女</span>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="wihte" style="padding-bottom: 8vw;">
+            <textarea class="shuru" autofocus="" cols="30" placeholder="请输入活动要求&#10;例如：&#10;1.需要拍摄45度自拍&#10;2.需要在app内晒奖品，并且发送朋友圈" maxlength="100" required="" rows="10"></textarea>
+            <div class="aitebox">
+                <label (click)="toaitehaoyou()" class="aite" for="">@好友</label>
+            </div>
+        </div>
+        <div class="wihte">
+            <div class="cent">
+                <p class="biaoti" style="padding-top: 2vw;">
+                    <img src="assets/icon/hand/hd.png" alt="">
+                    <span>最终奖励</span>
+                </p>
+            </div>
+
+            <div class="dis">
+                <div class="a">
+                    <input type="file" [(ngModel)]="imgsrc" input-on-change="uploadDown" class="uploadImg" accept="image/*">
+                </div>
+                <div class="b">
+                    <input type="file" input-on-change="uploadDown" class="uploadImg" accept="image/*">
+                </div>
+                <div class="b">
+                    <input type="file" input-on-change="uploadDown" class="uploadImg" accept="image/*">
+                </div>
+            </div>
+
+
+            <div class=" cent fabubox">
+                <div class="fubua">
+                    <img class="imga" src="assets/icon/tab3/wz.png" alt="">
+                    <p>{{shi}}<i>.</i>{{dizhi}}</p>
+                </div>
+
+                <div>
+                    <button class="btn" (click)="fabu()">发布</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
 
 </ion-content>

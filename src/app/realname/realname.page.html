@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>实名认证</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="">
+        <div class="first">
+            <img src="assets/icon/set/gantan.png" alt="">
+            <p>仅用于全国公民身份查询中心核实身份。拍摄时请确保身份证边框完整，字迹清晰，亮度均衡。</p>
+        </div>
+        <div class="second">
+            <div style="position:relative">
+                <input type="file" [(ngModel)]="imgsrc1" class="uploadImgi" accept="image/*">
+                <img src="assets/icon/set/zm.png" alt="">
+            </div>
+
+            <p>点击开始识别正面<span>照片面</span> </p>
+        </div>
+        <div class="second">
+            <div style="position:relative">
+                <input type="file" [(ngModel)]="imgsrc2" class="uploadImgi" accept="image/*">
+                <img src="assets/icon/set/fm.png" alt="">
+            </div>
+            <p>点击开始识别背面<span>国徽面</span> </p>
+        </div>
+        <div class="second">
+            <div style="position:relative">
+                <input type="file" [(ngModel)]="imgsrc3" class="uploadImgi" accept="image/*">
+                <img src="assets/icon/set/zp.png" alt="">
+            </div>
+            <p>正对人脸<span>识别人脸</span> </p>
+        </div>
+        <div class="cent">
+            <button class="btn" (click)="upload()">下一步</button>
+            <p>
+                身份证拍摄遇到问题，<span (click)="tohelp()">请点击这里</span>
+            </p>
+        </div>
+        <div class="cent">
+            <img src="assets/icon/set/jindu.png" alt="">
+            <!-- <mat-progress-bar mode="determinate" [value]="value">
+            </mat-progress-bar> -->
+        </div>
+    </div>
+</ion-content>

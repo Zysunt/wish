@@ -1,0 +1,35 @@
+.head span {
+    left: -5vw;
+}
+
+.badybox {
+    border: 1px solid #f99742;
+    margin: 0 5%;
+    width: 90%;
+    padding: 5vw;
+    position: relative;
+    top: -11vw;
+    background: #fff;
+    min-height: 70vw;
+    border-bottom: 7px solid #f99742;
+}
+
+.title {
+    background: url('../../assets/icon/fuli/title.png') no-repeat;
+    background-size: 100%;
+    text-align: center;
+    height: 14vw;
+}
+
+.title h4 {
+    color: #fb7b4b;
+    margin: 0;
+    position: relative;
+    top: 2vw;
+    font-size: 5.5vw;
+}
+
+.badybox ul li {
+    color: #ff9100;
+    font-size: 4vw;
+}

@@ -1,0 +1,255 @@
+.header {
+    height: 50vw;
+    width: 100%;
+    background: url(/assets/icon/mine/head.png) no-repeat center, linear-gradient(to bottom right, #fccf41, #FF9100);
+    background-size: 100%;
+}
+
+.tu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4vw;
+    padding: 6vw 0 2vw;
+}
+
+.tu img {
+    height: 5.1vw;
+    // width: 5.1vw;
+}
+
+.header p {
+    margin: 0;
+}
+
+.isvip {
+    height: 8.9vw;
+    width: 10.2vw;
+    position: absolute;
+    left: 7.5vw;
+    top: -4vw;
+}
+
+.toux {
+    height: 16vw;
+}
+
+.touxbox {
+    display: flex;
+    margin: 5%;
+    width: 90%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.touxbox p {
+    font-size: 3.2vw;
+}
+
+.touxbox h4 {
+    margin: 0;
+    font-size: 4.3vw;
+    max-width: 26vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.a {
+    position: relative;
+    display: inline-block;
+}
+
+.abox {
+    width: 70%;
+}
+
+.bbox {
+    width: 30%;
+    position: relative;
+    top: -2vw;
+}
+
+.jinbi {
+    height: 2.5vw;
+    width: 3.3vw;
+}
+
+.jinbi0 {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.bbox span {
+    font-size: 2.4vw;
+    color: #fff;
+}
+
+.jinbox div {
+    background: #65525217;
+    border-radius: 5vw;
+    padding: 2vw 5vw;
+    line-height: 4vw;
+    margin-bottom: 2vw;
+}
+
+.jinbox div img {
+    margin-right: 2vw;
+}
+
+.b {
+    position: relative;
+    top: -14vw;
+    left: 19vw;
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huiyuanbox p {
+    width: 100% !important;
+}
+
+.b p {
+    width: 90%;
+    margin-top: 0.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inner-scroll {
+    background: #f7f7f7;
+}
+
+.mybox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background: #fff;
+    margin: 0 5%;
+    border-radius: 3vw;
+    padding: 4vw 6vw;
+    position: relative;
+    top: -14vw;
+    box-shadow: 0px 2px 2px #f0f0f0;
+}
+
+.mybox div {
+    text-align: center;
+}
+
+.mybox h4 {
+    font-size: 4.8vw;
+    margin: 0 0 1vw;
+}
+
+.mybox span {
+    font-size: 3.2vw;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+.shux {
+    width: 0.266vw;
+    height: 6vw;
+    margin-top: 4vw;
+}
+
+.neibox {
+    min-height: 60vw;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 2vw;
+    padding: 5%;
+    margin-top: 17vw;
+    background: #fff;
+    box-shadow: 1px 2px 2px 2px #f0f0f0;
+}
+
+.changyong {
+    border-bottom: 1px solid #f1f1ec;
+}
+
+.changyong h4 {
+    font-size: 3.74vw;
+}
+
+.daojubox ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 5vw;
+}
+
+.daojubox ul img {
+    height: 5.7vw;
+}
+
+.daojubox ul p {
+    margin: 0;
+    margin-top: 1vw;
+}
+
+.daojubox ul li {
+    text-align: center;
+    width: 25%;
+}
+
+.left {
+    text-align: left !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.huiyuanbox {
+    display: flex
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.weib img {
+    height: 7.6vw;
+    width: 19.2vw;
+}
+
+.weib p {
+    margin: 0 4vw;
+}
+
+.touxboxwei {
+    display: flex;
+    margin: 4vw 5%;
+    width: 90%;
+    justify-content: space-between;
+    color: #fff;
+    line-height: 20vw;
+    margin-bottom: 9vw;
+}
+
+.weib {
+    position: relative;
+    left: -26vw;
+}

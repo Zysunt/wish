@@ -8,17 +8,45 @@
             <p class="fx" (click)="fx()"><img src="assets/icon/hand/fx.png" alt=""></p>
             <div style="both:clear"></div>
         </div>
+        <div (click)="guanbifenx()">
+            <div style="background: #d0cfcf99;" *ngIf="fxx==true" class="yinyin"></div>
+        </div>
+
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <div (click)="guanbifenx()">
+        <div *ngIf="fxx==true" class="yinyin"></div>
+    </div>
+    <div class="fenxiangbox" *ngIf="fxx==true">
+        <div class="cent">
+            <div class="asd">
+                <img (click)="guanbifenx()" class="guanbi" src="assets/icon/hand/gb.png" alt="">
+            </div>
+            <div class="fxnrbox">
+                <div>
+                    <img src="assets/icon/hand/share_wechat.png" alt="">
+                    <p>微信</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_wxcircle.png" alt="">
+                    <p>朋友圈</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_sina.png" alt="">
+                    <p>微博</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bod">
         <div>
             <div class="imgbox">
                 <img src="assets/icon/hand/q4.png" alt="" />
                 <div>
                     <p style="display:inline" (click)="details()">
-                        活动详情
+                        查看活动详情
                         <img class="hd" *ngIf="zhankai==1" src="assets/icon/hand/xia.png" alt="" />
                         <img class="youhd" *ngIf="zhankai!=1" src="assets/icon/hand/you.png" alt="" />
                     </p>
@@ -35,10 +63,23 @@
                 <div>
                     <p class="biaoti">
                         <img src="assets/icon/hand/hd.png" alt="">
-                        <span>活动详情</span>
+                        <span>活动介绍</span>
                     </p>
                     <p class="jieshao">
                         {{jieshao}}
+                    </p>
+                </div>
+            </div>
+            <div class="itembox">
+                <div style="height:3vw"></div>
+                <div>
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>活动规则</span>
+                    </p>
+                    <p class="jieshao">1.你是大家及时的金额为 i 收到你的身边呢</p>
+                    <p class="jieshao">
+                        2.需要在app里晒奖品
                     </p>
                 </div>
             </div>
@@ -120,12 +161,10 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="lastbox">
                         <img class="aixin" src="assets/icon/hand/aix.png" alt="">
                         <span class="dianzan">{{dianzan}}</span>
                     </div>
-
                 </div>
                 <div class="sl">
                     <p class="miaosu">{{pinl}}</p>
@@ -133,11 +172,9 @@
                 <div class="huifubox">
                     <p>
                         <span>{{hour}}</span>
-                        <span>回复</span>
+                        <span (click)="fasofun()">回复</span>
                     </p>
-
                 </div>
-
             </div>
         </div>
         <div class="onebox">
@@ -169,7 +206,7 @@
                 <div class="huifubox">
                     <p>
                         <span>{{hour}}</span>
-                        <span>回复</span>
+                        <span (click)="fasofun()">回复</span>
                     </p>
 
                 </div>
@@ -182,22 +219,38 @@
 
     <div class="fucbox">
         <div>
-            <p>
-                <img src="assets/icon/hand/shouc.png" alt="">
+            <p (click)="isscfun()">
+                <img *ngIf="issc==false" src="assets/icon/hand/shouc.png" alt="">
+                <img *ngIf="issc==true" src="assets/icon/hand/shoucang1.png" alt="">
                 <span class="pinls">收藏</span>
             </p>
             <p>
-                <img src="assets/icon/hand/pl.png" alt="">
+                <img (click)="fasofun()" src="assets/icon/hand/pl.png" alt="">
                 <span class="pinls">评论</span>
             </p>
         </div>
 
         <div>
             <button (click)="yuyuehans()">
-              <span *ngIf="yuyue==true">预约</span>
-              <span *ngIf="yuyue!=true">已预约</span>
+              <span *ngIf="yuyue!=true">预约</span>
+              <span *ngIf="yuyue==true">已预约</span>
             </button>
         </div>
 
+    </div>
+    <div class="assbox">
+        <div style="padding-left: 5%;padding-bottom: 11vw; width: 100%;" *ngIf="faso==true">
+            <textarea class="text" name="" id="" rows="4" cols="30" placeholder="回复&nbsp;&nbsp;{{someone}}："></textarea>
+            <div class="biaoq1">
+                <div style="line-height: 8vw;">
+                    <img src="assets/icon/tab3/img.png" alt="">
+                    <img (click)="toaitefirend()" src="assets/icon/tab3/@.png" alt="">
+                    <img src="assets/icon/tab3/bq.png" alt="">
+                </div>
+
+
+                <button (click)="guanbifaso()" style="left: 32vw;top: -1vw;" class="btn fabtn">发送</button>
+            </div>
+        </div>
     </div>
 </ion-content>

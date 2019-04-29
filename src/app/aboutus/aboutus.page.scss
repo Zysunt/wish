@@ -1,0 +1,31 @@
+.head span {
+    left: -5vw;
+}
+
+.guanyu {
+    color: #FF9100;
+    font-size: 4.5vw;
+    font-weight: 600;
+}
+
+.guanyu span {
+    margin-left: 1vw;
+}
+
+.guanyu img {
+    height: 3.4vw;
+    width: 3.4vw;
+}
+
+.guanyuwm {
+    font-size: 3.7vw;
+}
+
+.cent::-webkit-scrollbar {
+    display: none;
+}
+
+.cent {
+    overflow: hidden;
+    overflow-y: scroll
+}

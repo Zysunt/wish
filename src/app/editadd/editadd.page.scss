@@ -1,0 +1,158 @@
+.head span {
+    left: -5vw
+}
+
+.items {
+    display: flex;
+    line-height: 15vw;
+    border-bottom: 1px solid #e4e4e473;
+}
+
+.items div:first-child {
+    width: 30%;
+}
+
+.items div:last-child {
+    width: 70%;
+    display: flex;
+    justify-content: space-between
+}
+
+.items div:last-child img {
+    height: 4.5vw;
+    width: 2.5vw;
+    position: relative;
+    top: 5.5vw;
+}
+
+.items label {
+    font-size: 3.8vw;
+}
+
+.items p {
+    margin: 0;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.btns {
+    width: 80%;
+    margin: 40% 10% 0;
+}
+
+.wi {
+    background: #fff;
+}
+
+.items input {
+    border: none;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.shanchu {
+    color: #f74660;
+    font-size: 3.8vw;
+    background-color: #fff;
+    padding: 4vw 0;
+    padding-left: 5%;
+    margin-top: 4vw;
+}
+
+.btn {
+    border: none;
+    border-radius: 6vw;
+    background: linear-gradient(to bottom right, #fccf41, #FF9100);
+    color: #fff;
+    font-size: 5.3vw !important;
+    width: 100%;
+    line-height: 11vw !important;
+}
+
+.shanchu p {
+    margin: 0
+}
+
+.body {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+    width: 100%;
+    // margin: 10%;
+    line-height: 11vw;
+}
+
+.morendizhi {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 3% 5%;
+    padding-top: 0vw;
+    margin-top: 4vw;
+}
+
+.morendizhi p {
+    margin: 0;
+    font-size: 3.8vw;
+    margin-top: 5vw;
+}
+
+.xuanzhebox {
+    width: 8vw;
+}
+
+.xuanzhebox input[type=checkbox] {
+    opacity: 0;
+    // -webkit-appearance: none;
+    height: 5vw;
+    width: 9vw;
+    position: relative;
+    z-index: 100;
+}
+
+.xuanzhebox input[type=checkbox]+label {
+    display: block;
+    height: 5vw;
+    width: 9vw;
+    overflow: hidden;
+    background: url("../../assets/icon/set/xz0.png") no-repeat;
+    background-size: 9vw 5vw;
+    float: left;
+}
+
+.xuanzhebox input[type=checkbox]:checked+label {
+    display: block;
+    height: 5vw;
+    width: 9vw;
+    overflow: hidden;
+    float: left;
+    background: url("../../assets/icon/set/xz.png") no-repeat;
+    background-size: 9vw 5vw;
+}
+
+.toggle-inner {
+    width: 5vw !important;
+    height: 5vw !important;
+}
+
+.xzxbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.xzzzz {
+    // height: 6.5vw !important;
+    // width: 11.5vw !important;
+    margin-top: 3.5vw;
+}

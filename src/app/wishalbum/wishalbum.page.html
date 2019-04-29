@@ -1,0 +1,132 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>心愿相册</span>
+        </div>
+        <div (click)="guanbi()" style="background: #67626278;">
+            <div *ngIf="show==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbi()">
+        <div *ngIf="show==true" class="yinyin"></div>
+    </div>
+    <div class="cache" *ngIf="show==true">
+        <h5>确认删除吗？</h5>
+        <div class="caozuobtn">
+            <div>
+                <label (click)="guanbi()" for="">取消</label>
+            </div>
+            <div>
+                <label (click)="guanbi()" for="">确定</label>
+            </div>
+        </div>
+    </div>
+    <div class="itembox">
+
+        <div class="txbox" *ngFor="let item of imgurls">
+            <div>
+                <img src="{{item.u1}}" (click)="toalbum()" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+
+
+            </div>
+            <div>
+                <img (click)="toalbum()" src="{{item.u2}}" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+            </div>
+            <div>
+                <img (click)="toalbum()" src="{{item.u2}}" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+            </div>
+        </div>
+        <div class="txbox" *ngFor="let item of imgurls">
+            <div>
+                <img (click)="toalbum()" src="{{item.u1}}" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+            </div>
+            <div>
+                <img (click)="toalbum()" src="{{item.u2}}" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+            </div>
+            <div>
+                <img (click)="toalbum()" src="{{item.u2}}" alt="">
+                <input type="hidden">
+                <dl *ngIf="showxuanz==true">
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==true" src="assets/icon/mine/1(1).png" alt="">
+                    </p>
+                    <p (click)="xuanzhefun()">
+                        <img class="a" *ngIf="xuanzhe==false" src="assets/icon/mine/2(1).png" alt="">
+                    </p>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fux">
+        <div (click)="showxz()">
+            <img class="xz" src="assets/icon/mine/xz(1).png" alt="">
+            <p>选择</p>
+        </div>
+        <dl style="margin:0" *ngIf="sha==false">
+            <div>
+                <img src="assets/icon/mine/shanc0.png" alt="">
+                <p style="color:#999">删除</p>
+            </div>
+        </dl>
+        <dl style="margin:0" *ngIf="sha==true">
+            <div (click)="shanchufun()">
+                <img src="assets/icon/mine/shanc.png" alt="">
+                <p>删除</p>
+            </div>
+        </dl>
+
+    </div>
+</ion-content>

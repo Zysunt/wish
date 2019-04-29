@@ -1,0 +1,219 @@
+.head span {
+    left: -5vw;
+}
+
+.body {
+    width: 100%;
+    min-height: 100%;
+    background: #f7f7f7;
+}
+
+.wihte {
+    margin-top: 5vw;
+    background: #fff;
+}
+
+.biaoti img {
+    height: 4.3vw;
+    width: 1.33vw;
+}
+
+.biaoti span {
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin: 0 3vw 0;
+}
+
+.biaoti {
+    margin: 0 !important;
+    background: #fff;
+}
+
+.datebox {
+    display: flex;
+    margin: 2vw 0;
+}
+
+.btn {
+    padding: 2vw 5vw;
+}
+
+.datebox input {
+    border: 1px solid #80808036;
+    border-radius: 2vw;
+    outline: none;
+    width: 11vw;
+    height: 11vw;
+    line-height: 11vw;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.qita {
+    position: absolute;
+    top: -3vw;
+    width: 17vw !important;
+}
+
+.datebox p {
+    color: #999;
+    font-size: 3vw;
+    margin: 0 0.5vw;
+    line-height: 10vw;
+}
+
+.datebox label {
+    font-size: 4vw;
+    line-height: 10vw;
+    margin: 0 2vw;
+}
+
+.w {
+    width: 9vw !important;
+}
+
+.items {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 2vw 0 4vw;
+}
+
+.count {
+    display: flex
+}
+
+.count div {
+    position: relative;
+    line-height: 5vw;
+}
+
+.aite {
+    color: #FF9100;
+    border: 1px solid #FF9100;
+    border-radius: 5vw;
+    padding: 1.3vw 4vw;
+    font-size: 3.2vw;
+}
+
+.aitebox {
+    margin: 0vw 5%;
+}
+
+.shuru {
+    width: 90%;
+    resize: none;
+    font-size: 3.5vw;
+    border: 1px solid #dcdcdc8f;
+    border-radius: 3vw;
+    outline: none;
+    margin: 6vw 5% 2vw;
+}
+
+.count p {
+    margin: 0;
+    font-size: 3.5vw;
+    margin-left: 2vw;
+}
+
+.count span {
+    font-size: 3.8vw
+}
+
+.count input[type=checkbox] {
+    opacity: 0 !important;
+    -webkit-appearance: none;
+    height: 5.6vw;
+    width: 5.6vw;
+    position: absolute;
+    left: 2vw;
+    z-index: 100;
+}
+
+.count input[type=checkbox]+label {
+    display: block;
+    width: 5.6vw;
+    height: 5.6vw;
+    overflow: hidden;
+    background: url("../../assets/icon/tab3/hui.png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+    float: left;
+}
+
+.count input[type=checkbox]:checked+label {
+    background: url("../../assets/icon/mine/1(1).png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+}
+
+.imgas {
+    height: 5.6vw;
+    width: 5.6vw;
+    margin: 0 2vw;
+}
+
+.dis {
+    display: flex;
+    padding: 2vw;
+    justify-content: space-around
+}
+
+.b {
+    background-image: url(../../assets/icon/tab3/img0.png) !important;
+}
+
+.dis div {
+    position: relative;
+    max-width: 31%;
+    height: 30vw;
+    width: 30vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 99%;
+    // background-size: cover;
+    background-image: url("../../assets/icon/tab3/img1.png");
+}
+
+.uploadImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+//这是一个用做回显的盒子的样式
+.pic {
+    height: 30vw;
+    width: 30vw;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.fabubox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fabubox div {
+    line-height: 13vw
+}
+
+.fubua {
+    display: flex;
+}
+
+.imga {
+    height: 4vw;
+    position: relative;
+    top: 4vw;
+    left: -1vw;
+}
+
+.fubua p {
+    margin: 0;
+    font-size: 3.2vw;
+    color: #555;
+}

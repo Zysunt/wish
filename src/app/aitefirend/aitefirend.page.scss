@@ -1,0 +1,56 @@
+.back {
+    display: inline;
+    width: 12vw;
+    height: 11vw;
+    float: left;
+    padding: 4.5vw 2vw;
+}
+
+.head {
+    text-align: center;
+}
+
+.head span {
+    font-size: 5.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+    left: -4vw;
+}
+
+.itembox {
+    border-bottom: 1px solid #d6d3d354;
+    padding: 3vw 2vw;
+    position: relative;
+    display: flex;
+}
+
+.itembox p {
+    margin: 0 4vw;
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 12vw;
+}
+
+.hui {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 1vw
+}
+
+.hui1 {
+    height: 4.1vw
+}
+
+.itembox div {
+    position: relative;
+}
+
+.vip {
+    position: absolute;
+    top: -1vw;
+    height: 4.2vw;
+    width: 4.2vw;
+    left: 0vw;
+}

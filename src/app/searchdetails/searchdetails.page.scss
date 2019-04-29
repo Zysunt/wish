@@ -1,0 +1,898 @@
+.wishwall {
+    border-radius: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2vw
+}
+
+.ion-color-warning {
+    margin: 0;
+}
+
+.wishitem {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    height: 63vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 3px 10px 0px #c7c6c6;
+    border-radius: 2vw;
+}
+
+.le {
+    margin-left: 3%;
+}
+
+.wishwall p {
+    position: absolute;
+    bottom: 20vw;
+    left: 3vw;
+    margin: 0;
+    color: #fff;
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.wishwall img {
+    height: 50vw;
+    width: 100%;
+    height: 70%;
+}
+
+.caozuo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+.caozuo span {
+    position: relative;
+    top: -1vw;
+    color: #999;
+    font-size: 3.5vw;
+}
+
+.caozuo img {
+    height: 5vw;
+    width: 5vw;
+}
+
+.onebox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5%;
+    padding: 1vw 3vw 0vw;
+    border-bottom: 1px solid #f3f0f0;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 85% !important;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.clear div:first-child {
+    width: 100% !important;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    display: flex;
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    color: #999;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+    line-height: 6vw;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 30%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 100% !important;
+    display: inline-block;
+    line-height: 9vw;
+    position: relative;
+    left: 9vw;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 2vw;
+    border-radius: 2vw;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.as {
+    display: flex;
+    justify-content: space-between
+}
+
+.as div {
+    width: 30%;
+}
+
+.as div img {
+    width: 100%;
+}
+
+.fabuneir p {
+    margin: 0;
+    font-size: 3.5vw
+}
+
+.huodongimg {
+    height: 16.2vw;
+    width: 19.5vw;
+}
+
+.huodongnr {
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huodongnr label {
+    font-size: 3.7vw;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huodongnr p {
+    font-size: 3.2vw;
+    width: 100%;
+    color: #333;
+    // display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.huod .huodongnr div span {
+    color: #333;
+    font-size: 3vw;
+}
+
+.dizhitime {
+    color: #999 !important;
+}
+
+.wz {
+    height: 3.2vw;
+    width: 2.4vw
+}
+
+.jiezhibox {
+    display: flex;
+    justify-content: space-between
+}
+
+.jiezhibox div {
+    width: 50%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huod {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 0;
+    padding: 3vw 3vw 2vw;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 7px 1px #e6e5e5;
+    margin-top: 2vw;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 4vw 0;
+}
+
+.caozuoBox div {
+    width: 30%;
+    text-align: center;
+    line-height: 7vw;
+}
+
+.caozuoBox div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 0 !important
+}
+
+.aixin {
+    height: 4vw !important;
+    width: auto !important;
+}
+
+.border {
+    border-bottom: 1px solid #ecefef91
+}
+
+.xzbox {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.talentshow {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // top: -6vw;
+}
+
+.darenxiuitem {
+    background: #fff;
+    margin-bottom: 3vw;
+}
+
+.tabselect {
+    position: relative;
+    top: -5vw;
+}
+
+.peopleboxitem {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    width: 90%;
+    margin-left: 5%;
+    max-height: 9vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+.peopleboxitem div:last-child {
+    width: 70%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    display: inline-block;
+    position: relative;
+    top: -2vw;
+    min-height: 10vw;
+}
+
+.peopleboxitem div:last-child label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 2.7vw;
+    width: 100%;
+    display: inline-block;
+}
+
+.peopleboxitem div:last-child span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    color: #999;
+    font-size: 1vw !important;
+    position: relative;
+    top: -1vw;
+}
+
+.apeol {
+    width: 30%;
+    position: relative;
+    top: -1vw;
+}
+
+.wishwall .wishitem .peopleboxitem img {
+    height: 8.7vw;
+    width: 8.9vw;
+}
+
+.huangx {
+    height: 4.2vw !important;
+    width: 4.6vw !important;
+    position: absolute;
+    top: -2vw;
+    left: 0vw;
+}
+
+.acitemBox {
+    height: 70vw;
+    width: 90%;
+    margin: 0 5% 5%;
+    border-bottom: 0.005vw solid #ececec;
+}
+
+.tximgs {
+    height: 8.7vw !important;
+    width: 8.9vw !important;
+}
+
+.acitemBox img {
+    height: 66%;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.xiangBoxyy {
+    height: 34%;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search {
+    position: fixed !important;
+    top: 8vw !important;
+    left: 11vw !important;
+    width: 76% !important;
+    height: 4vw;
+    border: none !important;
+    max-height: 8vw;
+    box-shadow: none;
+}
+
+.searchbar-md .searchbar-input {
+    box-shadow: none;
+}
+
+.searchbar-input,
+.sc-ion-searchbar-md {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.sc-ion-searchbar-md-h {
+    --clear-button-color: initial;
+    --cancel-button-color: var(--ion-color-step-900, #1a1a1a);
+    --color: var(--ion-color-step-850, #262626);
+    --icon-color: var(--ion-color-step-600, #666);
+    --background: var(--ion-background-color, #fff);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: inherit
+}
+
+@supports ((-webkit-margin-start:0) or (margin-inline-start:0)) or (-webkit-margin-start:0) {
+    .sc-ion-searchbar-md-h {
+        padding-left: unset;
+        padding-right: unset;
+        -webkit-padding-start: 8px;
+        padding-inline-start: 8px;
+        -webkit-padding-end: 8px;
+        padding-inline-end: 8px
+    }
+}
+
+.searchbar-input.sc-ion-searchbar-md {
+    padding-right: 8px !important;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    background-position: left 8px center;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@supports ((-webkit-margin-start:0) or (margin-inline-start:0)) or (-webkit-margin-start:0) {
+    .searchbar-input.sc-ion-searchbar-md {
+        padding-left: unset;
+        padding-right: unset;
+        -webkit-padding-start: 55px;
+        padding-inline-start: 55px;
+        -webkit-padding-end: 9px;
+        padding-inline-end: 9px
+    }
+}
+
+.xiangBoxyy h4 {
+    font-size: 4vw;
+    margin: 1vw 0;
+    color: #333333;
+    margin-bottom: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangitem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbox {
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xbox span {
+    font-size: 3.2vw;
+    color: #999999;
+}
+
+.xia {
+    font-size: 2.9vw;
+    color: #ff9100;
+    margin-bottom: 1vw;
+}
+
+.xiangitem p {
+    margin: 0;
+}
+
+.xiangitem p img {
+    height: 2.5vw;
+    width: 1.5vw;
+}
+
+.caozuoBoxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    min-height: 10vw;
+    margin: 2vw 0;
+}
+
+.caozuoBoxyy div {
+    width: 50%;
+}
+
+.caozuoBoxyy div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBoxyy div img {
+    width: 4.6vw;
+    height: 3.7vw;
+    border-radius: 0 !important;
+}
+
+.oneboxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important
+}
+
+.touxyy {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clearyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-top: 1.5vw;
+}
+
+.czlast {
+    line-height: 10vw;
+}
+
+.clearyy div:first-child {
+    width: 70% !important;
+}
+
+.timeyy {
+    color: #999999;
+    font-size: 3.2vw;
+}
+
+.oayy {
+    width: 22% !important;
+    position: relative;
+}
+
+.vipyy {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.obyy {
+    width: 78% !important;
+    text-align: left;
+}
+
+.nameyy {
+    color: #333;
+    font-size: 4.7vw;
+    margin: 0;
+}
+
+.huipyy {
+    margin: 0;
+}
+
+.hui1yy {
+    height: 4.1vw !important;
+    width: 8.8vw !important;
+    margin: 0 2vw;
+}
+
+.hui2yy {
+    height: 4.1vw !important;
+    width: 3.7vw !important;
+}
+
+.huiyuanboxyy {
+    display: flex
+}
+
+.czlast {
+    display: flex;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.sc-ion-segment-md-h {
+    overflow: hidden;
+    justify-content: left;
+    --indicator-color-checked: #bbb;
+    --background-checked: transparent;
+}
+
+.headss {
+    display: flex;
+    justify-content: space-around;
+}
+
+.suosou {
+    width: 10%;
+    line-height: 15vw;
+}
+
+.suosou span {
+    color: #ff9100;
+    font-size: 4vw;
+}
+
+.locate {
+    width: 10%;
+    line-height: 7vw;
+    padding-left: 3vw;
+}
+
+.locate img {
+    width: 4vw;
+    height: 5vw;
+}
+
+.select {
+    width: 78%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.select img {
+    width: 3.5vw;
+    height: 3.5vw;
+    position: relative;
+    left: -9vw;
+}
+
+.select input {
+    height: 10vw;
+    border-radius: 16vw;
+    border: none;
+    width: 95%;
+    font-size: 4vw;
+    padding-left: 4vw;
+    background: #f6f7f8;
+    outline: none;
+    color: #b8b8b9;
+}
+
+.back {
+    display: inline;
+    width: 13vw;
+    height: 12vw;
+    float: left;
+    padding: 5vw;
+}
+
+ion-label {
+    font-size: 4.5vw;
+    font-weight: 600;
+    margin: 1vw 0;
+}
+
+.back img {
+    height: 3.8vw;
+    width: 2vw;
+}
+
+.xzbox {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.fx {
+    height: 0.8vw;
+    width: 12vw;
+    position: relative;
+}
+
+.segment-button-has-label,
+.segment-button-checked {
+    max-width: 32vw;
+    min-width: 0;
+}
+
+.activebox {
+    width: 100%;
+    margin: 0;
+}
+
+.xaunxiak {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xaunxiak img {
+    height: 2.6vw;
+    width: 5vw;
+}
+
+.xiangBox {
+    height: 30%;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangBox h4 {
+    font-size: 4vw;
+    margin: 1vw 0;
+    color: #333333;
+    margin-bottom: 0;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangitem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbox {
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xbox span {
+    font-size: 3.2vw;
+    color: #999999;
+}
+
+.xia {
+    font-size: 2.9vw;
+    color: #ff9100;
+    margin-bottom: 1vw;
+}
+
+.xiangitem p {
+    margin: 0;
+}
+
+.xiangitem p img {
+    height: 2.5vw;
+    width: 1.5vw;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 2vw 0;
+}
+
+.caozuoBox div {
+    width: 29%;
+}
+
+.caozuoBox div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    width: 4.6vw;
+    height: 3.7vw;
+    border-radius: 0 !important
+}
+
+@media screen and (max-width: 320px) {
+    .locate img {
+        width: 4vw;
+        height: 5vw;
+    }
+    .select input {
+        font-size: 4vw;
+    }
+}
+
+.segment-button-checked {
+    --indicator-color-checked: transparent !important
+}
+
+.button-native {
+    --margin-end: 0;
+    --padding-start: 0;
+    --padding-end: 0
+}
+
+.huodimg {
+    height: 2.4vw;
+    position: relative;
+    right: -14vw;
+    top: -5vw;
+    width: 3.5vw;
+}
+
+// .button-md:hover:not(.disable-hover) {
+//     background-color: rgba(255, 255, 255, 0.1);
+// }
+// .button-md.activated {
+//     background-color: rgba(255, 255, 255, 0.1);
+// }

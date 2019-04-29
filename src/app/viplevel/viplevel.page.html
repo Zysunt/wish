@@ -1,0 +1,272 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>会员等级</span>
+        </div>
+        <div (click)="guanbipayment()">
+            <div style="background: #00000012;" *ngIf="payment==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="show==true" class="yinyin">
+        <div class="bgi">
+            <img class="bgimg" src="assets/icon/mine/bgmine.png" alt="">
+
+            <h3>道具说明</h3>
+            <p>{{daoju}}</p>
+            <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+
+        </div>
+    </div>
+    <div>
+        <div class="heade">
+            <div class="touxbox">
+                <div class="abox">
+                    <div>
+                        <div class="a">
+                            <img (click)="tomyhome()" src="assets/icon/mine/viptx3.png" class="toux" alt="">
+                            <img src="assets/icon/mine/viptx2.png" *ngIf="isVip==true" class="isvip" alt="">
+                        </div>
+                        <div class="b ">
+                            <div class="huiyuanbox">
+                                <h4>{{myname}}</h4>
+                                <div *ngIf="isVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>{{miaosu}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bbox">
+                    <div class="jinbox">
+                        <div (click)="tomon()">
+                            <img class="jinbi" src="assets/icon/mine/jinbi1.png" alt="">
+                            <span>9877</span>
+                        </div>
+                        <div (click)="tomon()">
+                            <img class="jinbi" src="assets/icon/mine/jinbi.png" alt="">
+                            <span>9877</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="vipdes">
+                <label for="">VIP值</label>
+                <span (click)="toLeveldescription()">等级说明</span>
+            </p>
+            <div class="levelbox">
+                <p>
+                    <span>L{{dj1}}</span>
+                    <span>L{{dj2}}</span>
+                </p>
+                <img src="assets/icon/mine/jd.png" alt="">
+            </div>
+        </div>
+        <div class="cent">
+            <div class="tongzhi" (click)="toannouncement()">
+                <img src="assets/icon/mine/tz.png" alt="">
+                <p>{{notice}}</p>
+            </div>
+        </div>
+
+        <div class="slid" *ngIf="isVip==true">
+
+            <ion-slides centerInsufficientSlides="true" pager="true" [options]="slideOpts">
+
+                <ion-slide>
+                    <img src="assets/icon/mine/daiti.png" alt="">
+
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="assets/icon/mine/daiti.png" alt="">
+
+                </ion-slide>
+
+                <ion-slide>
+                    <img src="assets/icon/mine/daiti.png" alt="">
+
+                </ion-slide>
+            </ion-slides>
+        </div>
+        <div *ngIf="isVip==false">
+            <div class="bor">
+                <div class="daojubox">
+                    <p class="c">
+                        充值丁神币
+                    </p>
+                    <p class="jieshao" (click)="torecharge()">
+                        更多
+                        <img src="assets/icon/hand/you.png" alt="">
+                    </p>
+                </div>
+
+                <div>
+                    <div class="itembox">
+                        <div class="item1">
+                            <p>¥{{money}}</p>
+                            <label for="">丁神币{{dsb}}</label>
+                        </div>
+                        <div class="item2">
+                            <p>¥{{money1}}</p>
+                            <label for="">丁神币{{dsb1}}</label>
+                        </div>
+                        <div class="item3">
+                            <p>¥{{money2}}</p>
+                            <label for="">丁神币{{dsb2}}</label>
+                        </div>
+                    </div>
+                    <button class="czbtn" (click)="openpay()">立即充值</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="guajianbox">
+            <div (click)="toheadhanger()">
+                <img src="assets/icon/mine/101.png" alt="">
+                <p>头像挂件</p>
+            </div>
+            <div (click)="Themebg()">
+                <img src="assets/icon/mine/102.png" alt="">
+                <p>主题背景</p>
+            </div>
+            <div (click)="toprivilege()">
+                <img src="assets/icon/mine/103.png" alt="">
+                <p>特权福利</p>
+            </div>
+        </div>
+
+        <div class="huiyuanzk">
+            <p class="biaoti">
+                <img src="assets/icon/hand/hd.png" alt="">
+                <span>会员折扣</span>
+            </p>
+
+            <div class="items">
+                <div class="kaitem">
+                    <p class="kap">通过卡</p>
+                    <img (click)="showtanc()" class="ka" src="assets/icon/mine/0.png" alt="">
+                    <div>
+                        <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button (click)="openpay()" class="btna">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap">替换卡</p>
+                    <img (click)="showtanc()" class="ka" src="assets/icon/mine/5.png" alt="">
+                    <div>
+                        <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button (click)="openpay()" class="btna">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap"> 解答卡</p>
+                    <img (click)="showtanc()" class="ka" src="assets/icon/mine/3.png" alt="">
+                    <div>
+                        <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button (click)="openpay()" class="btna">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap">替换卡</p>
+                    <img class="ka" src="assets/icon/mine/5.png" alt="">
+                    <div>
+                        <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button (click)="openpay()" class="btna">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap"> 解答卡</p>
+                    <img class="ka" src="assets/icon/mine/3.png" alt="">
+                    <div>
+                        <img class="youhuiimg" src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button (click)="openpay()" class="btna">购买</button>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div (click)="guanbipayment()">
+        <div *ngIf="payment==true" class="yinyin">
+
+        </div>
+    </div>
+    <div class="zhifuc" *ngIf="zhifu==true">
+        <div class="cent">
+            <p class="biaotizhifu">
+                <label for="">请选择支付方式</label>
+                <img src="assets/icon/mine/close.png" alt="">
+            </p>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/mine/weixin.png" alt="">
+                    <label for="">微信支付 </label>
+                </div>
+
+                <div class="count">
+                    <input id="confirm" type="checkbox" />
+                    <label for="confirm"></label>
+                </div>
+            </div>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/mine/zhifubao.png" alt="">
+                    <label for="">支付宝支付</label>
+                </div>
+
+                <div class="count">
+                    <input id="confirm" checked type="checkbox" />
+                    <label for="confirm"></label>
+                </div>
+            </div>
+            <div class="zhifubox">
+                <div class="zhi">
+                    <img src="assets/icon/last/pg.png" alt="">
+                    <label for="">苹果支付</label>
+                </div>
+
+                <div class="count">
+                    <input id="con" type="checkbox" />
+                    <label for="con"></label>
+                </div>
+            </div>
+            <div class="queren">
+                <p>请在{{daojishi}}内完成支付</p>
+                <button *ngIf="xieyi==false" class="btnm huis">确认支付¥{{jine}}</button>
+                <button *ngIf="xieyi==true" class="btnm" (click)="tosuccess()">确认支付¥{{jine}}</button>
+            </div>
+            <div class="xieyibox">
+                <div class="xieyi">
+                    <input (change)="onChecked()" id="c" type="checkbox" />
+                    <label for="c"></label>
+                </div>
+                <p (click)="toxieyi()">充值协议条款</p>
+            </div>
+        </div>
+    </div>
+</ion-content>

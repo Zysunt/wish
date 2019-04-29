@@ -1,0 +1,277 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span *ngIf="state!='hdyijieshu'">系统通知详情</span>
+            <span *ngIf="state=='hdyijieshu'">得奖人员页面</span>
+            <p class="fx" (click)="zhuanfa()"><img src="assets/icon/hand/fx.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+        <div (click)="guanbi()">
+            <div style="background: #d0cfcf99;" *ngIf="zf==true" class="yinyin"></div>
+        </div>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbi()">
+        <div *ngIf="zf==true" class="yinyin"></div>
+    </div>
+    <div class="fenxiangbox" *ngIf="zf==true">
+        <div class="cent">
+            <div class="asd">
+                <img (click)="guanbi()" class="guanbi" src="assets/icon/hand/gb.png" alt="">
+            </div>
+            <div class="fxnrbox">
+                <div>
+                    <img src="assets/icon/hand/share_wechat.png" alt="">
+                    <p>微信</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_wxcircle.png" alt="">
+                    <p>朋友圈</p>
+                </div>
+                <div>
+                    <img src="assets/icon/hand/share_sina.png" alt="">
+                    <p>微博</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom:5vw">
+        <div (click)="guanbi()">
+            <div *ngIf="zf==true" class="yinyin"></div>
+        </div>
+        <div class="cent">
+
+            <div class="towbox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/head.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox0">
+                            <label class="name">丁神官方人员</label>
+
+                            <p class="fabutime">{{hour}}分钟前</p>
+
+                        </div>
+
+                        <div class="lastbox" style="padding-top:1vw">
+
+                            <div class="guanbox">
+                                <div (click)="Isguanzhu()">
+                                    <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                                <span>关注</span>
+                                            </button>
+                                    <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                               已关注
+                                            </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="gongbu">本次公布2019-4-20期的中奖名单，请仔细核对。没中的亲请耐心等待下一次哦。</p>
+                <img class="guanimg" src="assets/icon/hand/q4.png" alt="">
+                <div class="countbox" (click)="towinpage()">
+                    <dl class="youbox">
+                        <img src="assets/icon/hand/you.png" alt="">
+                    </dl>
+                    <div>
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <p class="aiteh">{{man}}</p>
+                    </div>
+                    <div>
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <p class="aiteh">{{man}}</p>
+                    </div>
+                    <div>
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <p class="aiteh">{{man}}</p>
+                    </div>
+                    <div>
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <p class="aiteh">{{man}}</p>
+                    </div>
+                    <div>
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <p class="aiteh">{{man}}</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="borderbox">
+            <div class="onebox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox">
+                            <label class="name">{{namepeople}}</label>
+                            <div *ngIf="IsVip==true">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastbox">
+                            <div class="guanz" (click)="Isguanzhu()">
+                                <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                                    <span>关注</span>
+                                                </button>
+                                <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                                   已关注
+                                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl">
+                        <p class="miaosu">{{pinl}}</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="backgoundh">
+                <div class="elseboxh">
+                    <div class="imgboxh">
+                        <p class="aiteh">{{manmsg}}</p>
+                        <div>
+                            <img src="assets/icon/msg/d1.png" alt="">
+                            <img src="assets/icon/msg/d20.png" alt="">
+                            <img src="assets/icon/msg/d3.png" alt="">
+
+                        </div>
+                        <div>
+                            <img src="assets/icon/msg/d4.png" alt="">
+                            <img src="assets/icon/msg/d5.png" alt="">
+                            <img src="assets/icon/msg/d6.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="caozuoBoxh">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="borderbox">
+            <div class="onebox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox">
+                            <label class="name">{{namepeople}}</label>
+                            <div *ngIf="IsVip==true">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lastbox">
+                            <div class="guanz" (click)="Isguanzhu()">
+                                <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                                    <span>关注</span>
+                                                </button>
+                                <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                                   已关注
+                                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl">
+                        <p class="miaosu">{{pinl}}</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="backgoundh">
+                <div class="elseboxh">
+                    <div class="imgboxh">
+                        <p class="aiteh">{{manmsg}}</p>
+                        <div>
+                            <img src="assets/icon/msg/d1.png" alt="">
+                            <img src="assets/icon/msg/d20.png" alt="">
+                            <img src="assets/icon/msg/d3.png" alt="">
+
+                        </div>
+                        <div>
+                            <img src="assets/icon/msg/d4.png" alt="">
+                            <img src="assets/icon/msg/d5.png" alt="">
+                            <img src="assets/icon/msg/d6.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <div class="caozuoBoxh">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 4vw;margin-bottom: 3vw;"></div>
+
+
+    </div>
+    <div class="fucbox" style="z-index: 20 !important; " *ngIf="faso==true">
+        <div *ngIf="huifu==false" class="fucbox">
+            <div class="shurubox">
+                <input class="shuru" type="text" name="" placeholder="说点儿什么吧！" id="">
+            </div>
+            <div class="faso">
+                <button class="btn fabtn">发送</button>
+                <img src="assets/icon/home/more.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</ion-content>

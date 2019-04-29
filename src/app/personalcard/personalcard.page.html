@@ -1,0 +1,69 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>个人中心</span>
+        </div>
+        <div (click)="guanbi()">
+            <div style="background: #00000012;" *ngIf="showyy==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbi()">
+        <div *ngIf="showyy==true" class="yinyin"></div>
+    </div>
+    <div>
+
+        <div class="bottonbox" *ngIf="show==true">
+            <div (click)="guanbi()">
+                <p>送给朋友</p>
+            </div>
+            <div (click)="guanbi()">
+                <p>收藏</p>
+            </div>
+            <div (click)="saveimg()">
+                <p>保存图片</p>
+            </div>
+            <div (click)="guanbi()">
+                <p>识别图中二维码</p>
+            </div>
+            <div (click)="guanbi()">
+                <p>编辑</p>
+            </div>
+            <div (click)="guanbi()">
+                <p>定位到聊天内容</p>
+            </div>
+            <div (click)="guanbi()" class="cancel">
+                <p>取消</p>
+            </div>
+
+        </div>
+        <div (click)="guanbi()">
+            <div class="cache" *ngIf="codeimg==true">
+                <h5>二维码保存成功</h5>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="body">
+
+        <div class="cent">
+            <div class="bgbox">
+                <h3>丁神二维码名片</h3>
+            </div>
+            <div class="codebox">
+                <img src="assets/icon/set/qr.png" alt="">
+                <p>在丁神app扫一扫加我</p>
+            </div>
+        </div>
+        <div class="btns">
+            <button (click)="presentActionSheet()" class="loginbtn">保存二维码名片</button>
+        </div>
+    </div>
+</ion-content>

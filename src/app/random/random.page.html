@@ -1,0 +1,129 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>约伴</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cent">
+        <div class="haoyout">
+            <div>
+                <img src="assets/icon/tab3/001.png" alt="">
+                <h4>随机匹配</h4>
+            </div>
+            <div>
+                <label for="">全选</label>
+            </div>
+        </div>
+
+        <div>
+            <div class="towbox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox0">
+                            <label class="name">{{name}}</label>
+                            <div *ngIf="IsVip==true" style="display: inline-block;">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                </p>
+
+                            </div>
+                            <div class="imszx">
+                                <div>
+                                    <img src="assets/icon/tab3/003.png" alt="">
+                                </div>
+
+                                <div>
+                                    <img src="assets/icon/activity/renqun.png" alt="">
+                                    <span>
+                                      {{guanzhu}}
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lastbox">
+                            <div>
+                                <div class="count">
+                                    <input id="confirm" checked type="checkbox" />
+                                    <label for="confirm"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="guanbox">
+                                    <img src="assets/icon/tab3/wz.png" alt="">
+                                    <span class="asz">{{juli}}km</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="towbox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/tab3/005.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/tab3/004.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox0">
+                            <label class="name">{{name}}</label>
+                            <div *ngIf="IsVip==true" style="display: inline-block;">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                </p>
+
+                            </div>
+                            <div class="imszx">
+                                <div>
+                                    <img src="assets/icon/tab3/002.png" alt="">
+                                </div>
+
+                                <div>
+                                    <img src="assets/icon/activity/renqun.png" alt="">
+                                    <span>
+                                      {{guanzhu}}
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="lastbox">
+                            <div>
+                                <div class="count">
+                                    <input id="confirm" checked type="checkbox" />
+                                    <label for="confirm"></label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="guanbox">
+                                    <img src="assets/icon/tab3/wz.png" alt="">
+                                    <span class="asz">{{juli}}km</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btnbs" (click)="tointsuccess()">发起邀约</button>
+        </div>
+    </div>
+</ion-content>

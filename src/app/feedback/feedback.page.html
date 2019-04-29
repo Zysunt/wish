@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>意见反馈</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <div class="wishcont">
+            <textarea [(ngModel)]="sub" autofocus required placeholder="请输入心愿内容" rows="15" cols="30"></textarea>
+        </div>
+        <div class="cent">
+            <button (click)="submit()" class="loginbtn">提交</button>
+        </div>
+    </div>
+
+</ion-content>

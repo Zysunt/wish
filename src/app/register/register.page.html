@@ -17,24 +17,24 @@
                 <h4>+86</h4>
                 <img src="assets/icon/login/86.png" alt="">
             </div>
-            <input style="margin-left:17vw" type="number" placeholder="请输入手机号" pattern="[0-9]*">
+            <input style="margin-left:17vw" type="number" [(ngModel)]="tel" placeholder="请输入手机号" pattern="[0-9]*">
 
         </div>
 
         <div class="itembox">
             <img src="assets/icon/login/code.png" class="code" alt="">
-            <input type="number" placeholder="请输入验证码" pattern="[0-9]*">
+            <input type="number" placeholder="请输入验证码" [(ngModel)]="code1" pattern="[0-9]*">
             <p class="getcode">
                 <button (click)="settime()" [disabled]="!verifyCode.disable" value="获取验证码">{{verifyCode.verifyCodeTips}}</button>
             </p>
         </div>
         <div class="itembox">
             <img src="assets/icon/login/mima.png" class="mima" alt="">
-            <input type="number" placeholder="请输入密码" pattern="[0-9]*">
+            <input type="number" [(ngModel)]="passw" placeholder="请输入密码" pattern="[0-9]*">
         </div>
         <div class="itembox">
             <img src="assets/icon/login/mima.png" class="mima" alt="">
-            <input type="number" placeholder="重复密码" pattern="[0-9]*">
+            <input type="number" [(ngModel)]="pass" placeholder="重复密码" pattern="[0-9]*">
         </div>
         <div class="towbox">
             <button class="loginbtn" (click)="tomine()">注册</button>

@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>他的关注</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="">
+        <div class="bg" style="height: 5vw;">
+            <!-- <ion-searchbar mode="ios" type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated (ionInput)="filters($event)" placeholder="搜索手机/用户名"></ion-searchbar> -->
+        </div>
+        <div class="items">
+            <div class="cent">
+                <div class="onebox">
+                    <div class="oa">
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                    </div>
+                    <div class="ob">
+                        <div class="clear">
+                            <div class="huiyuanbox">
+                                <label class="name">{{namepeople}}</label>
+                                <div *ngIf="IsVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sl">
+                            <p class="miaosu">
+                                <span>{{iszaixian}}</span>
+                                <span>参与活动数:</span>
+                                <span>{{count}}个</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="oc">
+                        <img src="assets/icon/mine/lt.png" alt="">
+                        <button class="btn" (click)="guanzhufun()">
+                          <span *ngIf="guanzhu==true">已关注</span>
+                          <span *ngIf="guanzhu==false">相互关注</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="cent">
+                <div class="onebox">
+                    <div class="oa">
+                        <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                        <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                    </div>
+                    <div class="ob">
+                        <div class="clear">
+                            <div class="huiyuanbox">
+                                <label class="name">{{namepeople}}</label>
+                                <div *ngIf="IsVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/hand/dr.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sl">
+                            <p class="miaosu">
+                                <span>{{iszaixian}}</span>
+                                <span>参与活动数:</span>
+                                <span>{{count}}个</span>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="oc">
+                        <img src="assets/icon/mine/lt.png" alt="">
+                        <button class="btn" (click)="guanzhufun()">
+                            <span *ngIf="guanzhu==false">已关注</span>
+                            <span *ngIf="guanzhu==true">相互关注</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</ion-content>

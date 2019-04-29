@@ -1,0 +1,101 @@
+.head span {
+    left: -5vw
+}
+
+.databox {
+    text-align: center;
+    line-height: 10vw;
+}
+
+.databox span {
+    background: #ddd;
+    border-radius: 1vw;
+    font-size: 3.8vw;
+    color: #fff;
+    padding: 1vw 3vw;
+}
+
+.zj {
+    background: #FF9100 !important;
+    color: #fff !important;
+    margin: 0 3vw 0 0 !important;
+}
+
+.scroll-y {
+    background: #f7f7f7 !important;
+    width: 100%;
+    min-height: 100%
+}
+
+.oapl {
+    width: 75% !important;
+    display: inline-block
+}
+
+.tzitembox p {
+    margin: 0;
+    font-size: 3.5vw;
+}
+
+.tznr {
+    margin-left: 3vw;
+    padding: 3vw;
+    border: 1px solid #eee;
+    border-radius: 2vw;
+    background: #fff
+}
+
+.tzhead {
+    height: 11vw;
+    width: 11vw;
+    border-radius: 50%;
+}
+
+.tzitembox {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1vw;
+}
+
+.fucbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 5%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px #e0e0e0;
+}
+
+.shurubox {
+    width: 63%
+}
+
+.shuru {
+    border: 1px solid #efeded;
+    width: 100%;
+    border-radius: 1vw;
+    height: 10vw;
+    padding-left: 3vw;
+    outline: none;
+}
+
+.faso {
+    width: 37%;
+    text-align: right;
+}
+
+.faso img {
+    height: 8vw;
+    margin-left: 4vw;
+    position: relative;
+    top: 1vw;
+}
+
+.fabtn {
+    height: 8vw;
+    top: -2vw;
+    position: relative;
+}

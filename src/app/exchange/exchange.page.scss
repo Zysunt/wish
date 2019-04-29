@@ -1,0 +1,165 @@
+.head span {
+    left: -5vw;
+}
+
+.biaotizhifu {
+    overflow: hidden;
+    margin: 0;
+    padding: 2vw 0 2.5vw;
+    text-align: center;
+    border-bottom: 1px solid #f1f1ec;
+}
+
+.biaotizhifu label {
+    font-size: 5vw;
+    font-weight: 500
+}
+
+.biaotizhifu img {
+    height: 3.8vw;
+    width: 3.8vw;
+    float: right;
+}
+
+.zhifubox {
+    border-bottom: 1px solid #f1f1ec;
+    line-height: 14vw
+}
+
+.zhifubox img {
+    height: 4.1vw;
+    width: 5.4vw;
+}
+
+.zhifubox label {
+    font-size: 3.8vw;
+    color: #333;
+    margin: 0 3vw;
+}
+
+.zhifuc {
+    height: 59vw;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 30;
+    background: #fff;
+}
+
+.queren p {
+    text-align: center;
+    font-size: 3.5vw;
+    color: #999;
+    margin: 4vw 0 2vw;
+}
+
+.btnm {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+    width: 90% !important;
+    margin-left: 5% !important;
+    padding: 4vw 0;
+    font-size: 4.5vw;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+}
+
+.kaitem {
+    width: 30%;
+    padding: 1vw 2vw;
+    text-align: center
+}
+
+.kaitem div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.youhuiimg {
+    position: relative;
+    top: 2.5vw;
+}
+
+.kaitem div img {
+    height: 3.2vw;
+    width: 3.2vw;
+}
+
+.ka {
+    height: 25vw;
+    width: 20vw
+}
+
+.kaitem p {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #333
+}
+
+.mokuai {
+    border-top: 3vw solid #f7f7f7
+}
+
+.btn {
+    color: #FF9302 !important;
+    background: #fff !important;
+    border: 1px solid #FF9302 !important;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding-top: 5vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 40;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.caozuobtn {
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-around
+}
+
+.caozuobtn div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caozuobtn div:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.caozuobtn label {
+    color: #4485ff;
+    font-size: 4vw;
+    padding: 3vw;
+    display: inline-block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}

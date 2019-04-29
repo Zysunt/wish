@@ -1,0 +1,93 @@
+<ion-content>
+    <div *ngIf="baocun==true" class="yinyin"></div>
+
+    <div class="head">
+        <div class="back" (click)="back()">
+            <img src="assets/icon/home/back.png" alt="">
+        </div>
+
+    </div>
+    <div class="Album" *ngIf="baocun==true">
+        <div class="onebox">
+            <div class="oa">
+                <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+            </div>
+            <div class="ob">
+                <div class="clear">
+                    <div class="huiyuanbox">
+                        <div class="oaa">
+                            <label class="aname">{{peoplename}}</label>
+                            <div *ngIf="IsVip==true" style="display: inline-block;">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="oba">
+                            <button class="highter">
+                              <img src="assets/icon/tab3/highter.png" alt="">
+                                高级认证
+                             </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div style="display:flex">
+                    <div class="sl">
+                        <p class="miaosu">{{qianming}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="imgbox">
+            <img src="assets/icon/home/o7.png" alt="">
+        </div>
+
+        <div class="codebox">
+            <div class="sl1">
+                <p>{{wishcont}}</p>
+            </div>
+
+            <img src="assets/icon/tab3/code.png" alt="">
+        </div>
+
+        <div class="baocun">
+            <button class="baoc">保存到相册</button>
+            <button class="fanhui" (click)="tohome()">返回</button>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="firstbox">
+        <img src="assets/icon/tab3/yifabu.png" alt="">
+        <h4>心愿发布成功</h4>
+        <p>官方正在筹集物资......邀请好友为你助威</p>
+    </div>
+
+
+    <div class="secondbox">
+        <div (click)="baocunalbum()">
+            <img src="assets/icon/tab3/fxt.png" alt="">
+            <p>生成分享图</p>
+        </div>
+        <div>
+            <img src="assets/icon/hand/share_wechat.png" alt="">
+            <p>微信</p>
+        </div>
+        <div>
+            <img src="assets/icon/hand/share_wxcircle.png" alt="">
+            <p>朋友圈</p>
+        </div>
+        <div>
+            <img src="assets/icon/hand/share_sina.png" alt="">
+            <p>微博</p>
+        </div>
+    </div>
+</ion-content>

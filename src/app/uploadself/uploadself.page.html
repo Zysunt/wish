@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>下一关</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="yinyin" *ngIf="daoju==true">
+
+        <div class="yinyin2" *ngIf="isused==true">
+            <div class="cache">
+                <h5>确定使用道具吗？</h5>
+                <div class="caozuobtn">
+                    <div>
+                        <label (click)="guanbiuse()" for="">取消</label>
+                    </div>
+                    <div>
+                        <label (click)="guanbiuse()" for="">确定</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tancka">
+            <div class="itesbox">
+                <div class="ites">
+                    <img src="assets/icon/mine/3.png" alt="">
+                    <p>解答卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/4.png" alt="">
+                    <p>提示卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': false ,'btn':true}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/5.png" alt="">
+                    <p>替换卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+            </div>
+            <div class="itesbox">
+                <div class="ites">
+                    <img src="assets/icon/mine/0.png" alt="">
+                    <p>通关卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/1.png" alt="">
+                    <p>提示卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/2.png" alt="">
+                    <p>替换卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+            </div>
+        </div>
+        <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+    </div>
+    <div>
+        <div class="headerbox" (click)="isimgfun()">
+            <img *ngIf="isimg==1" src="assets/icon/last/shili1.jpg" alt="">
+            <img *ngIf="isimg==0" src="assets/icon/last/shili2.jpg" alt="">
+        </div>
+        <div class="scbox">
+            <button class="scbtn" (click)="touploadcredentials()">上传凭证</button>
+            <div class="count">
+                <div>
+                    <input id="conm" checked type="checkbox" />
+                    <label for="conm"></label>
+                </div>
+                <p>同步到精彩回放</p>
+            </div>
+            <div>
+                <a (click)="showdaoju()">使用道具卡</a>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

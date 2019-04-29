@@ -1,16 +1,19 @@
 <ion-header>
     <ion-toolbar>
-        <div class="head">
+        <div class="headss">
             <div class="locate back" (click)="back()">
                 <img src="assets/icon/home/back.png" alt="">
             </div>
             <div class="select">
-                <input type="text" placeholder="在社区内搜索内容，用户">
-                <img src="assets/icon/home/select.png" alt="">
+                <!-- <input type="text" placeholder="在社区内搜索内容，用户">
+                <img src="assets/icon/home/ss.png" alt=""> -->
+                <ion-searchbar mode="md" type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated (ionInput)="filters($event)" placeholder="搜索内容，用户"></ion-searchbar>
+
             </div>
 
             <div class="suosou">
                 <span>搜索</span>
+
             </div>
         </div>
     </ion-toolbar>
@@ -19,16 +22,19 @@
 <ion-content>
     <div class="bodybox">
         <div>
-            <p>最近搜索</p>
+            <p style="overfolw:hiddden;*zoom:1">最近搜索
+                <img class="delete" src="assets/icon/home/lajit.png" alt="">
+
+            </p>
             <div class="a" *ngFor="let item of zuijinsuosou">
-                <label for="">{{item}}</label>
+                <label (click)="tocontent()" for="">{{item}}</label>
             </div>
 
         </div>
         <div>
             <p>常用分类</p>
             <div class="a" *ngFor="let item of suosouchangyong">
-                <label for="">{{item}}</label>
+                <label (click)="tocontent()" for="">{{item}}</label>
             </div>
 
         </div>

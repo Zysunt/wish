@@ -1,0 +1,538 @@
+.back {
+    display: inline;
+    width: 12vw;
+    height: 11vw;
+    float: left;
+    padding: 4.5vw 3vw;
+}
+
+.back img {
+    height: 5.1vw;
+    width: 2.7vw;
+}
+
+.head {
+    text-align: center;
+}
+
+.head span {
+    font-size: 5.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+}
+
+.fx {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+}
+
+.fx img {
+    height: 5.1vw;
+    width: 5.1vw;
+}
+
+.onebox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5%;
+    padding: 3vw 3vw 0vw;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 7px 1px #ccc8c8;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.clear div:first-child {
+    width: 70% !important;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    color: #999;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fxnrbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.fxnrbox img {
+    height: 7.5vw
+}
+
+.fxnrbox p {
+    font-size: 3.5vw;
+    color: #333;
+    margin: 0;
+}
+
+.guanbi {
+    height: 3.9vw;
+    width: 3.8vw;
+}
+
+.asd {
+    text-align: right;
+    margin: 3vw 0 2vw;
+}
+
+.fenxiangbox {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 21;
+}
+
+.biaoq1 {
+    display: flex;
+    box-shadow: 0px -5px 10px 0px #e4e3e3;
+    padding: 3vw 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.biaoq1 img {
+    height: 5vw;
+    margin-right: 8vw;
+}
+
+.name {
+    color: #333;
+    font-size: 4vw;
+    font-weight: 500;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+    line-height: 7vw;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 100% !important;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.7vw 0.5vw;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 2vw;
+    border-radius: 2vw;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.2vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.a {
+    color: #999;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.borderbox {
+    border-bottom: 3vw solid #f7f7f7;
+    padding-bottom: 3vw;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.7vw 0.5vw;
+}
+
+.miaosuwein {
+    font-size: 3.5vw;
+    margin: 0 0 2vw 0;
+}
+
+.miaosimg {
+    height: 50vw;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.pinlunbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 0;
+    border-bottom: 1px solid #f3efef;
+}
+
+.touxpl {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clearpl {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.dianzanpl {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.aixinpl {
+    height: 2.8vw;
+    width: 3.1vw;
+    position: relative;
+    top: 0vw;
+    left: -1vw;
+}
+
+.clearpl div:first-child {
+    width: 70% !important;
+}
+
+.lastboxpl {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.oapl {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vippl {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.obpl {
+    width: 86% !important;
+    text-align: left;
+}
+
+.miaosupl {
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.slpl p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slpl {
+    width: 80%;
+    max-height: 5vw;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.vippl {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.obpl {
+    width: 86% !important;
+    text-align: left;
+}
+
+.miaosupl {
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.slpl p {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.slpl {
+    width: 80%;
+    max-height: 5vw;
+    // display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.namepl {
+    color: #333;
+    font-size: 3.2vw;
+    margin: 0;
+}
+
+.huippl {
+    margin: 0;
+}
+
+.hui1pl {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2pl {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.huiyuanboxpl {
+    display: flex
+}
+
+.huifuboxpl {
+    overflow: hidden;
+    *zoom: 1;
+    padding-bottom: 2vw
+}
+
+.huifuboxpl p {
+    margin: 0
+}
+
+.huifuboxpl p span {
+    color: #999;
+    font-size: 3.5vw;
+}
+
+.huifuboxpl p span:last-child {
+    float: right;
+}
+
+.huifuboxpl p span:first-child {
+    float: left;
+}
+
+.punlinitem {
+    width: 100%;
+    background: #fff;
+    padding-top: 2vw;
+}
+
+.shurubox {
+    width: 63%;
+    margin-left: 5%;
+}
+
+.faso {
+    width: 37%;
+    text-align: right;
+    padding-right: 0;
+}
+
+.fabtn {
+    height: 8vw;
+    top: -2vw;
+    position: relative;
+}
+
+.text {
+    width: 100%;
+    resize: none;
+    font-size: 3.5vw;
+    border: 1px solid #b7b6b673;
+    border-radius: 3vw;
+    outline: none;
+    padding-left: 3vw;
+}
+
+.faso img {
+    height: 8vw;
+    margin-left: 1vw;
+    position: relative;
+    top: 1vw;
+}
+
+.shuru {
+    border: 1px solid #efeded;
+    width: 100%;
+    border-radius: 1vw;
+    height: 10vw;
+    padding-left: 3vw;
+    outline: none;
+}
+
+.fucbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 5% 3vw 0%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px #e0e0e0;
+}
+
+.a p {
+    margin: 0;
+    color: #333;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 3vw 0 0;
+    // padding-top: 2vw;
+}
+
+.caozuoBox div {
+    width: 45%;
+    text-align: center;
+    line-height: 7vw;
+    display: flex
+}
+
+.caozuoBox div span {
+    color: #333;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    border-radius: 0 !important;
+    position: relative;
+    top: 1vw;
+    height: 4vw;
+}

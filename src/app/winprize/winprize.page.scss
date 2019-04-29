@@ -1,0 +1,688 @@
+.fx {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+}
+
+.fx img {
+    height: 5.1vw;
+    width: 5.1vw;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.oneboxpl {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5%;
+    padding: 3vw 3vw 0;
+    border-bottom: 1px solid #efebeb;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    line-height: 9vw;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.clear div:first-child {
+    width: 100% !important;
+}
+
+.huiyuanbox {
+    display: flex;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+    position: relative;
+    top: 3vw;
+}
+
+.oa {
+    width: 13% !important;
+    padding-top: 2vw;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.2vw;
+    margin: 0;
+    color: #999;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    line-height: 9vw;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huip {
+    margin: 0;
+}
+
+.head span {
+    // left: -5vw;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 70%;
+}
+
+.body {
+    width: 100%;
+    min-height: 100%;
+    background: #f7f7f7;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+    margin-top: 1vw;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 100% !important;
+    display: inline-block;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    // margin: 3vw 0 2vw;
+    border-radius: 2vw;
+}
+
+.a {
+    color: #999;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.huiyuanboxpl {
+    display: flex
+}
+
+.gongbu {
+    font-size: 3.5vw;
+    margin: 1vw 0
+}
+
+.guanimg {
+    height: 57vw;
+    width: 100%;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: -2vw;
+}
+
+.fubua {
+    display: flex;
+    margin-top: 3vw;
+    line-height: 5vw;
+}
+
+.cent {
+    padding-top: 3vw
+}
+
+.borderbox {
+    border-top: 3vw solid #f7f7f7;
+}
+
+.a {
+    padding: 0 5%;
+}
+
+.a {
+    padding: 0 5%;
+}
+
+.dianzan {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.aixin {
+    height: 2.8vw;
+    width: 3.1vw;
+    position: relative;
+    top: 0vw;
+    left: -1vw;
+}
+
+.a p {
+    font-size: 4vw !important;
+    font-weight: 600 !important;
+    background: #fff;
+    margin: 4vw 0 -1vw;
+    padding: 0 0 1vw 0%;
+}
+
+.onebox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 0;
+    // border-bottom: 1px solid #f3efef;
+}
+
+.btnbox {
+    padding: 4vw 0;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.zhij {
+    background: #fff !important;
+    border: 1px solid #ff9302 !important;
+    color: #ff9302 !important;
+}
+
+.btnbox button {
+    padding-top: 3vw;
+    padding-bottom: 3vw
+}
+
+.btn img {
+    height: 2.6vw
+}
+
+.canspan {
+    font-size: 2vw !important;
+    color: #FF9302 !important;
+    float: right;
+    margin: 0 !important;
+    font-weight: 400 !important;
+}
+
+.abtn {
+    height: 11vw;
+    width: 100%;
+    border: 1px solid #FF9302;
+    background: #fff;
+    border-radius: 7vw;
+    color: #FF9302;
+    font-size: 4vw;
+    font-weight: 600;
+    margin: 4vw 0;
+}
+
+.biaoti img {
+    height: 4.3vw;
+    width: 1.33vw;
+}
+
+.biaoti {
+    margin: 0 !important;
+    background: #fff;
+}
+
+.biaoti span {
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin: 0 3vw 0
+}
+
+.imga {
+    height: 4vw;
+    position: relative;
+    // top: 1vw;
+    left: -1vw;
+}
+
+.fubua p {
+    margin: 0;
+    font-size: 3.2vw;
+    color: #555;
+}
+
+.contp {
+    // margin: 0;
+    font-size: 3.2vw;
+    color: #555;
+}
+
+.ma {
+    margin-left: 13vw
+}
+
+.contp span {
+    display: inline-block;
+    margin-left: 2vw
+}
+
+.titleimg {
+    height: 45vw;
+    width: 100%;
+    border-radius: 2vw;
+}
+
+.neirbox {
+    border-bottom: 1px solid #d1d2d4;
+    padding: 3vw 0
+}
+
+.neirbox h4 {
+    font-size: 5vw;
+    margin: 0
+}
+
+.huifubox {
+    overflow: hidden;
+    *zoom: 1;
+    padding-bottom: 2vw
+}
+
+.huifubox p {
+    margin: 0
+}
+
+.huifubox p span {
+    color: #999;
+    font-size: 3.5vw;
+}
+
+.huifubox p span:last-child {
+    float: right;
+}
+
+.huifubox p span:first-child {
+    float: left;
+}
+
+.fucbox {
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #d6d3d354;
+    padding: 2vw 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: 13vw;
+}
+
+.fucbox div:first-child {
+    display: flex;
+    justify-content: space-around;
+    text-align: center
+}
+
+.fucbox div:first-child img {
+    height: 4vw;
+}
+
+.fucbox div {
+    width: 40%;
+}
+
+.fucbox div p {
+    margin: 0
+}
+
+.fucbox div:last-child button {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    outline: none;
+    height: 9.3vw;
+    width: 30.6vw;
+}
+
+.pinls {
+    display: block;
+    color: #999;
+    font-size: 3.5vw;
+}
+
+.txboxyi img {
+    height: 9vw;
+    position: relative;
+    top: 3vw;
+    margin: 0 1vw;
+}
+
+.txboxyi {
+    width: 62% !important;
+    height: 14vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.bcy {
+    background: #fff !important;
+    border: 1px solid #ff9302 !important;
+    color: #ff9302 !important;
+}
+
+.txboxyi p {
+    margin: 0;
+    line-height: 9vw;
+    font-size: 4vw;
+    overflow: hidden;
+    line-height: 15vw;
+}
+
+.youyi {
+    height: 5vw !important;
+    top: 5vw !important;
+}
+
+.fxnrbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.fxnrbox img {
+    height: 7.5vw
+}
+
+.fxnrbox p {
+    font-size: 3.5vw;
+    color: #333;
+    margin: 0;
+}
+
+.guanbi {
+    height: 3.9vw;
+    width: 3.8vw;
+}
+
+.asd {
+    text-align: right;
+    margin: 3vw 0 2vw;
+}
+
+.fenxiangbox {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+
+.fucboxf {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 5%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px #e0e0e0;
+}
+
+.fabtnf {
+    height: 8vw;
+    top: -2vw;
+    position: relative;
+}
+
+.fasof img {
+    height: 8vw;
+    margin-left: 4vw;
+    position: relative;
+    top: 1vw;
+}
+
+.shuruf {
+    border: 1px solid #efeded;
+    width: 100%;
+    border-radius: 1vw;
+    height: 10vw;
+    padding-left: 3vw;
+    outline: none;
+}
+
+.shuruboxf {
+    width: 63%
+}
+
+.bo {
+    margin-bottom: 20vw;
+}
+
+.txboxcanyu {
+    padding: 1vw 0 !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 2vw 0 0vw;
+    height: 13vw;
+    background: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.txboxcanyu p {
+    display: initial;
+    margin: 0 1vw;
+}
+
+.txboxcanyu img {
+    height: 11.7vw;
+    width: 11.7vw;
+    display: inline;
+}
+
+.youboxcanyu {
+    position: absolute !important;
+    width: 13vw !important;
+    height: 14vw !important;
+    line-height: 14vw;
+    top: -1vw;
+    right: -6vw;
+    background: #fff;
+    padding: 0vw 5% 2vw;
+}
+
+.youboxcanyu img {
+    height: 5.1vw;
+    width: 2.7vw;
+}
+
+.canp {
+    font-size: 4vw !important;
+    font-weight: 600 !important;
+    background: #fff;
+    margin: 0;
+    padding: 0 0 1vw 0;
+    color: #333
+}
+
+.backgoundh {
+    background: #fff;
+    width: 100%;
+    margin-top: 3vw;
+}
+
+.elseboxh {
+    // background: #f7f7f7;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.imgboxh img {
+    width: 32%;
+    height: 23vw;
+    border-radius: 1vw;
+}
+
+.imgboxh div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+
+.caozuoBoxh {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 4vw 0 0;
+}
+
+.caozuoBoxh div {
+    width: 30%;
+    text-align: center;
+    line-height: 7vw;
+}
+
+.caozuoBoxh div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -1vw;
+    left: 1.5vw;
+}
+
+.caozuoBoxh div img {
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 0 !important
+}
+
+.aixinh {
+    height: 4vw !important;
+    width: auto !important;
+}
+
+.aiteh {
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+.aiteh span {
+    color: #7298de;
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.youbox {
+    position: absolute;
+    right: -4.5vw;
+}
+
+.youbox img {
+    height: 4.5vw
+}
+
+.countbox {
+    display: flex;
+    width: 95%;
+    position: relative;
+    margin-top: 3vw;
+}
+
+.countbox div {
+    width: 20%;
+    text-align: center;
+}
+
+.countbox div p {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

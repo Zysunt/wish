@@ -20,32 +20,59 @@
     </div>
     <div>
         <div class="city">
-            <p class="biaoti">热门城市<span>#</span></p>
+            <a id="top">
+                <p class="biaoti">热门城市<span>#</span></p>
+            </a>
             <p>
                 <span>北京</span>
             </p>
-        </div>
-        <div class="city">
-            <p class="biaoti">A</p>
+
             <p>
-                <span>澳门</span>
+                <span>上海</span>
             </p>
-        </div>
-        <div class="city">
-            <p class="biaoti">S</p>
             <p>
-                <span>苏州</span>
+                <span>深圳</span>
+            </p>
+            <p>
+                <span>广州</span>
             </p>
         </div>
 
+        <div class="city">
+            <a id=""></a>
+            <!-- <p class="biaoti">{{item.title}}</p> -->
+
+            <div *ngFor="let key of getKeys(dizhi)">
+                <ion-col *ngFor="let item of dizhi[key]">
+                    <ion-col *ngFor="let key of getKeys(item)">
+                        <ion-row class="loca" *ngFor="let item2 of item[key]">{{ item2 }}</ion-row>
+                    </ion-col>
+                </ion-col>
+            </div>
+
+        </div>
+
+
+        <!-- <div *ngFor="let key of getKeys(data5)">
+            <ion-col *ngFor="let item of data5[key]">
+                <ion-col *ngFor="let key of getKeys(item)">
+                    <ion-row *ngFor="let item2 of item[key]">{{ item2 }}</ion-row>
+                </ion-col>
+            </ion-col>
+        </div> -->
+
     </div>
     <div class="Letter">
-        <p>#</p>
-        <p>热</p>
-        <p>A</p>
-        <p>B</p>
-        <p>C</p>
-        <p>D</p>
+        <a href="#top">
+            <i>#</i>
+        </a>
+        <i>热</i>
+        <div *ngFor="let item of getItems(location)">
+            <a href="">
+                <i>{{item.title}}</i>
+            </a>
+        </div>
+
     </div>
 
 </ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>添加地址</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <div class="cent">
+        <div class="items">
+            <div>
+                <label for="">联系人</label>
+            </div>
+            <div>
+                <input type="text" value="{{lianxiren}}">
+            </div>
+        </div>
+        <div class="items">
+            <div>
+                <label for="">手机号码</label>
+            </div>
+            <div>
+                <input type="text" value="{{tel}}" placeholder="请输入手机号码">
+            </div>
+        </div>
+        <div class="items">
+            <div>
+                <label>所在区域</label>
+            </div>
+            <div>
+                <p>请选择</p>
+                <img src="assets/icon/set/you.png" alt="">
+            </div>
+        </div>
+        <div class="items">
+            <div>
+                <label for="">详细地址</label>
+            </div>
+            <div>
+                <input type="text" value="{{dizhi}}" placeholder="请输入">
+            </div>
+        </div>
+        <div class="btns">
+            <button (click)="add()" class="btn">确定</button>
+        </div>
+    </div>
+</ion-content>

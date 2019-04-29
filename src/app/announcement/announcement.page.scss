@@ -1,0 +1,271 @@
+.fx {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+}
+
+.fx img {
+    height: 5.1vw;
+    width: 5.1vw;
+}
+
+.fxnrbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.fxnrbox img {
+    height: 7.5vw
+}
+
+.fxnrbox p {
+    font-size: 3.5vw;
+    color: #333;
+    margin: 0;
+}
+
+.guanbi {
+    height: 3.9vw;
+    width: 3.8vw;
+}
+
+.asd {
+    text-align: right;
+    margin: 3vw 0 2vw;
+}
+
+.fenxiangbox {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+    margin-top: 1vw;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 86% !important;
+    display: inline-block;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 1vw;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 0 2vw;
+    border-radius: 2vw;
+}
+
+.huiyuanbox {
+    display: flex;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+    padding-top: 2.5vw;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.clear div:first-child {
+    width: 70% !important;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.fubua {
+    display: flex;
+    margin-top: 3vw;
+    line-height: 5vw;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    margin: 0;
+    color: #333;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.tzimg {
+    height: 51vw;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.hp {
+    font-size: 3.5vw;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+    height: 50vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.biaoti img {
+    height: 4.3vw;
+    width: 1.33vw;
+}
+
+.mokuai {
+    border-top: 3vw solid #f7f7f7;
+    padding: 5%;
+}
+
+.biaoti span {
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin: 0 3vw 0;
+}
+
+.biaoti {
+    margin: 0 !important;
+    background: #fff;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.kaitem {
+    min-width: 30vw;
+    height: 50vw;
+    padding: 1vw 2vw;
+    text-align: center;
+}
+
+.kaitem div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.youhuiimg {
+    position: relative;
+    // top: 2.5vw;
+}
+
+.shanchuxian {
+    text-decoration: line-through;
+}
+
+.nowsjinbi {
+    color: #FF9302 !important;
+}
+
+.kaitem div img {
+    height: 3.2vw;
+    width: 4.3vw;
+}
+
+.ka {
+    height: 25vw;
+    width: 20vw
+}
+
+.kaitem p {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #333
+}
+
+.kap {
+    margin: 1vw 0;
+}
+
+.btna {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+    color: #FF9302 !important;
+    background: #fff !important;
+    border: 1px solid #FF9302 !important;
+}

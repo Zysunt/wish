@@ -1,0 +1,124 @@
+.head span {
+    left: -5vw
+}
+
+.txbox img {
+    height: 33vw;
+    width: 100%
+}
+
+.txbox div {
+    width: 33%;
+}
+
+.txbox {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 0 0.7vw 0;
+}
+
+.txbox div {
+    position: relative;
+    overflow: hidden;
+}
+
+.txbox div dl {
+    float: right;
+}
+
+.a {
+    height: 5.6vw !important;
+    width: 5.6vw !important;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+.fux {
+    display: flex;
+    justify-content: space-around;
+    height: 14vw;
+    width: 100%;
+    position: fixed;
+    padding: 2vw;
+    bottom: 0;
+    box-shadow: 1px 4px 10px 1px #88888878;
+}
+
+.xz {
+    position: relative;
+    left: 0.3vw;
+}
+
+.fux div img {
+    height: 4.9vw;
+}
+
+.fux div {
+    text-align: center;
+}
+
+.fux div p {
+    font-size: 2.5vw;
+    margin: 0;
+    color: #333;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding-top: 5vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 20;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.caozuobtn {
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-around
+}
+
+.caozuobtn div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caozuobtn div:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.caozuobtn label {
+    color: #4485ff;
+    font-size: 4vw;
+    padding: 3vw;
+    display: inline-block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}

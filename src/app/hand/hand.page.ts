@@ -10,6 +10,10 @@ export class HandPage implements OnInit {
   timemiaosu = "起来并完成一定社会职能的动作的总和。活动由目的、sdf"
   reward = "rew的联合起来并完成一定社会职能的动作的总和。活动由目ard";
   canyu = 2435;
+  fxx = false
+  issc=false
+  someone:any='加拿大籍'
+  faso=false
   txsrc = 'assets/icon/hand/tx.png';
   imgs = [
     'assets/icon/hand/tx.png',
@@ -43,7 +47,26 @@ public jieshao = "活动是由共同目的联合起来并完成一定社会职�
 
   ngOnInit() {
   }
+  guanbifaso(){
+    if(this.faso==true){
+      this.faso=false
+    }
+  }
+  fasofun(){
+    if(this.faso==false){
+      this.faso=true
+    } else {
+      this.faso=false
+    }
+  }
+  toaitefirend(){
+    this.r.navigate(['aitefirend'], {
+      queryParams: {
+        state: 'hand'
+      }
+    });
 
+  }
   yuyuehans(){
   if(this.yuyue==false){
     this.yuyue=true;
@@ -55,7 +78,11 @@ public jieshao = "活动是由共同目的联合起来并完成一定社会职�
 this.r.navigate(['tabs/tab1'])
   }
   huan(){
-    this.r.navigate(['appoint'])
+    this.r.navigate(['appoint'], {
+      queryParams: {
+        state: 'hand'
+      }
+    });
   }
   details(){
     if(this.zhankai==0){
@@ -65,7 +92,17 @@ this.r.navigate(['tabs/tab1'])
     }
    
   }
+  isscfun(){
+    if(this.issc==false){
+      this.issc=true
+    } else{
+      this.issc=false
+    }
+  }
+  guanbifenx(){
+    this.fxx=false
+  }
   fx(){
-
+    this.fxx=true
   }
 }

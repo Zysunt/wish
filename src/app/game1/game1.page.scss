@@ -1,0 +1,286 @@
+.head span {
+    left: -5vw;
+}
+
+.bg {
+    background: url(../../assets/icon/last/kantu.jpg) no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 10% 5%;
+}
+
+.titlebox p {
+    color: #fff;
+    font-size: 2.8vw;
+    margin-bottom: 0;
+    margin-top: 3vw;
+}
+
+.btnbox {
+    position: absolute;
+    bottom: 10vw;
+    text-align: center;
+    width: 100%;
+}
+
+.daojishibox h2 {
+    margin: 0;
+    text-align: center;
+    margin-top: -1vw;
+}
+
+.daotibox {
+    margin: 15vw 4vw;
+}
+
+.daotibox p {
+    font-size: 3.5vw;
+}
+
+.daotibox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10vw;
+}
+
+.daotibox ul li {
+    font-size: 2.8vw;
+    padding: 4vw 0;
+    border: 1px solid #d6d5d57a;
+    text-align: center;
+    border-radius: 20vw;
+    margin: 5vw 0;
+    position: relative;
+}
+
+.daotibox ul li img {
+    height: 5vw;
+    position: absolute;
+    right: 10vw;
+}
+
+.selected {
+    background: #ff9100;
+    color: #fff;
+}
+
+.noselected {
+    background: #e5e5e5;
+}
+
+.titlebox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnbox button {
+    width: 41vw;
+    height: 10vw;
+    opacity: 0;
+}
+
+.guanbi {
+    height: 8.7vw;
+    width: 8.7vw;
+    margin: 10vw auto;
+    display: block;
+}
+
+.itesbox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1vw 5%;
+}
+
+.hx {
+    top: -3vw;
+    height: 1vw;
+    position: relative;
+}
+
+.ites img {
+    height: 12.4vw;
+    width: 10vw
+}
+
+.ites {
+    text-align: center;
+    margin: 4vw 0 0;
+}
+
+.ites p {
+    font-size: 3.5vw;
+    margin: 1vw;
+}
+
+.ites span {
+    font-size: 3.5vw;
+    color: #999
+}
+
+.tancka {
+    background: #fff;
+    border-radius: 4vw;
+    padding: 3vw;
+    width: 90%;
+    margin: 45% 5% 0;
+    padding-bottom: 10vw;
+}
+
+.btnno {
+    background: #fff;
+    font-size: 3.2vw;
+    color: #FF9302;
+    border: 1px solid #FF9302;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+}
+
+.yinyin2 {
+    height: 100%;
+    width: 100%;
+    background: #0a080863;
+    z-index: 79;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pzbg {
+    background: url('../../assets/icon/last/pingzheng.png') no-repeat;
+    background-size: 100%;
+    height: 83vw;
+    padding: 31vw 10vw 20vw;
+    width: 80%;
+    margin: 47% 10% 0;
+    text-align: center;
+}
+
+.pzbg h1 {
+    color: #ff9100;
+    margin: 0 0 4vw;
+    font-size: 9vw;
+}
+
+.shchan {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 4.5vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 4vw;
+    outline: none;
+    width: 80%;
+    margin: 4% 10%;
+}
+
+.pzbg p {
+    color: #999;
+    font-size: 4vw;
+    margin: 2vw 0 0;
+}
+
+.cache {
+    border-radius: 2vw;
+    padding-top: 5vw;
+    border: 1px solid #f0f0f0;
+    width: 70%;
+    position: fixed;
+    left: 15%;
+    top: 40%;
+    right: 15%;
+    background: #fff;
+    text-align: center;
+    z-index: 80;
+}
+
+.cache h5 {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+    margin-top: 2vw;
+}
+
+.caozuobtn {
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-around
+}
+
+.caozuobtn div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.caozuobtn div:first-child {
+    border-right: 1px solid #f0f0f0;
+}
+
+.caozuobtn label {
+    color: #4485ff;
+    font-size: 4vw;
+    padding: 3vw;
+    display: inline-block;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.successbox {
+    z-index: 100;
+    width: 70%;
+    margin: 50% 15% 5%;
+}
+
+.jixu {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 4.5vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 4vw;
+    width: 100%;
+    outline: none;
+    margin: 4vw 0;
+}
+
+.fanhui {
+    background: transparent;
+    color: #fff;
+    font-size: 4.5vw;
+    border: 1px solid #fff;
+    border-radius: 5vw;
+    padding: 4vw;
+    width: 100%;
+    outline: none;
+}
+
+.tablebox {
+    width: 80%;
+    min-height: 40vw;
+    position: absolute;
+    bottom: 22vw;
+    margin-left: 10%;
+}
+
+.tablebox table {
+    width: 100%;
+    min-height: 40vw;
+}
+
+.tablebox table span {
+    background: #fff;
+    width: 10vw;
+    height: 10vw;
+    line-height: 10vw;
+    display: inherit;
+    border-radius: 2vw;
+    box-shadow: 0px 1px 3px 0px #92909054;
+    font-size: 4.8vw;
+}

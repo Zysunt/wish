@@ -1,0 +1,65 @@
+.head span {
+    left: -5vw;
+}
+
+.caozuobox {
+    position: fixed;
+    bottom: 1vw;
+    width: 100%;
+    background: transparent;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.caozuobox label {
+    font-size: 4vw;
+    padding: 4vw;
+    background: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.caozuobox label span {
+    color: #f74660
+}
+
+.body {
+    width: 100%;
+    min-height: 100%;
+    background: #000
+}
+
+.imgboxs {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox {
+    padding-top: 30%
+}
+
+.imgbox img {
+    height: 100vw;
+}
+
+.sanbox {
+    padding: 5%
+}
+
+.san {
+    height: 1.1vw;
+    float: right;
+}

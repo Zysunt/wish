@@ -1,0 +1,155 @@
+<ion-content>
+    <div>
+        <div *ngIf="show==true" class="yinyin">
+            <div class="bgi">
+                <img class="bgimg" src="assets/icon/mine/bgmine.png" alt="">
+
+                <h3>解答卡</h3>
+                <p>某一个活动中的某一个关卡，在使用此卡后，得到一个关于正确答案的提示，请在使用提示卡之后做出正确答案。</p>
+                <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+
+            </div>
+        </div>
+        <div *ngIf="showtong==true" class="yinyin">
+            <div class="bgi">
+                <img class="bgimg" src="assets/icon/mine/bgmine.png" alt="">
+
+                <h3>通关卡</h3>
+                <p>某一个活动中的某一个关卡，在使用此卡后，得到一个关于正确答案的提示，请在使用提示卡之后做出正确答案。</p>
+                <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+
+            </div>
+        </div>
+        <div *ngIf="showtishi==true" class="yinyin">
+            <div class="bgi">
+                <img class="bgimg" src="assets/icon/mine/bgmine.png" alt="">
+
+                <h3>提示卡</h3>
+                <p>某一个活动中的某一个关卡，在使用此卡后，得到一个关于正确答案的提示，请在使用提示卡之后做出正确答案。</p>
+                <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+
+            </div>
+        </div>
+        <div *ngIf="showtihuan==true" class="yinyin">
+            <div class="bgi">
+                <img class="bgimg" src="assets/icon/mine/bgmine.png" alt="">
+
+                <h3>替换卡</h3>
+                <p>某一个活动中的某一个关卡，在使用此卡后，得到一个关于正确答案的提示，请在使用提示卡之后做出正确答案。</p>
+                <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="">
+            <div style="display: flex;">
+                <div class="head headlocation" (click)="back()">
+                    <div class="back">
+                        <img src="assets/icon/mine/bac.png" alt="">
+                    </div>
+                    <span>我的道具</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="touxbox">
+
+                <div class="abox">
+                    <div>
+                        <div class="a">
+                            <img src="assets/icon/mine/viptx3.png" class="toux" alt="">
+                            <img src="assets/icon/mine/viptx2.png" *ngIf="isVip==true" class="isvip" alt="">
+
+                        </div>
+                        <div class="b ">
+                            <div class="huiyuanbox">
+                                <h4>{{myname}}</h4>
+                                <div *ngIf="isVip==true">
+                                    <p class="huip">
+                                        <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                        <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>{{miaosu}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bbox">
+                    <div class="jinbox">
+                        <div (click)="tomon()">
+                            <img class="jinbi" src="assets/icon/mine/jinbi1.png" alt="">
+                            <span>9877</span>
+                        </div>
+                        <div (click)="tomon()">
+                            <img class="jinbi" src="assets/icon/mine/jinbi.png" alt="">
+                            <span>9877</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cent">
+        <ion-segment mode="md" [(ngModel)]="xiaoxi" color="warning">
+            <ion-segment-button value="sixin" (click)="a()">
+                <ion-label>全部</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="sixin==true" alt="">
+            </ion-segment-button>
+            <ion-segment-button (click)="b()">
+                <ion-label>通关卡</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="tongguan==true" alt="">
+            </ion-segment-button>
+            <ion-segment-button (click)="c()">
+                <ion-label>提示卡</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="tishi==true" alt="">
+            </ion-segment-button>
+            <ion-segment-button (click)="d()">
+                <ion-label>答题卡</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="dati==true" alt="">
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+    <div>
+        <div class="itesbox">
+            <div class="ites" (click)="showjieda()">
+                <img src="assets/icon/mine/3.png" alt="">
+                <p>解答卡</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+            <div class="ites" (click)="tishika()">
+                <img src="assets/icon/mine/4.png" alt="">
+                <p>提示卡x6</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+            <div class="ites" (click)="tihuanka()">
+                <img src="assets/icon/mine/5.png" alt="">
+                <p>替换卡</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+        </div>
+        <div class="itesbox">
+            <div class="ites" (click)="tongguanka()">
+                <img src="assets/icon/mine/0.png" alt="">
+                <p>通关卡</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+            <div class="ites">
+                <img src="assets/icon/mine/1.png" alt="">
+                <p>提示卡</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+            <div class="ites">
+                <img src="assets/icon/mine/2.png" alt="">
+                <p>替换卡x2</p>
+                <span>{{startdate}}至{{enddate}}</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>活动相册</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cent">
+        <div class="itemsbox" (click)="toavataralbum()">
+            <img src="assets/icon/mine/txzj.png" alt="">
+            <div>
+                <h4>头像专辑</h4>
+                <p>{{txcount}}张</p>
+            </div>
+        </div>
+        <div class="itemsbox" (click)="tocheckpoint()">
+            <img src="assets/icon/mine/gk.png" alt="">
+            <div>
+                <h4>关卡凭证</h4>
+                <p>{{guankacount}}张</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="cent">
+        <div class="itemsbox" (click)="towishalbum()">
+            <img src="assets/icon/home/n2.png" alt="">
+            <div>
+                <h4>心愿相册</h4>
+                <p>{{wishcount}}张</p>
+            </div>
+        </div>
+    </div>
+</ion-content>

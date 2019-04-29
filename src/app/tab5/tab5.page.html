@@ -1,13 +1,35 @@
 <ion-content>
-    <div class="body">
+    <div>
+        <div *ngIf="qiandao==true" class="yinyin">
+            <div class="yinyinbg">
+                <div>
+                    <h3>签到成功</h3>
+                    <label for="">已连续签到{{days}}天</label>
+                </div>
+                <div>
+                    <p>恭喜您，今日获得{{jifen}}积分</p>
+                    <span>签到越多，积分越多哦～</span>
+                    <button class="btn" (click)="guanbi()">确定</button>
+                </div>
 
+
+            </div>
+        </div>
+    </div>
+
+    <div class="body">
         <div class="header">
             <div class="tu">
-                <p><img *ngIf="login==true" src="assets/icon/mine/jiahaoyou.png" alt=""></p>
-                <p>
-                    <img *ngIf="login==true" src="assets/icon/mine/qiandao.png" style="margin-right: 4vw;" alt="">
-                    <img src="assets/icon/mine/shezhi.png" (click)="set()" alt="">
-                </p>
+                <p (click)="jiahaoU()"><img *ngIf="login==true" src="assets/icon/mine/jiahaoyou.png" alt=""></p>
+                <div style="display: flex;">
+                    <div (click)="qiaodaofun()">
+                        <img *ngIf="login==true" src="assets/icon/mine/qiandao.png" style="margin-right: 4vw;" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/icon/mine/shezhi.png" (click)="set()" alt="">
+                    </div>
+
+                </div>
             </div>
             <!-- 未登录 -->
             <div *ngIf="login==false">
@@ -30,7 +52,7 @@
                     <div class="abox">
                         <div>
                             <div class="a">
-                                <img src="assets/icon/mine/viptx3.png" class="toux" alt="">
+                                <img (click)="tomyhome()" src="assets/icon/mine/viptx3.png" class="toux" alt="">
                                 <img src="assets/icon/mine/viptx2.png" *ngIf="isVip==true" class="isvip" alt="">
 
                             </div>
@@ -45,11 +67,6 @@
                                     </div>
                                 </div>
 
-
-
-
-
-
                                 <p>{{miaosu}}</p>
                             </div>
                         </div>
@@ -57,11 +74,11 @@
 
                     <div class="bbox">
                         <div class="jinbox">
-                            <div>
+                            <div (click)="tomon()">
                                 <img class="jinbi" src="assets/icon/mine/jinbi1.png" alt="">
                                 <span>9877</span>
                             </div>
-                            <div>
+                            <div (click)="tomon()">
                                 <img class="jinbi" src="assets/icon/mine/jinbi.png" alt="">
                                 <span>9877</span>
                             </div>
@@ -75,28 +92,28 @@
 
             <div class="mybox">
 
-                <div>
+                <div (click)="tofollow()">
                     <h4>890</h4>
                     <span>关注</span>
                 </div>
                 <div>
                     <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
                 </div>
-                <div>
+                <div (click)="tofans()">
                     <h4>890</h4>
                     <span>粉丝</span>
                 </div>
                 <div>
                     <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
                 </div>
-                <div>
+                <div (click)="tocollection()">
                     <h4>8920</h4>
                     <span>收藏</span>
                 </div>
                 <div>
                     <img class="shux" src="assets/icon/mine/shuxian.png" alt="">
                 </div>
-                <div>
+                <div (click)="todianzan()">
                     <h4>22890</h4>
                     <span>点赞</span>
                 </div>
@@ -112,33 +129,33 @@
             </div>
             <div class="daojubox">
                 <ul>
-                    <li>
+                    <li (click)="tomyProp()">
                         <img style="margin-right: 4vw;" src="assets/icon/mine/daoju.png" alt="">
                         <p class="left"><span> 我的道具</span></p>
                     </li>
-                    <li>
+                    <li (click)="tomyactivities()">
                         <img src="assets/icon/mine/houdong.png" alt="">
                         <p>我的活动</p>
                     </li>
-                    <li>
+                    <li (click)="topropmall()">
                         <img src="assets/icon/mine/cs.png" alt="">
                         <p>道具商城</p>
                     </li>
-                    <li>
+                    <li (click)="tocustomerservice()">
                         <img style="margin-left: 4vw;" src="assets/icon/mine/kefu.png" alt="">
                         <p class="right"><span> 服务中心</span></p>
                     </li>
                 </ul>
                 <ul>
-                    <li>
+                    <li (click)="toviplevel()">
                         <img style="margin-right: 4vw;" src="assets/icon/mine/vip.png" alt="">
                         <p class="left"><span> 会员等级</span></p>
                     </li>
-                    <li>
+                    <li (click)="torecharge()">
                         <img src="assets/icon/mine/chongzhi.png" alt="">
                         <p>充值中心</p>
                     </li>
-                    <li>
+                    <li (click)="toactivityalbum()">
                         <img src="assets/icon/mine/xc.png" alt="">
                         <p>活动相册</p>
                     </li>

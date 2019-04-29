@@ -1,0 +1,106 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>猜字谜</span>
+        </div>
+        <div>
+            <div style="background: #d0cfcf99;" *ngIf="daoju==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="yinyin2" *ngIf="End==true">
+        <div class="pzbg">
+            <h1>答对{{duicount}}题</h1>
+            <p>恭喜您通过关卡</p>
+            <p>下一关继续加油哦</p>
+        </div>
+        <div *ngIf="End==true">
+            <button class="shchan" (click)="showSuccess()">上传凭证</button>
+
+        </div>
+    </div>
+    <div class="yinyin" *ngIf="daoju==true">
+
+        <div class="yinyin2" *ngIf="isused==true">
+            <div class="cache">
+                <h5>确定使用道具吗？</h5>
+                <div class="caozuobtn">
+                    <div>
+                        <label (click)="guanbiuse()" for="">取消</label>
+                    </div>
+                    <div>
+                        <label (click)="guanbiuse()" for="">确定</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tancka">
+            <div class="itesbox">
+                <div class="ites">
+                    <img src="assets/icon/mine/3.png" alt="">
+                    <p>解答卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/4.png" alt="">
+                    <p>提示卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/5.png" alt="">
+                    <p>替换卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+            </div>
+            <div class="itesbox">
+                <div class="ites">
+                    <img src="assets/icon/mine/0.png" alt="">
+                    <p>通关卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/1.png" alt="">
+                    <p>提示卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+                <div class="ites">
+                    <img src="assets/icon/mine/2.png" alt="">
+                    <p>替换卡</p>
+                    <button (click)="used()" [ngClass]="{'btnno': true ,'btn':false}">使用</button>
+                </div>
+            </div>
+        </div>
+        <img class="guanbi" (click)="guanbi()" src="assets/icon/mine/guanbi.png" alt="">
+    </div>
+    <div class="bg">
+        <div class="titlebox">
+            <p>第1/20题</p>
+
+        </div>
+        <div class="daojishibox">
+            <h2>
+                {{daojishi}}
+            </h2>
+        </div>
+        <div class="tablebox">
+            <table>
+                <tr *ngFor="let item of Answer">
+                    <td><span>{{item.o1}}</span></td>
+                    <td><span>{{item.o2}}</span></td>
+                    <td><span>{{item.o3}}</span></td>
+                    <td><span>{{item.o4}}</span></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="btnbox">
+            <button (click)="showdaoju()">使用</button>
+        </div>
+    </div>
+</ion-content>

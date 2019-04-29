@@ -1,3 +1,312 @@
 <ion-content>
 
+    <div (click)="totab1()">
+        <div *ngIf="fabu==false" class="yinyin"></div>
+    </div>
+    <div class="tanchaungbox" *ngIf="fabu==false">
+        <img src="assets/icon/home/tanc1.png" (click)="towishcontent()" alt="">
+        <img src="assets/icon/home/tanc2.png" (click)="toinvitation()" alt="">
+    </div>
+
+    <div class="bg">
+        <div class="headtab1">
+            <div class="locate" (click)="dingwei()">
+                <img src="assets/icon/home/location.png" alt="">
+                <span>定位</span>
+            </div>
+            <div class="select" (click)="toselect()">
+                <input type="text" placeholder="在社区内搜索内容，用户">
+                <img src="assets/icon/home/select.png" alt="">
+                <!-- <ion-searchbar type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated placeholder="搜索内容，用户"></ion-searchbar> -->
+
+            </div>
+
+            <div class="scanbox">
+                <img src="assets/icon/home/scan.png" class="scan" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tuijian">
+        <h1>''活动推荐''</h1>
+        <div (click)="tohand()">
+            <div class="tui1">
+                <img src="assets/icon/home/i1.png" alt="">
+            </div>
+            <div class="tui2">
+                <p>{{name}}</p>
+                <p><span>{{miaosu}}</span></p>
+                <button>抹一把</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabselect ">
+        <div class="cent">
+            <ion-segment [(ngModel)]="xinyuan">
+                <ion-segment-button (ionSelect)="wish_wall()" value="wish-wall">
+                    <ion-label>心愿墙</ion-label>
+                </ion-segment-button>
+                <ion-segment-button (ionSelect)="famouse_man()" value="famous-people">
+                    <ion-label>达人榜</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="talent-show" (ionSelect)="talent_show()">
+                    <ion-label>达人秀</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="meet-square" (ionSelect)="meet_square()">
+                    <ion-label>邀约广场</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+
+        <div class="wishwall" *ngIf="wishwall==true">
+
+            <div class="wishitem">
+                <img src="assets/icon/home/n.png" alt="">
+                <p>{{wishmiaosu}}</p>
+                <div class="peopleboxitem">
+                    <div class="apeol">
+                        <!-- <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt=""> -->
+                        <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                        <img src="assets/icon/home/tx.png" alt="">
+                    </div>
+                    <div>
+                        <label for="">{{manname}}</label>
+                        <span>{{mancount}}人关注</span>
+                    </div>
+                </div>
+                <div class="caozuo">
+                    <div>
+                        <img src="assets/icon/home/pinglun.png" alt="">
+                        <span>{{pinglun}}</span>
+                    </div>
+                    <div (click)="dianzanfun()">
+                        <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                        <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                        <span>89897</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wishitem le">
+                <img src="assets/icon/home/o7.png" alt="">
+                <p>asndshfbdhfba都是减肥的办法就完事bdhsdbhsdb</p>
+                <div class="peopleboxitem">
+                    <div class="apeol">
+                        <!-- <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt=""> -->
+                        <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                        <img src="assets/icon/home/tx.png" alt="">
+                    </div>
+                    <div>
+                        <label for="">{{manname}}</label>
+                        <span>{{mancount}}人关注</span>
+                    </div>
+                </div>
+                <div class="caozuo">
+                    <div>
+                        <img src="assets/icon/home/pinglun.png" alt="">
+                        <span>889</span>
+                    </div>
+                    <div (click)="dianzanfun()">
+                        <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                        <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                        <span>89897</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="famouspeople" *ngIf="famouseman==true">
+            <div class="onebox">
+                <div class="oa">
+                    <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                    <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                </div>
+                <div class="ob">
+                    <div class="clear">
+                        <div class="huiyuanbox">
+                            <label class="name">{{peoplename}}</label>
+                            <div *ngIf="IsVip==true" style="display: inline-block;">
+                                <p class="huip">
+                                    <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                    <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lastbox">
+                            <span class="time">{{hour}}</span>
+                        </div>
+
+                    </div>
+                    <div style="display:flex">
+                        <div class="sl">
+                            <p class="miaosu">{{qianming}}</p>
+                        </div>
+                        <div class="guanz">
+                            <div (click)="Isguanzhu()">
+                                <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                    <span>关注</span>
+                                </button>
+                                <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                   已关注
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="talentshow" *ngIf="talentshow==true">
+            <div class="darenxiuitem">
+                <div class="darenxiubox">
+                    <div class="towbox">
+                        <div class="oa">
+                            <img class="toux" src="assets/icon/msg/i2.png" alt="">
+                            <img class="vip" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                        </div>
+                        <div class="ob">
+                            <div class="clear">
+                                <div class="huiyuanbox">
+                                    <label class="name">{{darenxiuname}}</label>
+                                    <div *ngIf="IsVip==true" style="display: inline-block;">
+                                        <p class="huip">
+                                            <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                            <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                        </p>
+                                    </div>
+                                    <p class="fabutime">{{hour}}</p>
+
+                                </div>
+
+                                <div class="lastbox">
+                                    <div class="guanbox">
+                                        <div (click)="Isguanzhu()">
+                                            <button class="weiguanzhu" *ngIf="guanzhu==false">
+                                                            <span>关注</span>
+                                                        </button>
+                                            <button class="yiguanzhu" *ngIf="guanzhu==true">
+                                                           已关注
+                                                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fabuneir cent">
+                        <div (click)="huoxiangqing()">
+                            <p>{{fabumiaosu}}</p>
+                            <div class="as">
+                                <div>
+                                    <img class="" src="assets/icon/home/o1.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="" src="assets/icon/home/o2.png" alt="">
+                                </div>
+                                <div>
+                                    <img class="" src="assets/icon/home/o1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="huod">
+                            <div>
+                                <img class="huodongimg" src="assets/icon/home/o3.png" alt="">
+                            </div>
+                            <div class="huodongnr">
+                                <label for="">{{huodongbiaoti}}</label>
+                                <p>{{huodongmiaosu}}</p>
+                                <div class="jiezhibox">
+                                    <div>
+                                        <span class="dizhitime">{{stoptime}}截止</span>
+                                    </div>
+
+                                    <div>
+                                        <img class="wz" src="assets/icon/home/wz.png" alt="">
+                                        <span class="dizhitime">{{dizhi}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="caozuoBox">
+                                <div>
+                                    <img src="assets/icon/home/zhuanfa.png" alt="">
+                                    <span>89897</span>
+                                </div>
+                                <div>
+                                    <img src="assets/icon/home/pinun.png" alt="">
+                                    <span>89897</span>
+                                </div>
+
+                                <div (click)="dianzanfun()">
+                                    <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                                    <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                                    <span>89897</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meetsquare" *ngIf="meetsquare==true">
+
+            <div class="acitemBox">
+                <img src="assets/icon/home/q2.png" alt="">
+                <div class="xiangBox">
+                    <h4>斯顿南京阿森纳多</h4>
+                    <div>
+                        <div class="xiangitem">
+                            <p class="xbox">
+                                <span>你是不的话粉色的发布会</span>
+                            </p>
+                            <p class="xia">查看详情
+                                <img src="assets/icon/activity/youla1.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="caozuoBoxyy">
+                            <div>
+                                <div class="oneboxyy">
+                                    <div class="oayy">
+                                        <img class="touxyy tximgs" src="assets/icon/msg/i2.png" alt="">
+                                        <img class="vipyy" *ngIf="IsVip ==true" src="assets/icon/msg/toux.png" alt="">
+                                    </div>
+                                    <div class="obyy" (click)="tohuodong()">
+                                        <div class="clearyy">
+                                            <div class="huiyuanboxyy">
+                                                <h4 class="nameyy">不好的分别完成</h4>
+                                                <div *ngIf="IsVip==true">
+                                                    <p class="huipyy">
+                                                        <img class="hui1yy" src="assets/icon/msg/huiyuan.png" alt="">
+                                                        <img class="hui2yy" src="assets/icon/msg/huiyuan0.png" alt="">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="czlast">
+                                <div (click)="toxiaoxi()">
+                                    <img src="assets/icon/activity/pinlun.png" alt="">
+                                    <span>89897</span>
+                                </div>
+                                <div (click)="tomine()">
+                                    <img src="assets/icon/activity/renqun.png" alt="">
+                                    <span>89897</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </ion-content>

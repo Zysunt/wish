@@ -1,0 +1,121 @@
+.head span {
+    left: -5vw
+}
+
+.haoyout {
+    border-bottom: 1px solid #dcdcdc8f;
+    line-height: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.haoyout h4 {
+    font-size: 4.5vw;
+    margin: 0;
+    line-height: 20vw;
+    margin-left: 3vw
+}
+
+.haoyout label {
+    border: 1px solid #afaaaa;
+    color: #797878;
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    padding: 1.3vw 7vw;
+}
+
+.count input[type=checkbox] {
+    opacity: 0 !important;
+    -webkit-appearance: none;
+    height: 5.6vw;
+    width: 5.6vw;
+    position: absolute;
+    left: 2vw;
+    z-index: 100;
+}
+
+.count input[type=checkbox]+label {
+    display: block;
+    width: 5.6vw;
+    height: 5.6vw;
+    overflow: hidden;
+    background: url("../../assets/icon/tab3/hui.png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+    float: left;
+}
+
+.count input[type=checkbox]:checked+label {
+    background: url("../../assets/icon/mine/1(1).png") no-repeat;
+    background-size: 5.6vw 5.6vw;
+}
+
+.haoyout img {
+    height: 5.3vw;
+    width: 4.8vw;
+    position: relative;
+    top: 7vw;
+}
+
+.haoyout div:first-child {
+    display: flex
+}
+
+.txitem {
+    position: relative;
+    width: 30%;
+    margin-top: 4vw;
+}
+
+.count {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.txboxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aim {
+    height: 22vw;
+    width: 22vw;
+    border-radius: 100%;
+}
+
+.btnbox {
+    margin: 5vw 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.btnas {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 10vw;
+    padding: 4vw;
+    outline: none;
+    width: 45%;
+}
+
+.btnbs {
+    background: #fff;
+    font-size: 3.2vw;
+    color: #FF9302;
+    border: 1px solid #FF9302;
+    border-radius: 10vw;
+    padding: 4vw;
+    outline: none;
+    width: 45%;
+}
+
+.txitem h4 {
+    font-size: 3.8vw;
+    margin: 2vw 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

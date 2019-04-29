@@ -1,0 +1,172 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>我的收藏</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+
+        <div class="xzb">
+            <ion-segment [(ngModel)]="xinyuan">
+                <ion-segment-button (ionSelect)="wish_wall()" value="wish-wall">
+                    <ion-label>心愿</ion-label>
+                    <img class="fx" *ngIf="wishwall==true" src="assets/icon/msg/XXX.png" alt="">
+                </ion-segment-button>
+
+                <ion-segment-button value="talent-show" (ionSelect)="talent_show()">
+                    <ion-label>活动</ion-label>
+                    <img class="fx" *ngIf="talentshow==true" src="assets/icon/msg/XXX.png" alt="">
+                </ion-segment-button>
+
+            </ion-segment>
+        </div>
+
+        <div>
+            <div class="wishwall" *ngIf="wishwall==true">
+
+                <div class="wishitem">
+                    <img (click)="toimgwish()" src="assets/icon/home/n.png" alt="">
+                    <p>{{wishmiaosu}}</p>
+                    <div class="peopleboxitem">
+                        <div class="apeol">
+                            <!-- <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt=""> -->
+                            <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                            <img src="assets/icon/home/tx.png" alt="">
+                        </div>
+                        <div>
+                            <label for="">{{manname}}</label>
+                            <span>{{mancount}}人关注</span>
+                        </div>
+                    </div>
+                    <div class="caozuo">
+                        <div>
+                            <img src="assets/icon/home/pinglun.png" alt="">
+                            <span>{{pinglun}}</span>
+                        </div>
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>{{aixin}}</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="wishitem le">
+                    <img src="assets/icon/home/o7.png" (click)="toimgwish()" alt="">
+                    <p>asndshfbdhfba都是减肥的办法就完事bdhsdbhsdb</p>
+                    <div class="peopleboxitem">
+                        <div class="apeol">
+                            <!-- <img class="huangx" *ngIf="IsVip==true" src="assets/icon/home/vip.png" alt=""> -->
+                            <img class="huangx" *ngIf="ishuangguan==true" src="assets/icon/home/hg.png" alt="">
+                            <img src="assets/icon/home/tx.png" alt="">
+                        </div>
+                        <div>
+                            <label for="">{{manname}}</label>
+                            <span>{{mancount}}人关注</span>
+                        </div>
+                    </div>
+                    <div class="caozuo">
+                        <div>
+                            <img (click)="expression" src="assets/icon/home/pinglun.png" alt="">
+                            <span>889</span>
+                        </div>
+                        <div (click)="dianzanfun()">
+                            <img class="aixin" *ngIf="isdianzan==true" src="assets/icon/home/heart.png" alt="">
+                            <img class="aixin" *ngIf="isdianzan==false" src="assets/icon/home/aixin.png" alt="">
+                            <span>{{aixin}}</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="talentshow" *ngIf="talentshow==true">
+
+                <div class="yikaishibox">
+
+
+                    <div class="acitemBox" style="margin-top: -1vw;" (click)="yikaishifun()">
+
+                        <div style="position: relative">
+                            <img src="assets/icon/activity/i5.png" alt="">
+                            <span class="start">{{start}}</span>
+                        </div>
+                        <div class="xiangBox">
+                            <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                            <div>
+                                <div class="xiangitem">
+                                    <p class="xbox">
+                                        <span>你说的就是不的话粉色的发布会的吧</span>
+                                    </p>
+                                    <p class="xia">查看详情
+                                        <img src="assets/icon/activity/youla1.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="caozuoBox">
+                                    <div>
+                                        <img src="assets/icon/activity/pinlun.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icon/activity/chakan.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icon/activity/renqun.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acitemBox" (click)="weikaishifun()">
+                        <div style="position: relative">
+                            <img src="assets/icon/home/n2.png" alt="">
+                            <span class="start">{{isstart}}</span>
+                        </div>
+                        <div class="xiangBox">
+                            <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                            <div>
+                                <div class="xiangitem">
+                                    <p class="xbox">
+                                        <span>你说的就是不的话粉色的发布会的吧</span>
+                                    </p>
+                                    <p class="xia">查看详情
+                                        <img src="assets/icon/activity/youla1.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="caozuoBox">
+                                    <div>
+                                        <img src="assets/icon/activity/pinlun.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icon/activity/chakan.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/icon/activity/renqun.png" alt="">
+                                        <span>89897</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</ion-content>

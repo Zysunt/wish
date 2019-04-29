@@ -4,47 +4,63 @@
             <div class="back" (click)="back()">
                 <img src="assets/icon/home/back.png" alt="">
             </div>
-            <span>选择城市</span>
+            <span>设置</span>
         </div>
-
+        <div (click)="guanbic()">
+            <div style="background: #00000012;" *ngIf="showcache==true" class="yinyin"></div>
+        </div>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-    <div class="itembox">
+    <div (click)="guanbic()">
+        <div *ngIf="showcache==true" class="yinyin"></div>
+    </div>
+    <div class="cache" *ngIf="showcache==true">
+        <h5>是否清楚缓存</h5>
+        <div class="caozuobtn">
+            <div>
+                <label (click)="guanbic()" for="">取消</label>
+            </div>
+            <div>
+                <label (click)="guanbic()" for="">确定</label>
+            </div>
+        </div>
+    </div>
+    <div class="itembox" *ngIf="login=='true'">
         <div>
             <img src="assets/icon/set/u1.png" alt="">
         </div>
-        <div>
+        <div (click)="topersonalinfo()">
+            <!-- <div [navpush]="'PersonalinfoPage'"> -->
             <p>个人信息<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" *ngIf="login=='true'">
         <div>
             <img class="u2" src="assets/icon/set/u2.png" alt="">
         </div>
-        <div>
+        <div (click)="torealname()">
             <p>实名认证<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" *ngIf="login=='true'">
         <div>
             <img src="assets/icon/set/u3.png" alt="">
         </div>
-        <div>
+        <div (click)="topersonalcard()">
             <p>二维码名片<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" *ngIf="login=='true'">
         <div>
             <img src="assets/icon/set/u4.png" alt="">
         </div>
-        <div>
+        <div (click)="toaddress()">
             <p>常用地址<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" (click)="tocheckupdate()">
         <div>
             <img src="assets/icon/set/u5.png" alt="">
         </div>
@@ -52,15 +68,15 @@
             <p>检查更新<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" (click)="cache()">
         <div>
             <img class="u6" src="assets/icon/set/u6.png" alt="">
         </div>
         <div>
-            <p>清除缓存<span>（90909090M）</span><img src="assets/icon/set/you.png" alt=""></p>
+            <p>清除缓存<span>（{{chache}}M）</span><img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" (click)="toFeedback()">
         <div>
             <img class="u7" src="assets/icon/set/u7.png" alt="">
         </div>
@@ -68,7 +84,7 @@
             <p> 意见反馈<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" (click)="toaboutus()">
         <div>
             <img src="assets/icon/set/u8.png" alt="">
         </div>
@@ -76,13 +92,16 @@
             <p>关于我们<img src="assets/icon/set/you.png" alt=""></p>
         </div>
     </div>
-    <div class="itembox">
+    <div class="itembox" (click)="tohelp()">
         <div>
             <img src="assets/icon/set/u9.png" alt="">
         </div>
         <div>
             <p>帮助中心<img src="assets/icon/set/you.png" alt=""></p>
         </div>
+    </div>
+    <div class="cent">
+        <button (click)="tomine()" class="btn">退出登录</button>
     </div>
 
 </ion-content>

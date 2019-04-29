@@ -1,0 +1,70 @@
+.head span {
+    left: -5vw
+}
+
+.first {
+    display: flex;
+    padding: 2vw 5%;
+    background-color: #fff4e5;
+    margin-bottom: 4vw;
+}
+
+.first p {
+    color: #ffb163;
+    font-size: 3.7vw;
+    margin: 0;
+    margin-left: 2vw;
+}
+
+.first img {
+    height: 5vw
+}
+
+.btn {
+    line-height: 14vw;
+    padding: 0;
+    width: 90%;
+    margin: 33vw 5% 0vw;
+}
+
+.cent {
+    margin: 0 5% 4vw;
+}
+
+.imgbox {
+    width: 30%;
+}
+
+.imgbox img {
+    height: 15vw;
+    width: 21.4vw;
+}
+
+.msgbox {
+    width: 70%;
+}
+
+.msgbox div {
+    display: flex;
+    border-bottom: 1px solid #dcdcdc52;
+    padding: 1.5vw 0;
+}
+
+.msgbox div label {
+    font-size: 3.5vw;
+    color: #999;
+    width: 18vw;
+}
+
+.msgbox div p {
+    font-size: 3.5vw;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.itembox {
+    display: flex;
+    padding: 6vw 5vw;
+}

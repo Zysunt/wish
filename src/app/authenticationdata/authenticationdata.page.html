@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>实名认证</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="">
+        <div class="first">
+            <img src="assets/icon/set/gantan.png" alt="">
+            <p>仅用于全国公民身份查询中心核实身份。拍摄时请确保身份证边框完整，字迹清晰，亮度均衡。</p>
+        </div>
+        <div class="itembox">
+            <div class="imgbox">
+                <img src="assets/icon/set/sfz.png" alt="">
+                <!-- <img src="assets/icon/set/fsz.png" alt=""> -->
+            </div>
+            <div class="msgbox">
+                <div>
+                    <label for="">姓名</label>
+                    <p>{{name}}</p>
+                </div>
+                <div>
+                    <label for="">身份证好</label>
+                    <p>{{shenfz}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="itembox">
+            <div class="imgbox">
+                <!-- <img src="assets/icon/set/sfz.png" alt=""> -->
+                <img src="assets/icon/set/fsz.png" alt="">
+            </div>
+            <div class="msgbox">
+                <div>
+                    <label for="">姓名</label>
+                    <p>{{name}}</p>
+                </div>
+                <div>
+                    <label for="">身份证好</label>
+                    <p>{{shenfz}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="cent">
+            <button class="btn" (click)="totab5()">确定</button>
+
+        </div>
+
+    </div>
+</ion-content>

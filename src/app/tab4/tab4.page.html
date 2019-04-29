@@ -2,7 +2,7 @@
     <ion-toolbar>
         <div class="head">
             <span>消息中心</span>
-            <img src="assets/icon/msg/sc.png" class="shanchu" alt="">
+            <img (click)="showshanchu()" src="assets/icon/msg/sc.png" class="shanchu" alt="">
         </div>
 
     </ion-toolbar>
@@ -10,28 +10,248 @@
 
 <ion-content>
     <div class="cent">
-        <ion-segment [(ngModel)]="xiaoxi" color="warning">
-            <ion-segment-button value="sixin" (ionSelect)="segmentButtonClicked($event)">
+        <ion-segment mode="md" [(ngModel)]="xiaoxi" color="warning">
+            <ion-segment-button value="sixin" (ionSelect)="sixinfun()">
                 <ion-label>私信</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="sixin==true" alt="">
             </ion-segment-button>
-            <ion-segment-button value="pinlun" (ionSelect)="segmentButtonClicked($event)">
+            <ion-segment-button value="pinlun" (ionSelect)="pinglunfun()">
                 <ion-label>评论</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="pinglun==true" alt="">
             </ion-segment-button>
-            <ion-segment-button value="aite" (ionSelect)="segmentButtonClicked($event)">
+            <ion-segment-button value="aite" (ionSelect)="aitemefun()">
                 <ion-label>@我</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="aiteme==true" alt="">
             </ion-segment-button>
-            <ion-segment-button value="tongzhi" (ionSelect)="segmentButtonClicked($event)">
+            <ion-segment-button value="tongzhi" (ionSelect)="tongzhifun()">
                 <ion-label>通知</ion-label>
+                <img class="hx" src="assets/icon/msg/XXX.png" *ngIf="tongzhi==true" alt="">
             </ion-segment-button>
         </ion-segment>
     </div>
 
+    <div class="sixinbox" *ngIf="sixin==true">
+        <ion-list>
+            <ion-list>
+                <!-- Multi-line sliding item with icon options on both sides -->
+                <ion-item-sliding id="item1">
+                    <ion-item (click)="tosixininter()">
+                        <ion-label>
+                            <div class="msgitem ">
+                                <div>
+                                    <i>10</i>
+                                    <img src="assets/icon/msg/i1.png" alt="">
+                                </div>
+                                <div style="width: 76%;">
+                                    <div class="miaosubox">
+                                        <div class="huiyuanboxsx">
+                                            <label class="namesx">{{manname}}</label>
+
+                                            <div style="display: inline-block;width: 50%;margin: 0;">
+                                                <p class="huipsx">
+                                                    <img alt="" class="hui1sx" src="assets/icon/msg/huiyuan.png">
+                                                    <img alt="" class="hui2sx" src="assets/icon/msg/huiyuan0.png">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p>{{date}}</p>
+                                    </div>
+                                    <p>{{msg}}</p>
+                                </div>
+                            </div>
+                        </ion-label>
+                        <!-- <ion-note slot="end">
+                            10:45 AM
+                        </ion-note> -->
+                    </ion-item>
+
+                    <ion-item-options side="start">
+                        <ion-item-option>
+                            <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+
+                    <ion-item-options side="end">
+                        <ion-item-option color="danger">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-item-option>
+                        <!-- <ion-item-option>
+                            <ion-icon slot="icon-only" name="star"></ion-icon>
+                        </ion-item-option> -->
+                    </ion-item-options>
+                </ion-item-sliding>
+                <ion-item-sliding id="item2">
+                    <ion-item (click)="tosixininter()">
+                        <ion-label>
+                            <div class="msgitem">
+                                <div>
+                                    <i>120</i>
+                                    <img src="assets/icon/msg/i1.png" alt="">
+                                </div>
+                                <div style="width: 76%;">
+                                    <div class="miaosubox">
+                                        <div class="huiyuanboxsx">
+                                            <label class="namesx">{{manname}}</label>
+
+                                            <div style="display: inline-block;width: 50%;margin: 0;">
+                                                <p class="huipsx">
+                                                    <img alt="" class="hui1sx" src="assets/icon/msg/huiyuan.png">
+                                                    <img alt="" class="hui2sx" src="assets/icon/msg/huiyuan0.png">
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p>{{date}}</p>
+                                    </div>
+                                    <p>{{msg}}</p>
+                                </div>
+                            </div>
+                        </ion-label>
+                        <!-- <ion-note slot="end">
+                                10:45 AM
+                            </ion-note> -->
+                    </ion-item>
+
+                    <ion-item-options side="start">
+                        <ion-item-option>
+                            <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+
+                    <ion-item-options side="end">
+                        <ion-item-option color="danger">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-item-option>
+                        <!-- <ion-item-option>
+                                <ion-icon slot="icon-only" name="star"></ion-icon>
+                            </ion-item-option> -->
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-list>
+
+        </ion-list>
+
+    </div>
+    <div class="pinglunbox" *ngIf="pinglun==true">
+        <ion-list>
+            <ion-list>
+                <ion-item-sliding id="item3">
+                    <ion-item (click)="tocommentcont()">
+                        <ion-label>
+                            <div class="msgitempl active">
+                                <div>
+                                    <i>100</i>
+                                    <img src="assets/icon/msg/i1.png" alt="">
+                                </div>
+                                <div class="huiyuanpl">
+                                    <div class="oapl">
+                                        <div class="miaosubox">
+                                            <div class="huiyuanboxpl">
+                                                <label class="namesx">{{manname}}</label>
+
+                                                <div style="display: inline-block;width: 50%;margin: 0;">
+                                                    <p class="huipsx">
+                                                        <img alt="" class="hui1sx" src="assets/icon/msg/huiyuan.png">
+                                                        <img alt="" class="hui2sx" src="assets/icon/msg/huiyuan0.png">
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <p>{{msg}}</p>
+                                        <p style="color:#999"><span class="huifu">回复您的评论</span>{{hours}}小时前</p>
+
+                                    </div>
+                                    <div class="obpl">
+                                        <img class="renwu" src="assets/icon/home/n3.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </ion-label>
+                        <!-- <ion-note slot="end">
+                        10:45 AM
+                      </ion-note> -->
+                    </ion-item>
+
+                    <ion-item-options side="start">
+                        <ion-item-option>
+                            <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+
+                    <ion-item-options side="end">
+                        <ion-item-option color="danger">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-item-option>
+                        <!-- <ion-item-option>
+                    <ion-icon slot="icon-only" name="star"></ion-icon>
+                </ion-item-option> -->
+                    </ion-item-options>
+                </ion-item-sliding>
+                <ion-item-sliding id="item4">
+                    <ion-item (click)="tocommentcont()">
+                        <ion-label>
+                            <div class="msgitempl">
+                                <div>
+                                    <i>100</i>
+                                    <img src="assets/icon/msg/i1.png" alt="">
+                                </div>
+                                <div class="huiyuanpl">
+                                    <div class="oapl">
+                                        <div class="miaosubox">
+                                            <div class="huiyuanboxpl">
+                                                <label class="namesx">{{manname}}</label>
+
+                                                <div style="display: inline-block;width: 50%;margin: 0;">
+                                                    <p class="huipsx">
+                                                        <img alt="" class="hui1sx" src="assets/icon/msg/huiyuan.png">
+                                                        <img alt="" class="hui2sx" src="assets/icon/msg/huiyuan0.png">
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <p>{{msg}}</p>
+                                        <p style="color:#999"><span class="huifu">回复您的评论</span>{{hours}}小时前</p>
+
+                                    </div>
+                                    <div class="obpl">
+                                        <img class="renwu" src="assets/icon/home/n3.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </ion-label>
+                        <!-- <ion-note slot="end">
+                    10:45 AM
+                  </ion-note> -->
+                    </ion-item>
+
+                    <ion-item-options side="start">
+                        <ion-item-option>
+                            <ion-icon slot="icon-only" name="heart"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+
+                    <ion-item-options side="end">
+                        <ion-item-option color="danger">
+                            <ion-icon slot="icon-only" name="trash"></ion-icon>
+                        </ion-item-option>
+                        <ion-item-option>
+                            <ion-icon slot="icon-only" name="star"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-list>
+
+        </ion-list>
 
 
-    <div>
+    </div>
+    <div class="aitemebox" *ngIf="aiteme==true">
 
 
-        <div class="itemBox">
+        <div class="itemBox" (click)="tonewsatme()">
             <div class="onebox">
                 <div class="oa">
                     <img class="toux" src="assets/icon/msg/i1.png" alt="">
@@ -75,7 +295,7 @@
                 </div>
             </div>
         </div>
-        <div class="itemBox">
+        <div class="itemBox" (click)="tonewsatme()">
             <div class="onebox">
                 <div class="oa">
                     <img class="toux" src="assets/icon/msg/i2.png" alt="">
@@ -84,7 +304,7 @@
                 <div class="ob">
                     <div class="clear">
                         <div class="huiyuanbox">
-                            <h4 class="name">辅导费</h4>
+                            <h4 class="name">{{name}}</h4>
                             <div *ngIf="IsVip==true">
                                 <p class="huip">
                                     <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
@@ -121,5 +341,38 @@
 
 
     </div>
+    <div class="tongzhibox" *ngIf="tongzhi==true">
+        <div>
+            <div class="databox">
+                <span>{{datetz}}</span>
+            </div>
+            <div class="tzitembox">
+                <img class="tzhead" src="assets/icon/msg/head.png" alt="">
+                <div class="tznr">
+                    <p>
+                        {{tongzhicont}}
+                    </p>
+                </div>
 
+            </div>
+        </div>
+        <div>
+            <div class="databox">
+                <span>{{datetz}}</span>
+            </div>
+            <div class="tzitembox">
+                <img class="tzhead" src="assets/icon/msg/head.png" alt="">
+                <div class="tznr" (click)="toxittz()">
+                    <h4>系统通知</h4>
+                    <p class="imgp">
+                        {{tongzhicont}}
+                    </p>
+                    <img src="assets/icon/msg/x1.png" alt="">
+                    <p class="imgp"> {{tongzhicont}}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </ion-content>

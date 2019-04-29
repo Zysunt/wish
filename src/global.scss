@@ -41,7 +41,7 @@
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255, 255, 255;
     --ion-color-primary-shade: #be6d01;
-    --ion-color-primary-tint: #f4af53;
+    --ion-color-primary-tint: #fff;
 }
 
 :host(.segment-button-checked) .segment-button-indicator {
@@ -49,13 +49,32 @@
 }
 
 button,
-input {
+input,
+textarea {
     outline: none;
 }
 
 .cent {
     margin: 0 5%;
     width: 90%
+}
+
+.toux {
+    border-radius: 100%;
+}
+
+.searchbar-input.sc-ion-searchbar-ios {
+    padding-right: 0 !important
+}
+
+.btn {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
 }
 
 .touxia {
@@ -68,25 +87,104 @@ input {
     width: 12vw;
     height: 11vw;
     float: left;
-    padding: 4.5vw 2vw;
+    padding: 3.5vw 2vw;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #171414b0;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .back img {
     height: 5.1vw;
     width: 2.7vw;
     position: relative;
-    left: -3vw;
+    left: -1vw;
 }
 
 .head {
     text-align: center;
 }
 
+.sixinbox,
+.pinglunbox {
+    position: relative;
+    top: -3vw;
+}
+
 .head span {
-    font-size: 5.3vw;
+    font-size: 4.3vw;
     font-weight: 500;
     color: #333;
     position: relative;
     top: 2.5vw;
-    left: -4vw;
+    // left: -4vw;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+textarea {
+    border-bottom: 0px solid;
+    border-left: 0px solid;
+    border-top: 0px solid;
+    border-right: 0px solid;
+}
+
+:host(.segment-button-checked) .segment-button-indicator {
+    background-color: var(--indicator-color-checked, var(--color-checked));
+}
+
+:host(.segment-button-checked) .segment-button-indicator {
+    --indicator-color-checked: transparent;
+    --color-checked: transparent;
+}
+
+.segment-button-checked {
+    --indicator-color-checked: transparent;
+    // --color-checked: transparent;
+}
+
+.segment-button-indicator {
+    --indicator-color-checked: transparent;
+    // --color-checked: transparent;
+}
+
+@media screen and (max-width: 320px) {
+    .button-native {
+        --margin-start: 0;
+        --margin-start: 0;
+        --margin-end: 0;
+        --padding-start: 0;
+        --padding-end: 0;
+    }
+}
+
+ion-label {
+    font-size: 4.5vw;
+    font-weight: 600;
+}
+
+.clearfloat {
+    zoom: 1
+}
+
+.clearfloat:after {
+    /* 这三句必须写 */
+    display: block;
+    clear: both;
+    /*必须有这样写*/
+    content: "";
+    /*  这两句写不写无所谓*/
+    /*visibility:hidden;*/
+    /*height:0;*/
 }

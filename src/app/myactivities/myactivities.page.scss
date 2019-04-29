@@ -1,0 +1,245 @@
+.headmy span {
+    left: -5vw
+}
+
+.headmy {
+    text-align: center;
+}
+
+.start {
+    position: absolute;
+    bottom: 2vw;
+    color: #fff;
+    left: 0vw;
+    font-size: 2.2vw;
+    background: #3834347a;
+    border-radius: 1vw;
+    padding: 0.5vw 2vw;
+}
+
+.headmy span {
+    font-size: 4.3vw;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    top: 2.5vw;
+    // left: -4vw;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #f5f2f2;
+}
+
+.segment-button-indicator {
+    opacity: 0;
+}
+
+.bg {
+    // background-color: #B267FD;
+    background-image: url('/assets/icon/home/h1.png');
+    background-size: 100%;
+    height: 56vw;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.scan {
+    height: 5vw;
+    position: relative;
+    left: -1vw;
+}
+
+.toolbar-container {
+    background: #000;
+}
+
+.locate {
+    width: 16%;
+    line-height: 15vw;
+    padding-left: 3vw;
+}
+
+.locate img {
+    width: 4vw;
+    height: 5vw;
+}
+
+.locate span {
+    font-size: 3.5vw;
+    color: #898989;
+    position: relative;
+    top: -8%;
+    left: 1vw;
+}
+
+.select {
+    width: 70%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.select img {
+    width: 3.5vw;
+    height: 3.5vw;
+    position: relative;
+    left: -9vw;
+}
+
+.select input {
+    height: 10vw;
+    border-radius: 16vw;
+    border: none;
+    width: 95%;
+    padding-left: 6vw;
+    padding-left: 4vw;
+    background: #ccc8c830;
+    outline: none;
+    color: #fff;
+}
+
+.scanbox {
+    width: 7%;
+    // height: 30vw;
+    line-height: 15vw;
+}
+
+.activebox {
+    width: 90%;
+    margin: 1vw 5%;
+}
+
+.xaunxiak {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xaunxiak img {
+    height: 2.6vw;
+    width: 5vw;
+}
+
+.acitemBox {
+    height: 70vw;
+    width: 90%;
+    margin: 0 5% 5%;
+    border-bottom: 0.005vw solid #ececec;
+}
+
+.acitemBox img {
+    height: 100%;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.xiangBox {
+    height: 30%;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangBox h4 {
+    font-size: 4vw;
+    margin: 1vw 0;
+    color: #333333;
+    margin-bottom: 0;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangitem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbox {
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xbox span {
+    font-size: 3.2vw;
+    color: #999999;
+}
+
+.xia {
+    font-size: 2.9vw;
+    color: #ff9100;
+    margin-bottom: 1vw;
+}
+
+.xiangitem p {
+    margin: 0;
+}
+
+.xiangitem p img {
+    height: 2.5vw;
+    width: 1.5vw;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 2vw 0;
+}
+
+.caozuoBox div {
+    width: 29%;
+}
+
+.caozuoBox div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    width: 4.6vw;
+    height: 3.7vw;
+    border-radius: 0 !important
+}
+
+@media screen and (max-width: 320px) {
+    .locate img {
+        width: 4vw;
+        height: 5vw;
+    }
+    .select input {
+        font-size: 4vw;
+    }
+}
+
+.segment-button-checked {
+    --indicator-color-checked: transparent !important
+}
+
+.button-native {
+    --margin-end: 0;
+    --padding-start: 0;
+    --padding-end: 0
+}
+
+.huodimg {
+    height: 2.4vw;
+    position: relative;
+    right: -14vw;
+    top: -7vw;
+    width: 3.5vw;
+}
+
+.xuanzbox {
+    width: 80%;
+    margin: 0 6%;
+}

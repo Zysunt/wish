@@ -1,0 +1,134 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>特权福利</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <div>
+            <div class="heade">
+                <div class="touxbox">
+                    <div class="abox">
+                        <div>
+                            <div class="a">
+                                <img (click)="tomyhome()" src="assets/icon/mine/viptx3.png" class="toux" alt="">
+                                <img src="assets/icon/mine/viptx2.png" *ngIf="isVip==true" class="isvip" alt="">
+
+                            </div>
+                            <div class="b ">
+                                <div class="huiyuanbox">
+                                    <h4>{{myname}}</h4>
+                                    <div *ngIf="isVip==true">
+                                        <p class="huip">
+                                            <img class="hui1" src="assets/icon/msg/huiyuan.png" alt="">
+                                            <img class="hui2" src="assets/icon/msg/huiyuan0.png" alt="">
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <p>{{miaosu}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bbox">
+                        <div class="jinbox">
+                            <div (click)="tomon()">
+                                <img class="jinbi" src="assets/icon/mine/jinbi1.png" alt="">
+                                <span>9877</span>
+                            </div>
+                            <div (click)="tomon()">
+                                <img class="jinbi" src="assets/icon/mine/jinbi.png" alt="">
+                                <span>9877</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="vipdes">
+                    <label for="">VIP值</label>
+                    <span></span>
+                </p>
+                <div class="levelbox">
+                    <p>
+                        <span>L{{dj1}}</span>
+                        <span>L{{dj2}}</span>
+                    </p>
+                    <img src="assets/icon/mine/jd.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bor">
+            <div class="im">
+                <img src="assets/icon/fuli/fl.png" alt="">
+            </div>
+            <div class="itembg bg1" (click)="towelfare()">
+                <h4>L1-L2初级</h4>
+                <p>阿娇腹背受敌见风使舵可不分开不分开不分开电脑上看见你发几个快递</p>
+            </div>
+            <div class="itembg bg2" (click)="towelfare()">
+                <h4>L3-L4初级</h4>
+                <p>阿娇腹背受敌见风使舵可不分开不分开不分开电脑上看见你发几个快递</p>
+            </div>
+            <div class="itembg bg3" (click)="towelfare()">
+                <h4>L5-L6初级</h4>
+                <p>阿娇腹背受敌见风使舵可不分开不分开不分开电脑上看见你发几个快递</p>
+            </div>
+        </div>
+        <div class="bor">
+            <div class="mokuai">
+                <div class="daojubox">
+                    <p class="biaoti">
+                        <img src="assets/icon/hand/hd.png" alt="">
+                        <span>猜你喜欢</span>
+                    </p>
+
+                </div>
+                <div class="items">
+                    <div class="kaitem" (click)="topropmall()">
+                        <p class="kap">提示卡</p>
+                        <img class="ka" src="assets/icon/mine/4.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button class="btna">购买</button>
+                    </div>
+                    <div class="kaitem" (click)="topropmall()">
+                        <p class="kap">替换卡</p>
+                        <img class="ka" src="assets/icon/mine/5.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button class="btna">购买</button>
+                    </div>
+                    <div class="kaitem" (click)="topropmall()">
+                        <p class="kap"> 解答卡</p>
+                        <img class="ka" src="assets/icon/mine/3.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button class="btna">购买</button>
+                    </div>
+                    <div class="kaitem" (click)="topropmall()">
+                        <p class="kap">替换卡</p>
+                        <img class="ka" src="assets/icon/mine/5.png" alt="">
+                        <div>
+                            <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                            <p>{{jinbi}}</p>
+                        </div>
+                        <button class="btna">购买</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>帮助中心</span>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+
+        <div class="itemboxs">
+            <div *ngFor="let item of datas">
+                <div class="itembox" id='{{item.id}}' (click)="show()">
+                    <div>
+                        <img src="{{item.img}}" alt="">
+                        <h4>{{item.title}}</h4>
+                    </div>
+                    <div>
+                        <img *ngIf="s==true" src="assets/icon/set/s.png" alt="">
+                        <img *ngIf="s==false" src="assets/icon/set/x.png" alt="">
+                    </div>
+                </div>
+                <div class="hiddenbox" *ngIf="s==true">
+                    <p>{{item.content}}</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</ion-content>

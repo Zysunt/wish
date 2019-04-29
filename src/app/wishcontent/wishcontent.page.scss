@@ -1,0 +1,91 @@
+.wishcont {
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    position: relative;
+}
+
+.wishcont textarea {
+    width: 100%;
+    resize: none;
+    font-size: 3.5vw;
+}
+
+.weizhibox,
+.weizhibox div {
+    display: flex;
+    justify-content: space-between;
+    line-height: 4vw;
+    padding: 3vw 0 2vw;
+}
+
+.weiz {
+    height: 4vw;
+    position: relative;
+    top: -0.5vw;
+}
+
+.buc p {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+}
+
+.weizhibox p {
+    margin: 0;
+    font-size: 3.5vw;
+    margin-left: 2vw;
+}
+
+.weizhibox input[type=checkbox] {
+    opacity: 0;
+    -webkit-appearance: none;
+    height: 4vw;
+    width: 4vw;
+    position: relative;
+    left: 4vw;
+    z-index: 100;
+}
+
+.weizhibox input[type=checkbox]+label {
+    display: block;
+    width: 3.7vw;
+    height: 3.7vw;
+    overflow: hidden;
+    background: url("../../assets/icon/tab3/ch.png") no-repeat;
+    background-size: 3.7vw 3.7vw;
+    float: left;
+}
+
+.weizhibox input[type=checkbox]:checked+label {
+    background: url("../../assets/icon/tab3/ch1.png") no-repeat;
+    background-size: 3.7vw 3.7vw;
+}
+
+.fuc {
+    display: flex;
+    box-shadow: 0px -5px 10px 0px #e4e3e3;
+    padding: 3vw 5%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fuc img {
+    height: 5vw;
+    margin-right: 8vw;
+}
+
+.fx {
+    float: right;
+    padding-right: 3%;
+    color: #999;
+    font-size: 4vw;
+    margin: 0
+}
+
+.fx img {
+    position: relative;
+    height: 8.1vw;
+    top: 2vw;
+}

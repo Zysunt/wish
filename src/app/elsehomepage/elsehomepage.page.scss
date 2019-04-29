@@ -1,0 +1,946 @@
+.header {
+    height: 50vw;
+    width: 100%;
+    background: url(/assets/icon/mine/head.png) no-repeat center, linear-gradient(to bottom right, #fccf41, #FF9100);
+    background-size: 100%;
+}
+
+.tu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0vw 4vw;
+    padding-top: 10vw;
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.tu img {
+    height: 5.1vw;
+    // width: 5.1vw;
+}
+
+.header p {
+    margin: 0;
+}
+
+.isvip {
+    height: 8.9vw;
+    width: 10.2vw;
+    position: absolute;
+    left: 5.5vw;
+    top: -4vw;
+}
+
+.toux {
+    height: 16vw;
+}
+
+.touxbox {
+    display: flex;
+    margin: 5%;
+    width: 90%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.touxbox p {
+    font-size: 3.2vw;
+}
+
+.touxbox h4 {
+    margin: 0;
+    font-size: 4.3vw;
+    max-width: 26vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.a {
+    position: relative;
+    display: inline-block;
+}
+
+.abox {
+    width: 70%;
+}
+
+.bbox {
+    width: 30%;
+    position: relative;
+    top: -2vw;
+}
+
+.fxnrbox {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4vw;
+    text-align: center;
+}
+
+.fxnrbox img {
+    height: 7.5vw
+}
+
+.fxnrbox p {
+    font-size: 3.5vw;
+    color: #333;
+    margin: 0;
+}
+
+.guanbi {
+    height: 3.9vw;
+    width: 3.8vw;
+}
+
+.asd {
+    text-align: right;
+    margin: 3vw 0 2vw;
+}
+
+.fenxiangbox {
+    background: #fff;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.bbox span {
+    font-size: 2.4vw;
+    color: #fff;
+}
+
+.back {
+    height: auto;
+    padding: 0 0 0 1vw;
+}
+
+.jinbox {
+    display: flex;
+    height: 17vw;
+    padding: 3vw 0vw 0;
+}
+
+.jinbox div img {
+    height: 5.3vw;
+    position: relative;
+    left: 3vw;
+    top: 0.6vw;
+}
+
+.jinbox button {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 3vw;
+    padding: 1.2vw 4vw;
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 0;
+}
+
+.b {
+    position: relative;
+    top: -14vw;
+    left: 19vw;
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huiyuanbox p {
+    width: 100% !important;
+}
+
+.b p {
+    width: 90%;
+    margin-top: 0.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inner-scroll {
+    background: #f7f7f7;
+}
+
+.mybox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background: #fff;
+    margin: 0 5%;
+    border-radius: 3vw;
+    padding: 4vw 6vw;
+    position: relative;
+    top: -14vw;
+    box-shadow: 0px 2px 2px #f0f0f0;
+}
+
+.mybox div {
+    text-align: center;
+}
+
+.huiyuanbox {
+    display: flex
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.mybox h4 {
+    font-size: 4.8vw;
+    margin: 0 0 1vw;
+}
+
+.mybox span {
+    font-size: 3.2vw;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background: #f7f7f7;
+}
+
+.shux {
+    width: 0.266vw;
+    height: 6vw;
+    margin-top: 4vw;
+}
+
+.yiguanzhu {
+    background: #fff !important;
+    color: #F88222 !important;
+    border: none !important;
+    padding: 1.9vw 3.5vw 1.1vw !important;
+}
+
+.wishitem {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    height: 63vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0px 3px 10px 0px #c7c6c6;
+    border-radius: 2vw;
+}
+
+.wishwall {
+    border-radius: 2vw;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2vw
+}
+
+.le {
+    margin-left: 3%;
+}
+
+.wishwall p {
+    position: absolute;
+    bottom: 20vw;
+    left: 3vw;
+    margin: 0;
+    color: #fff;
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3.6vw
+}
+
+.wishwall img {
+    height: 50vw;
+    width: 100%;
+    height: 70%;
+}
+
+.caozuo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+}
+
+.caozuo div {
+    padding: 0 1vw
+}
+
+.caozuo span {
+    position: relative;
+    top: 0;
+    padding-left: 1vw;
+    color: #999;
+    font-size: 3.2vw;
+    display: inline-block;
+    width: 7vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.caozuo img {
+    height: 5vw;
+    width: 5vw;
+}
+
+.apeol {
+    width: 30%;
+    position: relative;
+    top: -1vw;
+}
+
+.wishwall .wishitem .peopleboxitem img {
+    height: 8.7vw;
+    width: 8.9vw;
+}
+
+.huangx {
+    height: 4.2vw !important;
+    width: 4.6vw !important;
+    position: absolute;
+    top: -2vw;
+    left: 0vw;
+}
+
+.peopleboxitem {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    width: 90%;
+    margin-left: 5%;
+    max-height: 9vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+.peopleboxitem div:last-child {
+    width: 70%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    display: inline-block;
+    position: relative;
+    top: -2vw;
+    min-height: 10vw;
+}
+
+.peopleboxitem div:last-child label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 2.7vw;
+    width: 100%;
+    display: inline-block;
+}
+
+.peopleboxitem div:last-child span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    color: #999;
+    font-size: 1vw !important;
+    position: relative;
+    top: -1vw;
+}
+
+.dac {
+    color: #ff9e1e;
+    font-size: 3.5vw;
+    font-weight: 500;
+    margin-left: 3vw;
+}
+
+.xuanz {
+    position: relative;
+    width: 90%;
+    margin-top: 7vw;
+    margin-left: 5%;
+}
+
+.toux {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clear {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.time {
+    color: #999;
+    font-size: 3.2vw;
+}
+
+.clear div:first-child {
+    width: 70% !important;
+}
+
+.lastbox {
+    width: 30% !important;
+    text-align: right !important;
+}
+
+.oa {
+    width: 13% !important;
+    position: relative !important;
+}
+
+.vip {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.ob {
+    width: 84% !important;
+    text-align: left;
+}
+
+.miaosu {
+    font-size: 3.5vw;
+    color: #999;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name {
+    color: #333;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.sl {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 76%;
+    line-height: 7vw;
+}
+
+.guanz button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.weiguanzhu {
+    color: #ff9100;
+    font-size: 3.2vw;
+}
+
+.yiguanzhut {
+    background: linear-gradient(to right, #FCCD3F, #FF9302) !important;
+    color: #fff;
+    border: none !important
+}
+
+.guanz {
+    display: inline-block;
+    width: 24%;
+    line-height: 9vw;
+}
+
+.clear .lastbox .guanbox div {
+    width: 100% !important;
+    display: inline-block;
+    line-height: 9vw;
+    position: relative;
+    left: 9vw;
+}
+
+.guanbox div button {
+    font-size: 3.2vw;
+    border-radius: 5vw;
+    outline: none;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ff9100;
+    padding: 1.1vw 0;
+}
+
+.towbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 5% 2vw;
+    border-radius: 2vw;
+}
+
+.fabutime {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #999;
+    margin-top: 1vw;
+}
+
+.as {
+    display: flex;
+    justify-content: space-between
+}
+
+.as div {
+    width: 30%;
+}
+
+.as div img {
+    width: 100%;
+}
+
+.fabuneir p {
+    margin: 0;
+    font-size: 3.5vw
+}
+
+.huodongimg {
+    height: 16.2vw;
+    width: 19.5vw;
+}
+
+.huodongnr {
+    width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.huodongnr label {
+    font-size: 3.7vw;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huodongnr p {
+    font-size: 3.2vw;
+    width: 100%;
+    color: #333;
+    // display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.huod .huodongnr div span {
+    color: #333;
+    font-size: 3vw;
+}
+
+.dizhitime {
+    color: #999 !important;
+}
+
+.wz {
+    height: 3.2vw;
+    width: 2.4vw
+}
+
+.jiezhibox {
+    display: flex;
+    justify-content: space-between
+}
+
+.jiezhibox div {
+    width: 50%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huod {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 0;
+    padding: 3vw 3vw 2vw;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 7px 1px #e6e5e5;
+    margin-top: 2vw;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 4vw 0;
+}
+
+.caozuoBox div {
+    width: 30%;
+    text-align: center;
+    line-height: 7vw;
+}
+
+.caozuoBox div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 0 !important
+}
+
+.aixin {
+    height: 4vw !important;
+    width: auto !important;
+}
+
+.xzbox {
+    // width: 90%;
+    // margin-left: 5%;
+}
+
+.fx {
+    height: 1.9vw;
+    width: 8.9vw;
+    position: relative;
+    top: -3vw;
+}
+
+.talentshow {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+
+.darenxiuitem {
+    background: #fff;
+    margin-bottom: 3vw;
+}
+
+.tabselect {
+    position: relative;
+    top: -5vw;
+}
+
+.peopleboxitem {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    width: 90%;
+    margin-left: 5%;
+    max-height: 9vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+.peopleboxitem div:last-child {
+    width: 70%;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    display: inline-block;
+    position: relative;
+    top: -2vw;
+    min-height: 10vw;
+}
+
+.peopleboxitem div:last-child label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 2.7vw;
+    width: 100%;
+    display: inline-block;
+}
+
+.peopleboxitem div:last-child span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    color: #999;
+    font-size: 1vw !important;
+    position: relative;
+    top: -1vw;
+}
+
+.apeol {
+    width: 30%;
+    position: relative;
+    top: -1vw;
+}
+
+.wishwall .wishitem .peopleboxitem img {
+    height: 8.7vw;
+    width: 8.9vw;
+}
+
+.huangx {
+    height: 4.2vw !important;
+    width: 4.6vw !important;
+    position: absolute;
+    top: -2vw;
+    left: 0vw;
+}
+
+.acitemBox {
+    height: 70vw;
+    width: 90%;
+    margin: 0 5% 5%;
+    border-bottom: 0.005vw solid #ececec;
+}
+
+.tximgs {
+    height: 8.7vw !important;
+    width: 8.9vw !important;
+}
+
+.acitemBox img {
+    height: 66%;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.xiangBox {
+    height: 34%;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangBox h4 {
+    font-size: 4vw;
+    margin: 1vw 0;
+    color: #333333;
+    margin-bottom: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangitem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbox {
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xbox span {
+    font-size: 3.2vw;
+    color: #999999;
+}
+
+.xia {
+    font-size: 2.9vw;
+    color: #ff9100;
+    margin-bottom: 1vw;
+}
+
+.xiangitem p {
+    margin: 0;
+}
+
+.xiangitem p img {
+    height: 2.5vw;
+    width: 1.5vw;
+}
+
+.caozuoBoxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    min-height: 10vw;
+    margin: 2vw 0;
+}
+
+.caozuoBoxyy div {
+    width: 50%;
+}
+
+.caozuoBoxyy div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBoxyy div img {
+    width: 4.6vw;
+    height: 3.7vw;
+    border-radius: 0 !important;
+}
+
+.oneboxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important
+}
+
+.touxyy {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clearyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-top: 1.5vw;
+}
+
+.czlast {
+    line-height: 10vw;
+}
+
+.clearyy div:first-child {
+    width: 70% !important;
+}
+
+.timeyy {
+    color: #999999;
+    font-size: 3.2vw;
+}
+
+.oayy {
+    width: 22% !important;
+    position: relative;
+}
+
+.vipyy {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.obyy {
+    width: 78% !important;
+    text-align: left;
+}
+
+.nameyy {
+    color: #333;
+    font-size: 4.7vw;
+    margin: 0;
+}
+
+.huipyy {
+    margin: 0;
+}
+
+.hui1yy {
+    height: 4.1vw !important;
+    width: 8.8vw !important;
+    margin: 0 2vw;
+}
+
+.hui2yy {
+    height: 4.1vw !important;
+    width: 3.7vw !important;
+}
+
+.huiyuanboxyy {
+    display: flex
+}
+
+.czlast {
+    display: flex;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+@media screen and (max-width: 320px) {
+    // .xzbox {
+    //     width: 80%;
+    //     margin: 0 10%
+    // }
+}
+
+:host(.segment-button-checked) .segment-button-indicator {
+    background: linear-gradient(to bottom right, #fccf41, #f75f16) !important;
+}
+
+.segment-button-checked {
+    --indicator-color-checked: #fea818;
+    // --color-checked: transparent;
+}
+
+.segment-button-indicator {
+    --indicator-color-checked: #fea818;
+    // --color-checked: transparent;
+}

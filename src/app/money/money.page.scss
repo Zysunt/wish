@@ -1,0 +1,61 @@
+.head span {
+    left: -5vw
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one p {
+    margin-bottom: 0;
+}
+
+.record {
+    height: 1vw;
+    width: 24vw;
+    position: relative;
+    top: -2vw;
+}
+
+.one p:first-child {
+    color: #999;
+    font-size: 3.5vw;
+}
+
+.one p:last-child {
+    color: #FF9100;
+    font-size: 3.5vw;
+}
+
+.two h3 {
+    font-size: 4vw;
+    margin-top: 1vw
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.msgitem {
+    border-bottom: 1px solid #f1f1ec
+}
+
+.msgbox {
+    width: 90%;
+    margin: 0 5%;
+    padding: 1vw 4vw 5vw;
+    min-height: 60%;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 10px 1px #d0d0d0a3;
+}
+
+:host(.segment-button-checked) .segment-button-indicator {
+    --indicator-color-checked: transparent;
+    --color-checked: transparent
+}
+
+.segment-button-checked {
+    --indicator-color-checked: transparent !important
+}

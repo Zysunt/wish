@@ -1,0 +1,95 @@
+<ion-header>
+    <ion-toolbar>
+
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>活动详情</span>
+            <p class="fx"><img (click)="fx()" src="assets/icon/hand/fx.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+        <div (click)="guanbifenx()">
+            <div *ngIf="fxx==true" style="background: #00000012;" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="body">
+        <div (click)="guanbifenx()">
+            <div *ngIf="fxx==true" class="yinyin"></div>
+        </div>
+        <div class="fenxiangbox" *ngIf="fxx==true">
+            <div class="cent">
+                <div class="asd">
+                    <img (click)="guanbifenx()" class="guanbi" src="assets/icon/hand/gb.png" alt="">
+                </div>
+                <div class="fxnrbox">
+                    <div>
+                        <img src="assets/icon/hand/share_wechat.png" alt="">
+                        <p>微信</p>
+                    </div>
+                    <div>
+                        <img src="assets/icon/hand/share_wxcircle.png" alt="">
+                        <p>朋友圈</p>
+                    </div>
+                    <div>
+                        <img src="assets/icon/hand/share_sina.png" alt="">
+                        <p>微博</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headbg">
+            <label class="riqilobal" for="">5月20日-6月20日</label>
+            <div class="biaotis">
+                <h2 class="h1">道具首冲</h2>
+                <h2 class="h2">折扣震撼</h2>
+            </div>
+
+            <div class="appmiaos">
+                <p>{{appmiaosu}}</p>
+            </div>
+        </div>
+
+        <div class="titlebox">
+            <img class="daojukaimg" src="assets/icon/mine/hiabaotitle.png" alt="">
+        </div>
+        <div class="daojukabox">
+            <div class="items">
+                <div class="kaitem">
+                    <p class="kap">通过卡</p>
+                    <img class="ka" src="assets/icon/mine/0.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap">替换卡</p>
+                    <img class="ka" src="assets/icon/mine/5.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+                <div class="kaitem">
+                    <p class="kap"> 解答卡</p>
+                    <img class="ka" src="assets/icon/mine/3.png" alt="">
+                    <div>
+                        <img src="assets/icon/mine/jinbidaoju.png" alt="">
+                        <p class="shanchuxian">{{jinbi}}</p>
+                        <p class="nowsjinbi">{{nowsjinbi}}</p>
+                    </div>
+                    <button class="btn">购买</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

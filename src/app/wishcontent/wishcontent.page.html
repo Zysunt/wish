@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>发布心愿</span>
+            <p class="fx" (click)="fabu()"><img src="assets/icon/tab3/fasong.png" alt=""></p>
+            <div style="both:clear"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="cent">
+        <div class="wishcont">
+            <textarea autofocus required placeholder="请输入心愿内容" rows="10" cols="30"></textarea>
+        </div>
+
+        <div class="weizhibox">
+            <div>
+                <img class="weiz" src="assets/icon/tab3/wz.png" alt="">
+                <p>{{weizhi}}</p>
+            </div>
+            <div>
+                <input id="confirm" checked type="checkbox" />
+                <label for="confirm"></label>
+                <p>不公开</p>
+            </div>
+        </div>
+    </div>
+    <div class="cent">
+        <div class="buc">
+            <p>选择匿名后，其他用户无法获取您的信息，同时您的发布也将不再对粉丝展示。</p>
+        </div>
+    </div>
+    <div class="fuc">
+        <img src="assets/icon/tab3/img.png" alt="">
+        <img (click)="toaitefirend()" src="assets/icon/tab3/@.png" alt="">
+        <img src="assets/icon/tab3/bq.png" alt="">
+    </div>
+</ion-content>

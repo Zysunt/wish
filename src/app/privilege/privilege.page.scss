@@ -1,0 +1,365 @@
+.head span {
+    left: -5vw
+}
+
+.touxbox {
+    display: flex;
+    padding: 0 3%;
+    padding-top: 10vw;
+    width: 100%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.touxbox p {
+    font-size: 3.2vw;
+}
+
+.touxbox h4 {
+    margin: 0;
+    font-size: 4.3vw;
+    max-width: 26vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.abox {
+    width: 65%;
+    height: 20vw;
+}
+
+.bbox {
+    width: 26%;
+    position: relative;
+    top: -2vw;
+    height: 20vw;
+}
+
+.jinbi {
+    height: 2.5vw;
+    width: 3.3vw;
+}
+
+.jinbi0 {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.bbox span {
+    font-size: 3vw;
+    color: #fff;
+}
+
+.jinbox {
+    // width: 93%
+    text-align: right
+}
+
+.jinbox div {
+    background: #65525217;
+    border-radius: 5vw;
+    padding: 2vw 3vw;
+    width: 97%;
+    line-height: 4vw;
+    margin: 0 !important;
+    margin-bottom: 2vw !important;
+}
+
+.jinbox div img {
+    margin-right: 2vw;
+}
+
+.b {
+    position: relative;
+    top: -14vw;
+    left: 17vw;
+    width: 77%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huiyuanbox p {
+    width: 100% !important;
+}
+
+.b p {
+    width: 90%;
+    margin-top: 0.5vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn {
+    padding: 3.5vw 15vw;
+    font-size: 3.5vw;
+    margin-top: 7vw;
+}
+
+.yinyin {
+    height: 100%;
+    width: 100%;
+    background: #1f1e1ead;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.inner-scroll {
+    background: #f7f7f7;
+}
+
+.isvip {
+    height: 8.9vw;
+    width: 10.2vw;
+    position: absolute;
+    left: 7.5vw;
+    top: -4vw;
+}
+
+.vipdes label {
+    font-size: 3.8vw;
+    color: #fff;
+    font-weight: 600
+}
+
+.huip {
+    margin: 0;
+}
+
+.hui1 {
+    height: 4.1vw;
+    width: 8.8vw;
+    margin: 0 2vw;
+}
+
+.hui2 {
+    height: 4.1vw;
+    width: 3.7vw;
+}
+
+.vipdes span {
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #fff
+}
+
+.huiyuanbox {
+    display: flex;
+}
+
+.levelbox p {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 5% !important;
+    font-size: 2.7vw;
+    color: #fff
+}
+
+.vipdes {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 5% !important;
+}
+
+.levelbox img {
+    height: 2vw;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.toux {
+    height: 16vw;
+}
+
+.a {
+    position: relative;
+    display: inline-block;
+}
+
+.heade {
+    height: 50vw;
+    width: 90%;
+    background: url(/assets/icon/mine/head.png) no-repeat center, linear-gradient(to bottom right, #fccf41, #FF9100);
+    background-size: 100%;
+    border-radius: 5vw;
+    margin-left: 5%;
+    margin-top: 6vw;
+}
+
+.heade p {
+    margin: 0;
+}
+
+.bor {
+    border-top: 4vw solid #f7f7f7;
+}
+
+.itembg {
+    background-size: 100% !important;
+    height: 30vw;
+    width: 100%;
+    padding: 7vw 11vw 0;
+}
+
+.bg1 {
+    background: url('../../assets/icon/fuli/bg1.png') no-repeat;
+}
+
+.bg2 {
+    background: url('../../assets/icon/fuli/bg2.png') no-repeat;
+}
+
+.bg3 {
+    background: url('../../assets/icon/fuli/bg3.png') no-repeat;
+}
+
+.itembg p {
+    color: #999;
+    font-size: 3.5vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%;
+    margin: 0;
+}
+
+.itembg h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 60%;
+    font-size: 5vw;
+    margin: 3vw 0 1vw;
+}
+
+.im {
+    width: 100%;
+    padding: 3vw 20%
+}
+
+.im img {
+    width: 100%;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3vw;
+    height: 50vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.biaoti img {
+    height: 4.3vw;
+    width: 1.33vw;
+}
+
+.mokuai {
+    border-top: 3vw solid #f7f7f7;
+    padding: 5%;
+}
+
+.biaoti span {
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin: 0 3vw 0;
+}
+
+.biaoti {
+    margin: 0 !important;
+    background: #fff;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.kaitem {
+    min-width: 30vw;
+    height: 50vw;
+    padding: 1vw 2vw;
+    text-align: center;
+}
+
+.kaitem div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.youhuiimg {
+    position: relative;
+    // top: 2.5vw;
+}
+
+.shanchuxian {
+    text-decoration: line-through;
+}
+
+.nowsjinbi {
+    color: #FF9302 !important;
+}
+
+.kaitem div img {
+    height: 3.2vw;
+    width: 4.3vw;
+}
+
+.ka {
+    height: 25vw;
+    width: 20vw
+}
+
+.kaitem p {
+    margin: 0;
+    font-size: 3.5vw;
+    color: #333
+}
+
+.kap {
+    margin: 1vw 0;
+}
+
+.daojubox {
+    display: flex;
+    justify-content: space-between;
+    line-height: 9vw;
+}
+
+.biaoti img {
+    height: 4.3vw;
+    width: 1.33vw;
+}
+
+.biaoti {
+    margin: 0 !important
+}
+
+.biaoti span {
+    font-size: 4.3vw;
+    font-weight: 700;
+    margin: 0 3vw 0
+}
+
+.btna {
+    background: linear-gradient(to right, #FCCD3F, #FF9302);
+    font-size: 3.2vw;
+    color: #fff;
+    border: none;
+    border-radius: 5vw;
+    padding: 1.5vw 5vw;
+    outline: none;
+    color: #FF9302 !important;
+    background: #fff !important;
+    border: 1px solid #FF9302 !important;
+}

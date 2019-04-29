@@ -1,0 +1,72 @@
+.head span {
+    left: -5vw
+}
+
+.first {
+    display: flex;
+    padding: 2vw 5%;
+    background-color: #fff4e5;
+    margin-bottom: 4vw;
+}
+
+.uploadImgi {
+    opacity: 0;
+    width: 54vw;
+    height: 35vw;
+    position: absolute;
+    z-index: 100;
+}
+
+.first p {
+    color: #ffb163;
+    font-size: 3.7vw;
+    margin: 0;
+    margin-left: 2vw;
+}
+
+.first img {
+    height: 5vw
+}
+
+.second {
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc52;
+    padding-top: 7vw;
+}
+
+.second img {
+    width: 54vw;
+    height: 35vw;
+}
+
+.second p {
+    font-size: 3.5vw;
+    color: #868686;
+    margin-top: 2vw;
+}
+
+.second p span {
+    color: #ffb163;
+    display: inline-block;
+    margin-left: 2vw
+}
+
+.cent {
+    text-align: center
+}
+
+.cent p {
+    font-size: 3.5vw;
+    color: #868686;
+}
+
+.cent p span {
+    color: #Fa99a6;
+}
+
+.btn {
+    line-height: 13vw;
+    padding: 0;
+    width: 90%;
+    margin: 6vw 0 0vw;
+}

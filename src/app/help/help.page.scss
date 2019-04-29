@@ -1,0 +1,50 @@
+.head span {
+    left: -5vw
+}
+
+.itemboxs {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 2vw 0 0;
+}
+
+.itembox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    line-height: 12vw;
+}
+
+.itembox div:last-child img {
+    height: 2.5vw;
+}
+
+.itembox div:first-child img {
+    width: 8vw;
+    height: 8vw;
+    position: relative;
+    top: 2vw;
+}
+
+.itembox div:first-child {
+    display: flex;
+    line-height: 12vw;
+}
+
+.itembox div:first-child h4 {
+    font-size: 3.5vw;
+    margin: 0;
+    margin-left: 3vw;
+    padding-top: 4vw;
+}
+
+.hiddenbox {
+    width: 80%;
+    margin-left: 15%;
+}
+
+.hiddenbox p {
+    margin: 0;
+    color: #999;
+    font-size: 3.2vw;
+}

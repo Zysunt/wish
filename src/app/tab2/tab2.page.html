@@ -4,116 +4,272 @@
             <img src="assets/icon/activity/location.png" alt="">
             <span>定位</span>
         </div>
-        <div class="select">
-            <input type="text" placeholder="在社区内搜索内容，用户">
-            <img src="assets/icon/activity/suosou.png" alt="">
+        <div class="select" (click)="toselect()">
+            <!-- <input type="text" placeholder="在社区内搜索内容，用户">
+            <img src="assets/icon/activity/suosou.png" alt=""> -->
+            <ion-searchbar mode="md" type="search" class="search" autocomplete="on" autocorrect="on" spellcheck animated placeholder="搜索内容，用户"></ion-searchbar>
         </div>
-
         <div class="scanbox">
             <img src="assets/icon/activity/scan.png" class="scan" alt="">
         </div>
     </div>
 </ion-header>
 <ion-content>
-
+    <div (click)="closeyinyin()">
+        <div class="yinyin" *ngIf="fenlei==true">
+            <ul class="weia" *ngIf="a==true">
+                <li [class.selected]='pointer === i' *ngFor="let item of Answer;let i = index;">
+                    <span (click)='changePointer(i)'>{{item}}</span>
+                </li>
+            </ul>
+            <ul class="weib" *ngIf="b==true">
+                <li [class.selected]='pointer === i' *ngFor="let item of Answer;let i = index;">
+                    <span (click)='changePointer(i)'>{{item}}</span>
+                </li>
+            </ul>
+            <ul class="weic" *ngIf="c==true">
+                <li [class.selected]='pointer === i' *ngFor="let item of Answer;let i = index;">
+                    <span (click)='changePointer(i)'>{{item}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="activebox">
         <div class="">
-            <div class="cent">
+            <div class="xuanzbox">
                 <ion-segment [(ngModel)]="activity" color="warning">
-                    <ion-segment-button value="weikais" (ionSelect)="segmentButtonClicked($event)">
+                    <ion-segment-button value="weikais" (ionSelect)="weikaishifun()">
                         <ion-label>未开始活动</ion-label>
+                        <div class="fenlei" (click)="showa()">
+                            <img *ngIf="weikaishi!=true" class="huodimg" src="assets/icon/activity/xiala.png" alt="">
+                            <img *ngIf="weikaishi==true" class="huodimg" src="assets/icon/activity/xiala1.png" alt="">
+                        </div>
                     </ion-segment-button>
-                    <ion-segment-button (ionSelect)="segmentButtonClicked($event)">
+                    <ion-segment-button (ionSelect)="yikaishufun()">
                         <ion-label>进行中活动</ion-label>
+                        <div class="fenlei" (click)="showb()">
+                            <img *ngIf="yikaishi!=true" class="huodimg" src="assets/icon/activity/xiala.png" alt="">
+                            <img *ngIf="yikaishi==true" class="huodimg" src="assets/icon/activity/xiala1.png" alt="">
+                        </div>
                     </ion-segment-button>
-                    <ion-segment-button (ionSelect)="segmentButtonClicked($event)">
+                    <ion-segment-button (ionSelect)="yijieshufun()">
                         <ion-label>结束活动</ion-label>
+                        <div class="fenlei" (click)="showc()">
+                            <img *ngIf="yijieshu!=true" class="huodimg" style="right: -11vw;" src="assets/icon/activity/xiala.png" alt="">
+                            <img *ngIf="yijieshu==true" class="huodimg" style="right: -11vw;" src="assets/icon/activity/xiala1.png" alt="">
+                        </div>
                     </ion-segment-button>
 
                 </ion-segment>
             </div>
 
-            <!-- <div>
-                <span>未开始活动</span>
-                <img src="assets/icon/activity/xiala.png" alt="">
-            </div>
-            <div>
-                <span>进行中活动</span>
-                <img src="assets/icon/activity/xiala1.png" alt="">
-            </div>
-            <div>
-                <span>结束活动</span>
-                <img src="assets/icon/activity/xiala.png" alt="">
-            </div> -->
         </div>
     </div>
+    <div class="weikaishibox" *ngIf="weikaishi==true">
 
-    <div class="acitemBox">
-        <img src="assets/icon/activity/i5.png" alt="">
-        <div class="xiangBox">
-            <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
-            <div>
-                <div class="xiangitem">
-                    <p class="xbox">
-                        <span>你说的就是不的话粉色的发布会的吧</span>
-                    </p>
-                    <p class="xia">查看详情
-                        <img src="assets/icon/activity/youla1.png" alt="">
-                    </p>
+
+        <div class="acitemBox" style="margin-top: -1vw;" (click)="hddetails()">
+            <img src="assets/icon/home/n2.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia" (click)="hddetails()">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="caozuoBox">
-                    <div>
-                        <img src="assets/icon/activity/pinlun.png" alt="">
-                        <span>89897</span>
-                    </div>
-                    <div>
-                        <img src="assets/icon/activity/chakan.png" alt="">
-                        <span>89897</span>
-                    </div>
-                    <div>
-                        <img src="assets/icon/activity/renqun.png" alt="">
-                        <span>89897</span>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="acitemBox">
-        <img src="assets/icon/activity/i5.png" alt="">
-        <div class="xiangBox">
-            <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
-            <div>
-                <div class="xiangitem">
-                    <p class="xbox">
-                        <span>你说的就是不的话粉色的发布会的吧</span>
-                    </p>
-                    <p class="xia">查看详情
-                        <img src="assets/icon/activity/youla1.png" alt="">
-                    </p>
+        <div class="acitemBox">
+            <img src="assets/icon/activity/i5.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="caozuoBox">
-                    <div>
-                        <img src="assets/icon/activity/pinlun.png" alt="">
-                        <span>89897</span>
-                    </div>
-                    <div>
-                        <img src="assets/icon/activity/chakan.png" alt="">
-                        <span>89897</span>
-                    </div>
-                    <div>
-                        <img src="assets/icon/activity/renqun.png" alt="">
-                        <span>89897</span>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="yikaishibox" *ngIf="yikaishi==true">
 
 
+        <div class="acitemBox" style="margin-top: -1vw;" (click)="yikaishifun()">
+            <img src="assets/icon/activity/i5.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia" (click)="yikaishifun()">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="acitemBox">
+            <img src="assets/icon/home/n2.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yijieshubox" *ngIf="yijieshu==true">
+
+
+        <div class="acitemBox" style="margin-top: -1vw;" (click)="hdyijieshu()">
+            <img src="assets/icon/activity/i5.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia" (click)="hdyijieshu()">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="acitemBox">
+            <img src="assets/icon/activity/i5.png" alt="">
+            <div class="xiangBox">
+                <h4>最新的阿斯顿南京阿森纳多久啊是吧</h4>
+                <div>
+                    <div class="xiangitem">
+                        <p class="xbox">
+                            <span>你说的就是不的话粉色的发布会的吧</span>
+                        </p>
+                        <p class="xia">查看详情
+                            <img src="assets/icon/activity/youla1.png" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="caozuoBox">
+                        <div>
+                            <img src="assets/icon/activity/pinlun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/chakan.png" alt="">
+                            <span>89897</span>
+                        </div>
+                        <div>
+                            <img src="assets/icon/activity/renqun.png" alt="">
+                            <span>89897</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>

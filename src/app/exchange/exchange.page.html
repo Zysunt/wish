@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>积分兑换</span>
+        </div>
+        <div (click)="guanbipayment()">
+            <div style="background: #00000012;" *ngIf="payment==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="showcz==true" class="yinyin">
+        <div class="zhifuc">
+            <div class="cent">
+                <p class="biaotizhifu">
+                    <label for="">请确认支兑换</label>
+                    <img src="assets/icon/mine/close.png" alt="">
+                </p>
+                <div class="zhifubox">
+                    <img src="assets/icon/mine/jifen.png" alt="">
+                    <label for="">需兑换积分{{money}}</label>
+                </div>
+                <div class="queren">
+                    <p>请在{{daojishi}}内完成兑换</p>
+                    <button class="btnm" (click)="tosuccess()">确认兑换</button>
+                </div>
+            </div>
+        </div>
+        <div class="cache" *ngIf="showcz==true">
+            <h5>积分不足，无法兑换</h5>
+            <div class="caozuobtn">
+                <div>
+                    <label (click)="guanbicz()" for="">确定</label>
+                </div>
+                <div>
+                    <label (click)="gorecharge()" for="">去充值</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div (click)="guanbipayment()">
+        <div *ngIf="payment==true" class="yinyin">
+            <div class="zhifuc">
+                <div class="cent">
+                    <p class="biaotizhifu">
+                        <label for="">请确认兑换</label>
+                        <img src="assets/icon/mine/close.png" alt="">
+                    </p>
+                    <div class="zhifubox">
+                        <img src="assets/icon/mine/jifen.png" alt="">
+                        <label for="">需兑换积分{{money}}</label>
+                    </div>
+                    <div class="queren">
+                        <p>请在{{daojishi}}内完成兑换</p>
+                        <button class="btnm" (click)="tosuccess()">确认兑换</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="items" *ngFor="let item of jinbi">
+            <div class="kaitem">
+                <p class="kap">通过卡</p>
+                <img class="ka" src="assets/icon/mine/0.png" alt="">
+                <div>
+                    <img src="assets/icon/mine/jifen.png" alt="">
+                    <p>{{item}}</p>
+                </div>
+                <button class="btn" (click)="openpay()">兑换</button>
+            </div>
+            <div class="kaitem">
+                <p class="kap">替换卡</p>
+                <img class="ka" src="assets/icon/mine/5.png" alt="">
+                <div>
+                    <img src="assets/icon/mine/jifen.png" alt="">
+                    <p>{{item}}</p>
+                </div>
+                <button class="btn" (click)="openpay()">兑换</button>
+            </div>
+            <div class="kaitem">
+                <p class="kap"> 解答卡</p>
+                <img class="ka" src="assets/icon/mine/3.png" alt="">
+                <div>
+                    <img src="assets/icon/mine/jifen.png" alt="">
+                    <p>{{item}}</p>
+                </div>
+                <button class="btn" (click)="openpay()">兑换</button>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

@@ -3,18 +3,101 @@
     overflow: hidden;
 }
 
+.shurubox {
+    width: 63%
+}
+
+.Abox {
+    max-height: 10vw;
+    width: 90%;
+    position: absolute;
+    top: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xuyuan {
+    height: 4vw !important;
+    width: 20vw !important;
+    position: relative;
+    top: 0.5vw;
+}
+
+.bofang {
+    height: 5vw !important;
+    width: 5vw !important;
+}
+
+.faso {
+    width: 37%;
+    text-align: right;
+}
+
+.fabtn {
+    height: 8vw;
+    top: -2vw;
+    position: relative;
+}
+
+.faso img {
+    height: 8vw;
+    margin-left: 4vw;
+    position: relative;
+    top: 1vw;
+}
+
+.shuru {
+    border: 1px solid #efeded;
+    width: 100%;
+    border-radius: 1vw;
+    height: 10vw;
+    padding-left: 3vw;
+    outline: none;
+}
+
+.fucbox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3vw 5%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0px 0px 7px 0px #e0e0e0;
+}
+
 .headtab1 {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    z-index: 9;
+    width: 100%;
 }
 
 .bg {
     // background-color: #B267FD;
-    background-image: url('/assets/icon/home/h1.png');
-    background-size: 100%;
+    // background-image: url('/assets/icon/home/h1.png');
+    // background-size: 100%;
     height: 56vw;
     width: 100%;
-    background-repeat: no-repeat;
+    position: relative;
+    // z-index: -2;
+    // background-repeat: no-repeat;
+}
+
+.slidesbox {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slides {
+    // z-index: -1;
+}
+
+.slidesbox img {
+    height: 56vw;
+    width: 100%;
 }
 
 .ion-color-warning {
@@ -31,40 +114,43 @@
 }
 
 .locate {
-    width: 15%;
-    // height: 30vw;
+    width: 16%;
     line-height: 15vw;
     padding-left: 3vw;
 }
 
 .locate img {
-    width: 5vw;
-    height: 6vw;
+    width: 4vw;
+    height: 5vw;
 }
 
 .locate span {
-    font-size: 0.35vw;
+    font-size: 3.5vw;
     color: #ffffff;
     position: relative;
-    top: -11%;
+    top: -8%;
+    left: 1vw;
 }
 
 .select {
-    width: 78%;
-    // height: 30vw;
-    line-height: 15vw;
+    width: 70%;
+    line-height: 14vw;
+    position: relative;
+    left: -2vw;
 }
 
 .select img {
-    width: 0.35vw;
-    height: 0.35vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    position: relative;
+    left: -9vw;
 }
 
 .select input {
     height: 10vw;
     border-radius: 16vw;
     border: none;
-    width: 90%;
+    width: 95%;
     padding-left: 6vw;
     padding-left: 4vw;
     background: #00000030;
@@ -93,6 +179,7 @@
     top: -7vw;
     background: #fff;
     padding: 2vw 4vw;
+    z-index: 10;
 }
 
 .tuijian h1 {
@@ -158,6 +245,7 @@
     border-radius: 2vw;
     width: 90%;
     margin-left: 5%;
+    margin-top: 2vw
 }
 
 .ion-color-warning {
@@ -168,10 +256,12 @@
     position: relative;
     display: inline-block;
     width: 48%;
-    height: 58vw;
+    height: 63vw;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    box-shadow: 0px 3px 10px 0px #c7c6c6;
+    border-radius: 2vw;
 }
 
 .le {
@@ -180,37 +270,45 @@
 
 .wishwall p {
     position: absolute;
-    bottom: 11vw;
+    bottom: 20vw;
+    left: 3vw;
     margin: 0;
     color: #fff;
+    width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .wishwall img {
     height: 50vw;
     width: 100%;
-    height: 88%;
+    height: 70%;
 }
 
 .caozuo {
     display: flex;
     justify-content: space-between;
+    padding: 0vw 2vw;
 }
 
 .caozuo span {
     position: relative;
-    top: -1.5vw;
+    top: -1vw;
+    color: #999;
+    font-size: 3.5vw;
 }
 
 .caozuo img {
-    height: 6vw;
-    width: 6vw;
+    height: 5vw;
+    width: 5vw;
 }
 
 .onebox {
     display: flex;
     justify-content: space-between;
     margin: 3vw 5%;
-    padding: 3vw;
+    padding: 3vw 3vw 0vw;
     border-radius: 2vw;
     box-shadow: 1px 1px 7px 1px #ccc8c8;
 }
@@ -260,8 +358,11 @@
 
 .miaosu {
     font-size: 3.5vw;
-    margin: 0;
     color: #999;
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .name {
@@ -269,6 +370,10 @@
     font-size: 3.8vw;
     font-weight: 500;
     margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
 }
 
 .huip {
@@ -287,12 +392,11 @@
 }
 
 .sl {
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
     overflow: hidden;
     white-space: pre-line;
     width: 76%;
+    line-height: 7vw;
 }
 
 .guanz button {
@@ -337,7 +441,7 @@
     background: #fff;
     width: 100%;
     border: 1px solid #ff9100;
-    padding: 1.1vw 0;
+    padding: 1.7vw 0.5vw;
 }
 
 .towbox {
@@ -379,21 +483,43 @@
 
 .huodongnr {
     width: 70%;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    white-space: pre-line;
 }
 
 .huodongnr label {
     font-size: 3.7vw;
     font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    white-space: pre-line;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .huodongnr p {
     font-size: 3.2vw;
+    width: 100%;
     color: #333;
+    // display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.onebox .huodongnr div span {
-    color: #999;
+.huod .huodongnr div span {
+    color: #333;
     font-size: 3vw;
+}
+
+.dizhitime {
+    color: #999 !important;
 }
 
 .wz {
@@ -408,9 +534,382 @@
 
 .jiezhibox div {
     width: 50%;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.huod {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw 0;
+    padding: 3vw 3vw 2vw;
+    border-radius: 2vw;
+    box-shadow: 1px 1px 7px 1px #e6e5e5;
+    margin-top: 2vw;
+}
+
+.caozuoBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    margin: 4vw 0;
+}
+
+.caozuoBox div {
+    width: 30%;
+    text-align: center;
+    line-height: 7vw;
+}
+
+.caozuoBox div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBox div img {
+    width: 4.2vw;
+    height: 4.2vw;
+    border-radius: 0 !important
+}
+
+.aixin {
+    height: 4vw !important;
+    width: auto !important;
+}
+
+.onebox {
+    margin: 1vw 5% 2vw;
+}
+
+.xzbox {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.meetsquare {
+    position: relative;
+    top: -1vw;
+}
+
+.talentshow {
+    position: relative;
+    top: -3vw;
+}
+
+.fx {
+    height: 1.9vw;
+    width: 8.9vw;
+    position: relative;
+    top: -1vw;
+}
+
+.talentshow {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+
+.darenxiuitem {
+    background: #fff;
+    margin-bottom: 3vw;
+}
+
+.tabselect {
+    position: relative;
+    top: -5vw;
+}
+
+.peopleboxitem {
+    display: flex;
+    border-bottom: 1px solid #ececec;
+    width: 90%;
+    margin-left: 5%;
+    max-height: 9vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+}
+
+.peopleboxitem div:last-child {
+    width: 70%;
     -webkit-line-clamp: 1;
     overflow: hidden;
     white-space: pre-line;
+    display: inline-block;
+    position: relative;
+    top: -2vw;
+    min-height: 10vw;
+}
+
+.peopleboxitem div:last-child label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 2.7vw;
+    width: 100%;
+    display: inline-block;
+}
+
+.peopleboxitem div:last-child span {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    color: #999;
+    font-size: 1vw !important;
+    position: relative;
+    top: -1vw;
+}
+
+.apeol {
+    width: 30%;
+    position: relative;
+    top: -1vw;
+}
+
+.wishwall .wishitem .peopleboxitem img {
+    height: 8.7vw;
+    width: 8.9vw;
+}
+
+.huangx {
+    height: 4.2vw !important;
+    width: 4.6vw !important;
+    position: absolute;
+    top: -2vw;
+    left: 0vw;
+}
+
+.acitemBox {
+    height: 70vw;
+    width: 90%;
+    margin: 0 5% 5%;
+    border-bottom: 0.005vw solid #ececec;
+}
+
+.tximgs {
+    height: 8.7vw !important;
+    width: 8.9vw !important;
+}
+
+.acitemBox img {
+    height: 66%;
+    width: 100%;
+    border-radius: 3vw;
+}
+
+.xiangBox {
+    height: 34%;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangBox h4 {
+    font-size: 4vw;
+    margin: 1vw 0;
+    color: #333333;
+    margin-bottom: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xiangitem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.xbox {
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.xbox span {
+    font-size: 3.2vw;
+    color: #999999;
+}
+
+.xia {
+    font-size: 2.9vw;
+    color: #ff9100;
+    margin-bottom: 1vw;
+}
+
+.xiangitem p {
+    margin: 0;
+}
+
+.xiangitem p img {
+    height: 2.5vw;
+    width: 1.5vw;
+}
+
+.caozuoBoxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10%;
+    min-height: 10vw;
+    margin: 2vw 0;
+}
+
+.caozuoBoxyy div {
+    width: 50%;
+}
+
+.caozuoBoxyy div span {
+    color: #999;
+    font-size: 4vw;
+    position: relative;
+    top: -0.5vw;
+    left: 1.5vw;
+}
+
+.caozuoBoxyy div img {
+    width: 4.6vw;
+    height: 3.7vw;
+    border-radius: 0 !important;
+}
+
+.oneboxyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important
+}
+
+.touxyy {
+    height: 11.3vw;
+    width: 11.3vw;
+}
+
+.clearyy {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-top: 1.5vw;
+}
+
+.czlast {
+    line-height: 10vw;
+}
+
+.clearyy div:first-child {
+    width: 70% !important;
+}
+
+.timeyy {
+    color: #999999;
+    font-size: 3.2vw;
+}
+
+.oayy {
+    width: 22% !important;
+    position: relative;
+}
+
+.vipyy {
+    height: 4.5vw;
+    width: 5.2vw;
+    position: absolute;
+    left: 0vw;
+    top: -2.5vw;
+}
+
+.obyy {
+    width: 78% !important;
+    text-align: left;
+}
+
+.nameyy {
+    color: #333;
+    font-size: 4.7vw;
+    margin: 0;
+}
+
+.huipyy {
+    margin: 0;
+}
+
+.hui1yy {
+    height: 4.1vw !important;
+    width: 8.8vw !important;
+    margin: 0 2vw;
+}
+
+.hui2yy {
+    height: 4.1vw !important;
+    width: 3.7vw !important;
+}
+
+.huiyuanboxyy {
+    display: flex
+}
+
+.czlast {
+    display: flex;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+.sc-ion-segment-md-h {
+    overflow: hidden;
+    justify-content: left;
+}
+
+@media screen and (max-width: 320px) {
+    .xzbox {
+        // width: 90%;
+        // margin: 0 5%
+    }
+}
+
+.button-native {
+    --margin-start: 0;
+    --margin-start: 0;
+    --margin-end: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 20vw !important;
+    --bottom: 20vw !important
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 20vw !important;
+}
+
+.swiper-pagination-bullet-active {
+    --bullet-background-active: #fff;
+    width: 3vw;
+    border-radius: 0.2vw;
+    height: 1vw;
+}
+
+.swiper-pagination-bullet {
+    --bullet-background: #ada7a7;
+    width: 3vw;
+    border-radius: 0.2vw;
+    height: 1vw;
+}
+
+.segment-button-has-label,
+.segment-button-checked {
+    max-width: 20vw;
+    min-width: 0;
 }

@@ -1,0 +1,56 @@
+.head span {
+    left: -5vw
+}
+
+.items {
+    display: flex;
+    line-height: 15vw;
+    border-bottom: 1px solid #e4e4e473;
+}
+
+.items div:first-child {
+    width: 30%;
+}
+
+.btn {
+    width: 100% !important;
+    // padding: 4vw 0 !important;
+    line-height: 11vw
+}
+
+.items div:last-child {
+    width: 70%;
+    display: flex;
+    justify-content: space-between
+}
+
+.items div:last-child img {
+    height: 4.5vw;
+    width: 2.5vw;
+    position: relative;
+    top: 5.5vw;
+}
+
+.items label {
+    font-size: 3.8vw;
+}
+
+.items p {
+    margin: 0;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.items input {
+    border: none;
+    font-size: 3.8vw;
+    color: #999
+}
+
+.btns {
+    margin-top: 30%
+}
+
+.btn {
+    font-size: 5vw
+}

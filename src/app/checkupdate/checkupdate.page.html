@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <div class="head">
+            <div class="back" (click)="back()">
+                <img src="assets/icon/home/back.png" alt="">
+            </div>
+            <span>检查更新</span>
+        </div>
+        <div (click)="guanbi()">
+            <div style="background: #00000012;" *ngIf="show==true" class="yinyin"></div>
+        </div>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div (click)="guanbi()">
+        <div *ngIf="show==true" class="yinyin"></div>
+    </div>
+    <div (click)="guanbi()">
+        <div class="cache" *ngIf="show==true">
+            <h5>已经是最新版本</h5>
+        </div>
+    </div>
+    <div class="body">
+        <div class="onebox">
+            <img src="assets/icon/set/ds.png" alt="">
+            <p>V1.0版本</p>
+        </div>
+        <div class="towbox">
+            <p>去评分</p>
+            <img src="assets/icon/set/you.png" alt="">
+        </div>
+        <div (click)="presentAlert()" class="towbox">
+            <p>版本更新</p>
+            <img src="assets/icon/set/you.png" alt="">
+        </div>
+
+        <div class="bton">
+            <p class="ax">{{company}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>版权所有</span></p>
+            <p class="ax">Copyright@ <span>2019-2020.All Rights</span> </p>
+        </div>
+    </div>
+</ion-content>

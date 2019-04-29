@@ -1,0 +1,41 @@
+.head span {
+    left: -5vw;
+}
+
+.item img {
+    height: 18vw;
+}
+
+.item p {
+    font-size: 3.5vw;
+    margin: 1vw;
+    text-align: center;
+}
+
+.pw {
+    width: 15vw;
+}
+
+.spa {
+    justify-content: space-around;
+}
+
+.imgw {
+    width: 20vw;
+}
+
+.weiused {
+    border: 1px solid #ff9302 !important;
+    color: #ff9302 !important;
+    background: #fff !important;
+}
+
+.itembox {
+    margin: 4vw 0px;
+    display: flex;
+    // justify-content: space-between
+}
+
+.item {
+    margin: 0 3vw 0 0;
+}
